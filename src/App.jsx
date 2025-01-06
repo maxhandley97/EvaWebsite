@@ -7,7 +7,6 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
-import "./styling/app.css"
 import Shiatsu from './pages/Shiatsu';
 import Jin from './pages/Jin';
 import 'bootstrap/dist/css/bootstrap.min.css'
