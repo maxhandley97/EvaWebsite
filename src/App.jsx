@@ -5,8 +5,8 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Impressum from './pages/impressum';
-import Datenschutz from './pages/datenschutz';
+import Impressum from './pages/Impressum';
+import Datenschutz from './pages/Datenschutz';
 import "./styling/app.css"
 import Shiatsu from './pages/Shiatsu';
 import Jin from './pages/Jin';
