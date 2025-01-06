@@ -1,0 +1,47 @@
+.datenschutz {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    padding: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  .datenschutz h1 {
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .datenschutz h2 {
+    font-size: 24px;
+    color: #2d3e50;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .datenschutz p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .datenschutz p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .datenschutz p strong {
+    font-weight: bold;
+  }
+  
+  .datenschutz a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .datenschutz a:hover {
+    text-decoration: underline;
+  }
+  
