@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import Methods from './pages/Jin';
 import Contact from './pages/Contact';
 import Impressum from './pages/impressum';
 import Datenschutz from './pages/datenschutz';
