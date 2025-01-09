@@ -5,7 +5,7 @@ const Contact = () => {
     <div className='article'>
       <h2>Kontakt</h2>
       <p>
-        Studio: Be your Star<br />
+        Studio: Be Your Star<br />
         Joachim-Friedrichstr. 41, 10711 Berlin<br />
         Mail: <a href="mailto:evakluge.praxis@yahoo.com">evakluge.praxis@yahoo.com</a><br />
         Tel: 0174 53 99 457
