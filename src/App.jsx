@@ -9,7 +9,6 @@ import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import Shiatsu from './pages/Shiatsu';
 import Jin from './pages/Jin';
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 const App = () => {
   return (

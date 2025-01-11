@@ -1,38 +1,40 @@
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container } from "react-bootstrap";
 import banner from "../assets/eva-banner.png";
-import "../styling/Header.module.css"
+import "../styling/Header.css";
+import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
 const Header = () => {
   return (
-    <header className="styles.navbar">
-      <Navbar bg="light" expand="lg">
-        <Container fluid className="d-flex justify-content-between align-items-center">
-          {/* Far Left: Logo Image */}
+    <header className="header">
+      <Navbar expand="lg" className="bg-dark navbar-dark">
+        <Container className="navbar-container">
+          {/* Logo */}
           <Navbar.Brand href="/">
-            <div>
-              <img src={banner} alt="Logo" className="syles.banner" width='500rem'/>
-            </div>
+            <img src={banner} alt="Logo" className="banner" />
           </Navbar.Brand>
 
-          {/* Far Right: Nav Items */}
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">
-              Home
-            </Nav.Link>
-            <Nav.Link as={Link} to="/about">
-              Über mich
-            </Nav.Link>
-            <Nav.Link as={Link} to="/Shiatsu">
-              Shiatsu
-            </Nav.Link>
-            <Nav.Link as={Link} to="/jin">
-              Jin Shin Jyutsu
-            </Nav.Link>
-            <Nav.Link as={Link} to="/contact">
-              Kontakt
-            </Nav.Link>
-          </Nav>
+          {/* Navbar Items */}
+      
+          <Navbar.Collapse id="navbar-nav">
+            <Nav className="ms-auto">
+              <Nav.Link as={Link} to="/">
+                <i className="fas fa-home"></i> {/* Home Icon */}
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about">
+                Über mich
+              </Nav.Link>
+              <Nav.Link as={Link} to="/Shiatsu">
+                Shiatsu
+              </Nav.Link>
+              <Nav.Link as={Link} to="/jin">
+                Jin Shin Jyutsu
+              </Nav.Link>
+              <Nav.Link as={Link} to="/contact">
+                Kontakt
+              </Nav.Link>
+
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>
