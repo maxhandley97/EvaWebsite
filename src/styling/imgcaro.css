@@ -1,0 +1,13 @@
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Add pointer cursor for clickability */
+  }
+  
+  .carousel-image {
+    width: 100%;
+    max-width: 500px; /* Control the max size of the image */
+    height: auto;
+  }
+  

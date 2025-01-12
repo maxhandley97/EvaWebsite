@@ -10,6 +10,7 @@ import Datenschutz from './pages/Datenschutz';
 import Shiatsu from './pages/Shiatsu';
 import Jin from './pages/Jin';
 
+
 const App = () => {
   return (
     <div>

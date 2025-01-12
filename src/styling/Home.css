@@ -1,0 +1,122 @@
+/* General Page Styles */
+.home-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #a0bded; /* Soft cream background */
+    color: #4b2e2a; /* Earthy brown color */
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto; /* Centered container */
+    display: flex; 
+    gap:4rem;
+}
+
+/* Intro Text Styles */
+.intro-text {
+    text-align: center;
+    margin-bottom: 40px;
+    flex: 1; /* Allow intro-text to take up available space */
+}
+
+h2 {
+    color: #533e0d ; /* Earthy yellow/brown for headers */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #4b2e2a;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Intro Content Container */
+.intro {
+    gap: 2rem;
+    align-items: center;
+    margin-top: 40px;
+}
+
+/* Text Content */
+.text-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+h2 {
+    text-align: center;
+}
+
+.text-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-wrapper{
+    min-width: 300px;
+}
+
+.carousel-wrapper:hover {
+    transform: translateY(-5px);
+}
+
+.carousel-wrapper img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.intro-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Responsive behavior */
+@media (max-width: 700px) {
+   
+    .home-container {
+        flex-direction: column;
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .intro .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Move Carousel next to Schwerpunkte on small screens */
+    .intro .content-container {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding: 15px;
+    }
+
+    .text-content {
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

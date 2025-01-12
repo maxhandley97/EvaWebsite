@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import banner from "../assets/eva-banner.png";
+import banner from "../assets/EvaImages/banner.png";
 import "../styling/Header.css";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 
