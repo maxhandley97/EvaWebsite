@@ -29,9 +29,13 @@ const Header = () => {
               <Nav.Link as={Link} to="/jin">
                 Jin Shin Jyutsu
               </Nav.Link>
+              <Nav.Link as={Link} to="/sitzung">
+                Sitzung und Kosten
+              </Nav.Link>
               <Nav.Link as={Link} to="/contact">
                 Kontakt
               </Nav.Link>
+              
 
             </Nav>
           </Navbar.Collapse>

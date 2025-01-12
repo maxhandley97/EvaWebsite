@@ -14,7 +14,7 @@ import fb5 from '../assets/EvaImages/CARDS/5.png'
 
 
 const About = () => {
-  const imageArray = [fb1, fb2, fb3, fb4, fb5];
+  const imageArray = [fb1, fb2, fb3, fb4];
   return (
     <div className='article'>
 
