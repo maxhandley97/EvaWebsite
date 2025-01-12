@@ -3,15 +3,17 @@ import '../styling/Home.css';
 import img1 from '../assets/EvaImages/int1.png';
 import img2 from '../assets/EvaImages/int2.png';
 import img3 from '../assets/EvaImages/int3.png';
+import ReviewCaro from '../components/ReviewCaro';
 
 const Home = () => {
   const imageArray = [img1, img2, img3];
 
   return (
     <div className='home-container'>
-      <div className='text-container'>
+      <h2>Willkommen</h2>
+      <div className='top-container'>
       <section className="intro-text">
-        <h2>Willkommen</h2>
+        
         <div className="text-content">
         <p>
           Willkommen bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische Gesundheitsmethoden 
@@ -19,7 +21,15 @@ const Home = () => {
         </p>
         </div>
       </section>
-      <section className="intro">
+      <ReviewCaro />
+      
+      </div> 
+
+      <div className='bottom-container'>
+      </div>
+      <div className="carousel-wrapper">
+            <ImageCarousel images={imageArray} />
+            <section className="intro">
        
         <h2>Meine Schwerpunkte</h2>
           <div className="text-content">
@@ -32,9 +42,6 @@ const Home = () => {
             </p>
         </div>
       </section>
-      </div> 
-      <div className="carousel-wrapper">
-            <ImageCarousel images={imageArray} />
       </div>
     </div>
   );

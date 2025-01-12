@@ -7,10 +7,16 @@
     max-width: 1200px;
     margin: 0 auto; /* Centered container */
     display: flex; 
-    gap:4rem;
+    flex-direction: column; /* Vertical */
+    
 }
 
-/* Intro Text Styles */
+.top-container {
+    display: flex;
+
+}
+
+Intro Text Styles */
 .intro-text {
     text-align: center;
     margin-bottom: 40px;

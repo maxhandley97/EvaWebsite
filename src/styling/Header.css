@@ -1,11 +1,12 @@
 /* General Header Styles */
 .header {
-  background-color: #ae8507; /* Dark brown */
+  background-color: #CDAB81; /* Dark brown */
     padding: 0;
   }
 
   .banner {
-    display: block; /* Remove inline behavior *//* Ensure the banner takes full width on small screens */
+    display: block; 
+    border-radius: 40% / 100%; 
   }
   /* Navbar Styles */
   .navbar-container {
