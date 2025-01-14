@@ -1,12 +1,7 @@
-import ImageCarousel from '../components/ImageCarousel';
 import '../styling/Home.css';
-import img1 from '../assets/EvaImages/int1.png';
-import img2 from '../assets/EvaImages/int2.png';
-import img3 from '../assets/EvaImages/int3.png';
-import ReviewCaro from '../components/ReviewCaro';
+import IntroCaro from '../components/IntroCaro';
 
 const Home = () => {
-  const imageArray = [img1, img2, img3];
 
   return (
     <div className='home-container'>
@@ -15,20 +10,15 @@ const Home = () => {
       <section className="intro-text">
         
         <div className="text-content">
-        <p>
-          Willkommen bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische Gesundheitsmethoden 
-          wie Shiatsu und Jin Shin Jyutsu. Finden Sie Ihre Balance und Wohlbefinden im eigenen Körper.
-        </p>
         </div>
       </section>
-      <ReviewCaro />
+      <IntroCaro />
       
       </div> 
 
       <div className='bottom-container'>
       </div>
       <div className="carousel-wrapper">
-            <ImageCarousel images={imageArray} />
             <section className="intro">
        
         <h2>Meine Schwerpunkte</h2>

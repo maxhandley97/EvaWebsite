@@ -1,5 +1,5 @@
 import '../styling/sitzung.css'
-import ReviewCaro from '../components/ReviewCaro'
+import IntroCaro from '../components/IntroCaro'
 
 const Sitzung = () => {
   return (
@@ -14,7 +14,7 @@ const Sitzung = () => {
                     </p>  
                     <h4>bitte mitbringen: bequeme Kleidung und warme Socken.</h4>
                 </div>
-                <div className='CaroContainer'><ReviewCaro /></div>
+                <div className='CaroContainer'><IntroCaro /></div>
                 
 
             </div>

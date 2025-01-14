@@ -1,11 +1,10 @@
 import '../styling/about.css';
-import ReviewCaro from '../components/ReviewCaro';
 
 
 //Sections:
 
 // My Background: Life history, family influences (healthcare background, sports).
-// Training and Certifications: Detailed list of Eva’s training in Shiatsu, Jin Shin Jyutsu, and Aikido.
+// Training and Certifications: Detailed list import fb3 from '../assets/EvaImages/3.png';of Eva’s training in Shiatsu, Jin Shin Jyutsu, and Aikido.
 // Philosophy: A personal reflection on Eva’s approach to healing and her practice.
 
 
@@ -25,9 +24,6 @@ const About = () => {
         Im ersten Beruf wurde ich Grundschulehrerin mit den Schwerpunkten Geschichte und Theaterpädagogik, auch hier war die Verbindung von Bewegung und Lernen mein Ziel.
         Im zweiten Beruf wurde ich Heilpraktikerin und widmete mich der naturheilkundlichen und asiatischen Gesundheitslehre:
       </p>
-      </div>
-      <div className="carousel-wrapper">
-            <ReviewCaro/>
       </div>
       </div>
 
