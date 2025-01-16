@@ -1,23 +1,87 @@
-.container {
+.footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #CDAB81;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  }
 
-}
-
-p, h5{
-    font-family: 'Arial', sans-serif;
-    font-size: 1rem;
-}
-
-.ex {
-    display: flex;
-    justify-content: space-around;
-    
-
-}
-.item {
+  .footer .banner {
+    width: 100%; /* Adjust this width as needed */
+    max-width: 1200px; /* Set a maximum width if desired */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .left-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 25rem;
-}
+    justify-content: center;
+    max-width: 60%;
+    padding-right: 3rem;
+  }
+  
+  h4, p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    margin: 5px 0; /* Add margin between paragraphs */
+  }
+  
+  .bottom {
+    margin-top: 10px;
+  }
+  
+  .bottom a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Adjust map container styling */
+  .map-container {
+    flex-shrink: 0;
+    width: 400px; /* Set initial width */
+    height: 300px; /* Set initial height */
+    margin-left: 20px; /* For larger screens, keep some spacing */
+    margin-right: 0; /* Remove padding on right for larger screens */
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  /* Make the map responsive */
+  .map-container iframe {
+    width: 100%; /* Make map take full width of its container */
+    height: 100%; /* Make map take full height of its container */
+    border: 0;
+  }
+  
+  /* Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .left-container {
+      max-width: 100%; /* Make text section take full width */
+      padding-right: 0; /* Remove right padding */
+    }
+  
+    .map-container {
+      width: 90%; /* Map should take 90% of the container's width on smaller screens */
+      height: 200px; /* Reduce height for better fit on small screens */
+      margin-top: 20px; /* Add margin between text and map */
+      margin-left: auto; /* Center the map horizontally */
+      margin-right: auto; /* Center the map horizontally */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-container {
+      height: 150px; /* Adjust map height further for very small screens */
+    }
+  }
+  

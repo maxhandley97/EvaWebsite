@@ -1,7 +1,8 @@
 .carousel-container {
     position: relative;
-    height: 50vh; /* Reduced height for better phone compatibility */
+    height: 65vh; /* Reduced height for better phone compatibility */
     overflow: hidden;
+    border-radius: 1rem;
   }
   
   .carousel-slide {
@@ -26,8 +27,19 @@
   }
   
   .carousel-banner h1 {
-    font-size: 1.25rem; /* Adjusted for better readability on phones */
-    margin: 0 0 1rem;
+    font-size: 4rem; /* Keeps font size for readability */
+    font-family: 'Hina Mincho';
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    line-height: 1.2; /* Adjust line height for spacing between lines */
+  }
+  
+  .carousel-banner h5 {
+    font-family: 'Hina Mincho';
+    margin: 1rem;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+
   }
   
   .carousel-button {
@@ -60,3 +72,48 @@
   }
 
 
+  @media (max-width: 1225px) {
+    .carousel-banner {
+      padding: 1rem; /* Reduce padding */
+      top: 45%; /* Move banner slightly higher */
+      transform: translate(-50%, -45%);
+    }
+  
+    .carousel-banner h1 {
+      font-size: 3rem; /* Reduce font size */
+      line-height: 1.2; /* Adjust line height */
+    }
+  
+    .carousel-banner h5 {
+      font-size: 1.5rem; /* Reduce font size */
+      line-height: 1.4; /* Adjust spacing */
+      margin: 1rem 0; /* Reduce margin */
+    }
+  
+    .carousel-button {
+      padding: 0.5rem 1rem; /* Adjust button size */
+      font-size: 1rem; /* Smaller text on the button */
+      margin-top: 1rem; /* Reduce spacing above button */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .carousel-banner {
+      top: 40%; /* Move higher for even smaller screens */
+      transform: translate(-50%, -40%);
+    }
+  
+    .carousel-banner h1 {
+      font-size: 2.5rem; /* Further reduce font size */
+    }
+  
+    .carousel-banner h5 {
+      font-size: 1.25rem; /* Adjust for smaller screens */
+    }
+  
+    .carousel-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,28 +1,91 @@
+.bottom-container {
+    display: flex;
+    flex-direction: row; /* Stack all sections */
+    justify-content: center;
+    gap: 2rem; /* Space between sections */
+    padding: 2rem;
+    font-family: 'Hina Mincho', serif; /* Consistent font */
+    line-height: 1.6;
+  }
+  
+  .bottom-container .title-row {
+    display: flex;
+    align-items: center; /* Center align title and image vertically */
+    gap: 1rem; /* Space between title and image */
+  }
+  
+  .bottom-container h2 {
+    font-size: 2rem; /* Adjust font size */
+    margin: 0; /* Remove default margins */
+  }
+  
+  .bottom-container img {
+    max-width: 150px; /* Limit image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make the image circular */
+    flex-shrink: 0; /* Prevent the image from shrinking */
+  }
+  
+  .bottom-container .text-boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; /* Evenly space text boxes */
+    gap: 2rem; /* Space between text boxes */
+  }
+  
+  .bottom-container .text-box {
+    flex: 1; /* Each box takes equal space */
+    background-color: #f9f9f9; /* Subtle background color */
+    padding: 1rem;
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  .bottom-container .text-box p {
+    margin: 0; /* Remove default margins */
+    font-size: 1rem; /* Adjust text size */
+  }
 
-/* General Page Styles */
-.home-container {
-    font-family: 'Arial', sans-serif;
-    background-color: #a0bded; /* Soft cream background */
-    color: #4b2e2a; /* Earthy brown color */
-    padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto; /* Centered container */
-    display: flex; 
-    flex-direction: column; /* Vertical */
-    
-}
-
-h2 {
-    color: #533e0d ; /* Earthy yellow/brown for headers */
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-p {
-    line-height: 1.8;
-    font-size: 1.1rem;
-    margin-bottom: 1.5rem;
-    color: #4b2e2a;
-    max-width: 900px;
-    margin: 0 auto;
-}
+  .review {
+    padding: 3rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .bottom-container {
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    .title-row {
+      flex-direction: column; /* Stack title and image vertically */
+      align-items: center; /* Center align for smaller screens */
+    }
+  
+    .text-boxes {
+      flex-direction: column; /* Stack text boxes vertically */
+      gap: 1rem; /* Adjust gap */
+    }
+  
+    .bottom-container img {
+      max-width: 120px; /* Reduce image size on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bottom-container {
+      padding: 0.5rem; /* Further reduce padding on small devices */
+    }
+  
+    .bottom-container h2 {
+      font-size: 1.5rem; /* Reduce title font size */
+    }
+  
+    .text-box {
+      padding: 0.8rem; /* Adjust text box padding */
+    }
+  
+    .bottom-container p {
+      font-size: 0.9rem; /* Adjust text size */
+    }
+  }
+  

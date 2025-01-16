@@ -45,10 +45,11 @@ const IntroCaro = () => {
       ))}
       <div className="carousel-banner">
         <h1>
-          Willkommen <br />bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische
-          Gesundheitsmethoden wie Shiatsu und Jin Shin Jyutsu. Finden Sie Ihre
-          Balance und Wohlbefinden im eigenen Körper.
+          Willkommen <br />
         </h1>
+        <h5>bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische
+          Gesundheitsmethoden wie Shiatsu und Jin Shin Jyutsu. <br /> Finden Sie Ihre
+          Balance und Wohlbefinden im eigenen Körper.</h5>
         <a href="/kontact" className="carousel-button">Kontakt</a>
       </div>
       <button className="carousel-button-prev" onClick={prevSlide}>&#8592;</button>

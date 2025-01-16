@@ -1,53 +1,61 @@
 .review-carousel-container {
-    position: relative;
-    height: 30vh; /* Adjust height as needed for design */
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    background-color: #f5f5f5; /* Light background for better readability */
-  }
-  
-  .review-slide {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    transition: left 1s ease-in-out;
-  }
-  
-  .review-quote {
-    font-size: 1.5rem;
-    margin: 0 1rem 1rem;
-    color: #333;
-  }
-  
-  .review-initial {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .review-button-prev,
-  .review-button-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border: none;
-    padding: 0.5rem;
-    cursor: pointer;
-  }
-  
-  .review-button-prev {
-    left: 1rem;
-  }
-  
-  .review-button-next {
-    right: 1rem;
-  }
-  
+  position: relative;
+  height: 30vh; /* Adjust height as needed for design */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  overflow: hidden;
+  background-color: #f5f5f5; /* Light background for better readability */
+  padding: 0 2rem; /* Add padding on the left and right */
+}
+
+.review-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center text vertically */
+  align-items: center; /* Center text horizontally */
+  text-align: center; /* Center align text content */
+  transition: left 1s ease-in-out;
+  padding: 0 2rem; /* Add extra padding inside the slide */
+  box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.review-quote {
+  font-family: 'Hina Mincho', serif;
+  font-size: 1.5rem;
+  margin: 1rem 2rem; /* Add more spacing around the quote */
+  color: #333;
+  line-height: 1.6; /* Improve readability */
+}
+
+.review-initial {
+  font-family: 'Hina Mincho', serif;
+  font-size: 1.5rem;
+  color: #555;
+  margin-top: 0.5rem; /* Add spacing above initials */
+}
+
+.review-button-prev,
+.review-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px; /* Optional: Add rounded corners */
+}
+
+.review-button-prev {
+  left: 1rem;
+}
+
+.review-button-next {
+  right: 1rem;
+}

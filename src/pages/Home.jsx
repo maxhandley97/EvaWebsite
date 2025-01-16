@@ -1,11 +1,12 @@
 import '../styling/Home.css';
 import IntroCaro from '../components/IntroCaro';
+import img1 from '../assets/EvaImages/profile.png'
+import ReviewCarousel from '../components/ReviewCaro'
 
 const Home = () => {
 
   return (
     <div className='home-container'>
-      <h2>Willkommen</h2>
       <div className='top-container'>
       <section className="intro-text">
         
@@ -16,23 +17,24 @@ const Home = () => {
       
       </div> 
 
-      <div className='bottom-container'>
-      </div>
-      <div className="carousel-wrapper">
-            <section className="intro">
-       
-        <h2>Meine Schwerpunkte</h2>
-          <div className="text-content">
-            <p>Meine Leidenschaft gilt dem Wohlfühlen im eigenen Körper. Ich möchte Menschen darin unterstützen, Ihren Körper besser wahrzunehmen und zu empfinden und damit ihre Gesundheitskompetenz zu stärken und Stress besser zu bewältigen.</p>
-            <p>Meine Anliegen ist es, Ihre Verspannungen zu lösen und dadurch Ihre Schmerzen zu lindern, damit Sie Ihre Bewegungsfreiheit wieder erlangen und Haltungsfehler korrigieren können.</p>
-            <p>Dabei habe ich verschiedene Möglichkeiten der asiatischen Behandlungs- und Bewegungskunst als sehr effektiv kennen und schätzen gelernt: Ich praktiziere seit 1979 Shiatsu, seit 1988 Aikido und seit 2003 Jin Shin Jyutsu.</p>
-            <p>
-            Beim Behandeln sind meine Hände die Werkzeuge. Ich arbeite mit den Diagnose- und Behandlungsmöglichkeiten des Shiatsu und des Jin Shin Jyutsu. Bei Bedarf zeige ich Druckpunkte für die Selbstbehandlung und Meridian-Dehnübungen.
+      <div className="bottom-container">
+  <div className="title-row">
+    <h2>Meine Schwerpunkte</h2>
+    <img src={img1} alt="Headshot of Eva Kluge" />
+  </div>
+  <div className="text-boxes">
+    <div className="text-box">
+      <p>Meine Leidenschaft gilt dem Wohlfühlen im eigenen Körper. <br /> Ich möchte Menschen darin unterstützen, Ihren Körper besser wahrzunehmen und zu empfinden und damit ihre Gesundheitskompetenz zu stärken und Stress besser zu bewältigen.</p>
+      <p>Beim Behandeln sind meine Hände die Werkzeuge. Ich arbeite mit den Diagnose- und Behandlungsmöglichkeiten des Shiatsu und des Jin Shin Jyutsu. Bei Bedarf zeige ich Druckpunkte für die Selbstbehandlung und Meridian-Dehnübungen.</p>
+    </div>
+  </div>
+</div>
+<div className='review'>
+  <ReviewCarousel/>
+</div>
 
-            </p>
-        </div>
-      </section>
-      </div>
+
+
     </div>
   );
 };

@@ -39,13 +39,15 @@
   .navbar-nav .nav-link {
     color: #fffce6; /* Light color for nav items */
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Hina Mincho';
+    font-size: 1.75rem; 
     text-decoration: none;
     display: flex; /* Make the link behave as a flex container */
     align-items: center; /* Center the text/icon vertically */
     justify-content: center; /* Center the text/icon horizontally */
     min-height: 1rem; /* Set minimum height for clickable box */
     padding: 0.5rem 1rem; /* Add padding for better clickability */
+    text-align: center;
   }
   
   .navbar-nav .nav-link:hover {
