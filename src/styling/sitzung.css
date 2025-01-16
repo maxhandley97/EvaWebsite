@@ -1,22 +1,40 @@
-.container {
-    display: flex;
-    flex-direction: column;
+.sitzung {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1, h2 {
     text-align: center;
-}
-
-.price-container {
-    display: flex;
-    justify-content: space-around
-}
-.price {
-    padding: 2rem;
-}
-
-.CaroContainer {
-    max-width: 50%;
-}
-
-.top {
-    display: flex;
-    align-items: center;
-}
+  }
+  
+  .price-container {
+    margin-top: 20px;
+  }
+  
+  .price-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .price-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .price-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .price-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  

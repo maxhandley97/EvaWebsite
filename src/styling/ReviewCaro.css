@@ -1,0 +1,53 @@
+.review-carousel-container {
+    position: relative;
+    height: 30vh; /* Adjust height as needed for design */
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: #f5f5f5; /* Light background for better readability */
+  }
+  
+  .review-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: left 1s ease-in-out;
+  }
+  
+  .review-quote {
+    font-size: 1.5rem;
+    margin: 0 1rem 1rem;
+    color: #333;
+  }
+  
+  .review-initial {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .review-button-prev,
+  .review-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .review-button-prev {
+    left: 1rem;
+  }
+  
+  .review-button-next {
+    right: 1rem;
+  }
+  
