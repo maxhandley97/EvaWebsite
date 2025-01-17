@@ -25,10 +25,7 @@ const Header = () => {
                 Über mich
               </Nav.Link>
               <Nav.Link as={Link} to="/Shiatsu">
-                Shiatsu
-              </Nav.Link>
-              <Nav.Link as={Link} to="/jin">
-                Jin Shin Jyutsu
+              Methoden und Wirkung
               </Nav.Link>
               <Nav.Link as={Link} to="/sitzung">
                 Sitzung und Kosten
