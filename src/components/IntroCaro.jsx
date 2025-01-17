@@ -1,4 +1,4 @@
-
+import React from 'react';
 import fb1 from '../assets/EvaImages/1.png';
 import fb2 from '../assets/EvaImages/2.png';
 import fb3 from '../assets/EvaImages/3.png';

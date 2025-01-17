@@ -60,8 +60,9 @@ const ReviewCarousel = () => {
             left: `${(index - currentIndex) * 100}%`,
           }}
         >
-          <p className="review-quote">"{review.quote}"</p>
-          <p className="review-initial">- {review.initial}</p>
+          <p className="review-quote">&quot;{review.quote}&quot;</p>
+<p className="review-initial">- {review.initial}</p>
+        
         </div>
       ))}
       <button className="review-button-prev" onClick={prevSlide}>
