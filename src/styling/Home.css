@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0 5px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+
 .bottom-container {
     display: flex;
     flex-direction: row; /* Stack all sections */

@@ -59,3 +59,23 @@
 .review-button-next {
   right: 1rem;
 }
+
+/* Media Query for screens below 550px */
+@media (max-width: 550px) {
+  .review-quote {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    margin: 1rem 1rem; /* Adjust margin to fit smaller screens */
+  }
+
+  .review-initial {
+    font-size: 1.2rem; /* Reduce font size for smaller screens */
+  }
+  
+  .review-carousel-container {
+    padding: 0 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .review-slide {
+    padding: 0 1rem; /* Reduce padding inside the slide */
+  }
+}

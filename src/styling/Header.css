@@ -1,94 +1,101 @@
 /* General Header Styles */
 .header {
-  background-color: #CDAB81; /* Dark brown */
-    padding: 0;
+  background-color: #CDAB81;
+  padding: 0;
+}
+
+.banner {
+  display: block;
+  border-radius: 40% / 100%;
+}
+
+/* Navbar Styles */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  list-style: none;
+  padding: 0 1rem;
+  margin: 0;
+  align-items: center;
+  flex-wrap: nowrap; /* Default: prevent wrapping */
+}
+
+/* Logo/Banner */
+.navbar-brand img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 150px;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #fffce6;
+  font-family: 'Hina Mincho';
+  font-size: 1.75rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 1rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: #927a29;
+  color: #fff;
+}
+
+.navbar-nav .nav-link i {
+  margin-right: 8px;
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 1050px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 1rem;
   }
 
   .banner {
-    display: block; 
-    border-radius: 40% / 100%; 
-  }
-  /* Navbar Styles */
-  .navbar-container {
-    display: flex;
-    justify-content: space-between; /* Space between logo and nav items */
-    align-items: center; /* Align items in the center vertically */
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .navbar-nav {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 1rem; /* Space between nav items */
-    list-style: none;
-    padding: 0 1rem;
-    margin: 0;
-    align-items: center;
-  }
-  
-  /* Logo/Banner */
-  .navbar-brand img {
-    width: auto;
     max-width: 100%;
-    height: auto;
-    max-height: 150px; /* Adjust as needed */
   }
-  
-  /* Navbar Links */
+}
+
+@media (max-width: 700px) {
+  .navbar-nav {
+    justify-content: center; /* Center items if they wrap */
+    padding: 0 0.5rem; /* Adjust padding to make more space */
+  }
+
   .navbar-nav .nav-link {
-    color: #fffce6; /* Light color for nav items */
+    font-size: 1.25rem; /* Reduce font size */
+    padding: 0.5rem 0.75rem; /* Adjust padding to fit items */
+  }
+}
 
-    font-family: 'Hina Mincho';
-    font-size: 1.75rem; 
-    text-decoration: none;
-    display: flex; /* Make the link behave as a flex container */
-    align-items: center; /* Center the text/icon vertically */
-    justify-content: center; /* Center the text/icon horizontally */
-    min-height: 1rem; /* Set minimum height for clickable box */
-    padding: 0.5rem 1rem; /* Add padding for better clickability */
-    text-align: center;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    background-color: #927a29;
-    color: #fff;
-  }
-  
-  .navbar-nav .nav-link i {
-    margin-right: 8px; /* Space between icon and text */
-  }
-  
-  /* Responsive behavior: Stack logo and nav items vertically at a breakpoint */
-  @media (max-width: 1050px) {
-    .navbar-container {
-      flex-direction: column; /* Stack logo and nav items vertically on smaller screens */
-      align-items: center; /* Center align logo and nav items */
-    }
-  
-    .navbar-nav .nav-item {
-      margin-bottom: 1rem; /* Space between items */
-    }
-  
-    .banner {
-      max-width: 100%; /* Ensure the banner takes full width on small screens */
-    }
+@media (max-width: 480px) {
+  .navbar-nav {
+    flex-wrap: wrap; /* Allow items to wrap on very small screens */
+    justify-content: center; /* Center items when wrapping */
   }
 
-  @media (max-width: 470px) {
-    .navbar-container {
-      flex-direction: column;
-      align-items: center;
-      padding: 0 5px; /* Further reduce padding */
-    }
-  
-    .navbar-nav {
-      flex-direction: column; /* Stack nav items */
-      gap: 0.8rem; /* Adjust gap to make items fit */
-    }
-  
-    .navbar-brand img {
-      max-height: 100px; /* Further reduce banner size */
-    }
+  .navbar-nav .nav-link {
+    font-size: 1rem; /* Adjust font size even further on very small screens */
+    padding: 0.5rem 0.5rem; /* Reduce padding */
   }
-  
+}

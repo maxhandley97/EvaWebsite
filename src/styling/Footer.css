@@ -4,13 +4,6 @@
     align-items: center;
     padding: 20px;
     background-color: #CDAB81;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-  }
-
-  .footer .banner {
-    width: 100%; /* Adjust this width as needed */
-    max-width: 1200px; /* Set a maximum width if desired */
-    height: auto; /* Maintain aspect ratio */
   }
   
   .left-container {
@@ -18,70 +11,70 @@
     flex-direction: column;
     justify-content: center;
     max-width: 60%;
-    padding-right: 3rem;
+    padding-right: 1rem;
   }
   
-  h4, p {
-    font-family: 'Arial', sans-serif;
-    font-size: 1rem;
-    margin: 5px 0; /* Add margin between paragraphs */
-  }
-  
-  .bottom {
-    margin-top: 10px;
-  }
-  
-  .bottom a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .bottom a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Adjust map container styling */
   .map-container {
     flex-shrink: 0;
-    width: 400px; /* Set initial width */
-    height: 300px; /* Set initial height */
-    margin-left: 20px; /* For larger screens, keep some spacing */
-    margin-right: 0; /* Remove padding on right for larger screens */
+    width: 400px; /* Set the initial width */
+    height: 300px; /* Set the height as 25% of its container */
+    margin-left: 20px;
     position: relative;
     box-sizing: border-box;
   }
   
-  /* Make the map responsive */
   .map-container iframe {
-    width: 100%; /* Make map take full width of its container */
-    height: 100%; /* Make map take full height of its container */
+    width: 100%;
+    height: 100%;
     border: 0;
   }
   
-  /* Media Query for smaller screens */
+  /* Media Query for screens below 768px */
   @media (max-width: 768px) {
     .footer {
-      flex-direction: column; /* Stack items vertically on small screens */
-      align-items: flex-start; /* Align items to the left */
+      flex-direction: column;
+      align-items: flex-start;
     }
   
     .left-container {
-      max-width: 100%; /* Make text section take full width */
-      padding-right: 0; /* Remove right padding */
+      max-width: 100%;
+      padding-right: 0;
     }
   
     .map-container {
-      width: 90%; /* Map should take 90% of the container's width on smaller screens */
-      height: 200px; /* Reduce height for better fit on small screens */
-      margin-top: 20px; /* Add margin between text and map */
-      margin-left: auto; /* Center the map horizontally */
-      margin-right: auto; /* Center the map horizontally */
+      width: 90%;
+      height: 10rem;
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
   
+  /* Media Query for very small screens */
   @media (max-width: 480px) {
     .map-container {
-      height: 150px; /* Adjust map height further for very small screens */
+      width: 90%; /* Ensure it remains responsive */
+      height: 150px; /* Adjust height for very small screens */
+    }
+  }
+  
+  .banner {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+  }
+  
+  @media (max-width: 1050px) {
+    .banner {
+      width: 100%;
+      max-width: 1000px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .banner {
+      width: 100%;
+      max-width: 100%;
     }
   }
   
