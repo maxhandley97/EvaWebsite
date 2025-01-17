@@ -1,3 +1,4 @@
+import React from 'react';
 import '../styling/sitzung.css';
 
 const Sitzung = () => {
