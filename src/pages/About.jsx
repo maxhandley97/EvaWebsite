@@ -1,4 +1,4 @@
-import '../styling/about.css';
+import '../styling/About.css';
 
 
 //Sections:
