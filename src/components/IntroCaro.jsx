@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import fb1 from '../assets/EvaImages/1.png';
 import fb2 from '../assets/EvaImages/2.png';
 import fb3 from '../assets/EvaImages/3.png';
 import fb4 from '../assets/EvaImages/4.png';
 import fb5 from '../assets/EvaImages/5.png';
 import { useState, useEffect } from "react";
-import '../styling/IntroCaro.css'
+import '../styling/IntroCaro.css';
 
 const IntroCaro = () => {
   const images = [
@@ -50,7 +51,7 @@ const IntroCaro = () => {
         <h5>bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische
           Gesundheitsmethoden wie Shiatsu und Jin Shin Jyutsu. <br /> Finden Sie Ihre
           Balance und Wohlbefinden im eigenen Körper.</h5>
-        <a href="/kontact" className="carousel-button">Kontakt</a>
+        <Link to="/contact" className="carousel-button">Kontakt</Link>
       </div>
       <button className="carousel-button-prev" onClick={prevSlide}>&#8592;</button>
       <button className="carousel-button-next" onClick={nextSlide}>&#8594;</button>
