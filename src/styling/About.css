@@ -1,17 +1,113 @@
-
-.container2 {
-    padding-top: 2rem;
-}
-
-.container1 {
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0 5px;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    font-family: 'Hina Mincho', serif; /* Consistent font */
+    line-height: 1.6;
+  }
+  
+  .about-page {
     display: flex;
-
-}
-
-.carousel-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  /* Background Section */
+  .background {
+    background-color: #f9f9f9;
     padding: 1rem;
-}
-
-h2 {
-    font-family: 'Hina Mincho';
-}
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .background h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .background p {
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+  }
+  
+  /* Training Section */
+  .training {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .training-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .training-item {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .training-item h5 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .training-item p {
+    margin: 0;
+    font-size: 1.25rem;
+  }
+  
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 1rem;
+    }
+  
+    .background h2,
+    .training h2 {
+      font-size: 1.5rem;
+    }
+  
+    .training-item h5 {
+      font-size: 1.25rem;
+    }
+  
+    .training-item p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-page {
+      padding: 0.5rem;
+    }
+  
+    .background,
+    .training {
+      padding: 0.8rem;
+    }
+  
+    .background h2,
+    .training h2 {
+      font-size: 1.25rem;
+    }
+  
+    .training-item p {
+      font-size: 0.9rem;
+    }
+  }
+  

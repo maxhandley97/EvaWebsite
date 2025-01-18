@@ -1,40 +1,110 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 .sitzung {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  h1, h2 {
-    text-align: center;
-  }
-  
-  .price-container {
-    margin-top: 20px;
-  }
-  
-  .price-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-  }
-  
-  .price-table th, .price-table td {
-    border: 1px solid #ddd;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.top p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.top h4 {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+/* Price Table Styling */
+.price-container {
+  margin-top: 20px;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.price-table th, .price-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.price-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.price-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sitzung {
     padding: 10px;
-    text-align: center;
   }
-  
-  .price-table th {
-    background-color: #f4f4f4;
-    font-weight: bold;
+
+  .price-table {
+    font-size: 0.9rem;
   }
-  
-  .price-table tr:nth-child(even) {
-    background-color: #f9f9f9;
+
+  .price-table th, .price-table td {
+    padding: 8px;
   }
-  
-  .price-table tr:hover {
-    background-color: #f1f1f1;
+
+  .top p {
+    font-size: 1rem;
   }
-  
+
+  .top h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sitzung {
+    padding: 5px;
+  }
+
+  .price-table {
+    font-size: 0.8rem;
+  }
+
+  .price-table th, .price-table td {
+    padding: 5px;
+  }
+
+  h1, h2 {
+    font-size: 1.25rem;
+  }
+
+  .top p {
+    font-size: 0.9rem;
+  }
+
+  .top h4 {
+    font-size: 1rem;
+  }
+}
