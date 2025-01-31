@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/sitzung.css';
+import './sitzung.css';
 
 const Sitzung = () => {
   return (

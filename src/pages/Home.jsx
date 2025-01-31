@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styling/Home.css';
+import './Home.css';
 import IntroCaro from '../components/IntroCaro';
 import img1 from '../assets/EvaImages/profile.png'
 import ReviewCarousel from '../components/ReviewCaro'

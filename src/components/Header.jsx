@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import banner from "../assets/EvaImages/banner.png";
-import "../styling/Header.css";
+import "./Header.css";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header = () => {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../styling/ReviewCaro.css";
+import "./ReviewCaro.css";
 
 const ReviewCarousel = () => {
   const reviews = [

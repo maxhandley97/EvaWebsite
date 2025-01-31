@@ -6,7 +6,7 @@
 // Philosophy: A personal reflection on Eva’s approach to healing and her practice.
 
 import React from 'react';
-import '../styling/About.css';
+import './About.css';
 
 const About = () => {
   return (

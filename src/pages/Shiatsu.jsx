@@ -1,6 +1,6 @@
 import React from 'react';
 import stretch from '../assets/EvaImages/tall2.jpg';
-import '../styling/Shiatsu.css';
+import './Shiatsu.css';
 import ReviewCarousel from '../components/ReviewCaro.jsx'
 
 const Shiatsu = () => {

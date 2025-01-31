@@ -6,7 +6,7 @@ import fb3 from '../assets/EvaImages/3.png';
 import fb4 from '../assets/EvaImages/4.png';
 import fb5 from '../assets/EvaImages/5.png';
 import { useState, useEffect } from "react";
-import '../styling/IntroCaro.css';
+import './IntroCaro.css';
 
 const IntroCaro = () => {
   const images = [
