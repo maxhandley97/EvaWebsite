@@ -9,6 +9,7 @@ import Impressum from './pages/Impressum';
 import Datenschutz from './pages/Datenschutz';
 import Shiatsu from './pages/Shiatsu';
 import Sitzung from './pages/Sitzung';
+import Geschichte from './pages/Geschichte'; 
 
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/shiatsu" element={<Shiatsu />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/geschichte" element={<Geschichte />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/datenschutz" element={<Datenschutz />} />
           <Route path="/sitzung" element={<Sitzung />} />

@@ -24,6 +24,20 @@
     text-align: center;
     color: #fff;
     z-index: 1;
+  
+    /*** Added semi-transparent background for contrast ***/
+    background: rgba(0, 0, 0, 0.3); /* Dark background with slight transparency */
+    padding: 2rem; /* Increased padding for better spacing */
+    border-radius: 10px; /* Soft rounded edges */
+  
+    /*** Added border for a clean and modern look ***/
+    border: 2px solid rgba(255, 255, 255, 0.4);
+  }
+  
+  .carousel-banner h1,
+  .carousel-banner h5 {
+    /*** Ensuring text stands out ***/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
   
   .carousel-banner h1 {

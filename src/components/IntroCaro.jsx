@@ -50,7 +50,7 @@ const IntroCaro = () => {
         </h1>
         <h5>bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische
           Gesundheitsmethoden wie Shiatsu und Jin Shin Jyutsu. <br /> Finden Sie Ihre
-          Balance und Wohlbefinden im eigenen Körper.</h5>
+          Stärken Sie Ihre Gesundheit und das Wohlfühlen im Körper!</h5>
         <Link to="/contact" className="carousel-button">Kontakt</Link>
       </div>
       <button className="carousel-button-prev" onClick={prevSlide}>&#8592;</button>

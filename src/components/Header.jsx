@@ -2,43 +2,54 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import banner from "../assets/EvaImages/banner.png";
 import "./Header.css";
-import { Navbar, Nav, Container } from "react-bootstrap";
 
 const Header = () => {
   return (
     <header className="header">
-      <Navbar expand="lg" className="bg-dark navbar-dark">
-        <Container className="navbar-container">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div className="navbar-container">
           {/* Logo */}
-          <Navbar.Brand href="/">
+          <a href="/" className="navbar-brand">
             <img src={banner} alt="Logo" className="banner" />
-          </Navbar.Brand>
+          </a>
 
           {/* Navbar Items */}
-      
-          <Navbar.Collapse id="navbar-nav">
-            <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/">
-                <i className="fas fa-home"></i> {/* Home Icon */}
-              </Nav.Link>
-              <Nav.Link as={Link} to="/about">
-                Über mich
-              </Nav.Link>
-              <Nav.Link as={Link} to="/Shiatsu">
-              Methoden und Wirkung
-              </Nav.Link>
-              <Nav.Link as={Link} to="/sitzung">
-                Sitzung und Kosten
-              </Nav.Link>
-              <Nav.Link as={Link} to="/contact">
-                Kontakt
-              </Nav.Link>
-              
-
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+          <div className="collapse navbar-collapse" id="navbar-nav">
+            <ul className="navbar-nav ml-auto">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">
+                  <i className="fas fa-home"></i> {/* Home Icon */}
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/about" className="nav-link">
+                  Über mich
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/Shiatsu" className="nav-link">
+                  Methoden und Wirkung
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/Geschichte" className="nav-link">
+                  Geschichte der Methoden
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/sitzung" className="nav-link">
+                  Sitzung und Kosten
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/contact" className="nav-link">
+                  Kontakt
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
   );
 };
