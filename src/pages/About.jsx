@@ -7,11 +7,25 @@
 
 import React from 'react';
 import './About.css';
+import oil from '../assets/EvaImages/massage-oil.jpg'
+import headshot from '../assets/EvaImages/profile.png'
 
 const About = () => {
   return (
     <article className='about-page'>
       {/* My Background Section */}
+      <div className='intro-image'>
+        <img src={oil} alt="Oil image" className="background-image" />
+        <div className="content">
+          <div className="top-right">
+            <h1>Über Mich</h1>
+            <img src={headshot} alt="Headshot" className="headshot" />
+          </div>
+          <h5>Erfahren Sie mehr über die Frau hinter der Kunst des Shiatsu.</h5>
+        </div>
+      </div>
+
+
       <section className='background'>
         <h2>Lebenslauf</h2>
         <p>

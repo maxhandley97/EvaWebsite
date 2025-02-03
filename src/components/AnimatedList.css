@@ -1,0 +1,70 @@
+.animated-list-container {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .animated-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0; /* Initially, make the list invisible */
+    animation: fadeIn 1s forwards; /* Fade in effect */
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(-20px); /* Start position (above) */
+    animation: fall 0.5s ease forwards;
+    animation-delay: 0s; /* Set this dynamically via JS */
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .checkbox {
+    margin-right: 10px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .item-text {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  /* When the item falls and becomes visible */
+  .list-item.fall {
+    opacity: 1;
+    transform: translateY(0); /* Moves it down to the normal position */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes tickCheckbox {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
