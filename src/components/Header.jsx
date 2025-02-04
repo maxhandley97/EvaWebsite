@@ -6,11 +6,11 @@ import "./Header.css";
 const Header = () => {
   return (
     <header className="header">
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar">
         <div className="navbar-container">
           {/* Logo */}
           <a href="/" className="navbar-brand">
-            <img src={banner} alt="Logo" className="banner" />
+            <img src={banner} alt="Logo" className="header-banner" />
           </a>
 
           {/* Navbar Items */}

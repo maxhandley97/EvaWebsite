@@ -9,9 +9,10 @@ body {
 position: relative;
 width: 100%;
 height: 60vh; /* Keep the height at 60vh */
+background: rgba(0, 0, 0, 0.5);
 }
 
-.background-image {
+.about-background-image {
 position: absolute;
 top: 0;
 left: 0;
@@ -19,44 +20,45 @@ width: 100%;
 height: 100%;
 object-fit: cover;
 z-index: -1; /* Keep the background behind the content */
+
 }
 
-.content {
+.about-content h2 {
+  font-size: 2rem;
+  color:#fff;
+}
+
+.about-content {
 position: absolute;
 top: 0;
 left: 0; /* Align to the top right */
 margin: 20px;
 color: #808080;
-font-family: "Lora", sans-serif;
+font-family: 'Hina Mincho', serif;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
 }
 
-.top-right {
+.about-top-right {
 display: flex;
 align-items: center;
 justify-content: flex-start;
 margin-bottom: 10px; /* Space between the h1 and the h5 */
 }
 
-.top-right h1 {
-font-size: 80px;
-font-weight: 400;
-text-transform: uppercase;
-margin-right: 20px; /* Space between the h1 and the headshot */
-}
-
 .top-right img {
   margin-top: 40px; 
+  
 }
 
-.headshot {
-width: 150px;
+.about-headshot {
+width: 100px;
 height: 150px;
 border-radius: 50%;
 border: 5px solid white;
 object-fit: cover;
+margin-right: 1rem;
 }
 
 h5 {
@@ -97,8 +99,20 @@ padding: 2rem;
 }
 
 @media (max-width: 480px) {
+.intro-image {
+  height: 35vh;
+}
+
 .about-page {
   padding: 0.5rem;
+}
+.about-background-image {
+  height: 35vh;
+}
+
+.about-headshot {
+  width: 100px;
+  height: 150px;
 }
 
 .background,

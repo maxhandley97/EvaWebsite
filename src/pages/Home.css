@@ -48,18 +48,26 @@ html, body {
   }
   
   .bottom-container .text-box p {
-    margin: 0; /* Remove default margins */
+     /* Remove default margins */
     font-size: 1.25rem; /* Adjust text size */
   }
-
+  
+  .text-box p {
+    margin-bottom: 15px;
+  }
   .review {
     padding: 3rem;
+  }
+
+  .second-paragraph {
+    margin-top: 1rem; /* Adjust the space between the two paragraphs */
   }
   
   /* Responsive Styling */
   @media (max-width: 768px) {
     .bottom-container {
       padding: 1rem; /* Reduce padding */
+      flex-wrap: wrap;
     }
   
     .title-row {
@@ -80,6 +88,8 @@ html, body {
   @media (max-width: 480px) {
     .bottom-container {
       padding: 0.5rem; /* Further reduce padding on small devices */
+      flex-wrap: wrap;
+      gap: 0;
     }
   
     .bottom-container h2 {

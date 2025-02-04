@@ -15,11 +15,11 @@ const About = () => {
     <article className='about-page'>
       {/* My Background Section */}
       <div className='intro-image'>
-        <img src={oil} alt="Oil image" className="background-image" />
-        <div className="content">
-          <div className="top-right">
-            <h1>Über Mich</h1>
-            <img src={headshot} alt="Headshot" className="headshot" />
+        <img src={oil} alt="Oil image" className="about-background-image" />
+        <div className="about-content">
+          <div className="about-top-right">
+          <img src={headshot} alt="Headshot" className="about-headshot" />
+            <h2>Über Mich</h2>
           </div>
           <h5>Erfahren Sie mehr über die Frau hinter der Kunst des Shiatsu.</h5>
         </div>
