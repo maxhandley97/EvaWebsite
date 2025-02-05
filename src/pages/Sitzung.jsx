@@ -1,9 +1,9 @@
 import React from 'react';
 import './sitzung.css';
-
+import image from '../assets/EvaImages/candels-incense.jpg';
 const Sitzung = () => {
   return (
-    <div>
+    <div className='sitzung-background'>
       <div className="sitzung">
         <h1>Sitzung und Kosten</h1>
         <div className="top">

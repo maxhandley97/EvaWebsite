@@ -3,6 +3,24 @@ html, body {
     padding: 0 5px;
     overflow-x: hidden; /* Prevent horizontal scroll */
   }
+.home-container {
+  background-image: url('../assets/EvaImages/candels-incense.jpg'); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This creates the parallax effect */
+  background-repeat: no-repeat;
+  min-height: 100vh; /* Ensures it covers the entire viewport */
+  width: 100%;
+  color: black; /* Adjust text color for readability */
+}
+
+.top-container {
+  margin-top: 2rem;
+}
+
+intro-caro-wrap {
+  background-color: white;
+}
 
 .bottom-container {
     display: flex;

@@ -12,7 +12,13 @@ const Home = () => {
         <section className="intro-text">
           <div className="text-content"></div>
         </section>
-        <IntroCaro />
+        <div className="intro-caro-wrap">
+        <div className="intro-caro-bg">
+          <IntroCaro />
+        </div>
+      </div>
+
+        
       </div>
 
       <div className="bottom-container">
