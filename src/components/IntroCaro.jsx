@@ -1,25 +1,44 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';  // Import motion from framer-motion
-import fb1 from '../assets/EvaImages/1.png';
-import fb2 from '../assets/EvaImages/2.png';
-import fb3 from '../assets/EvaImages/3.png';
-import fb4 from '../assets/EvaImages/4.png';
-import fb5 from '../assets/EvaImages/5.png';
-import { useState, useEffect } from "react";
-import './IntroCaro.css';
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import fb1 from "../assets/EvaImages/1.png";
+import fb2 from "../assets/EvaImages/2.png";
+import fb3 from "../assets/EvaImages/3.png";
+import fb4 from "../assets/EvaImages/4.png";
+import fb5 from "../assets/EvaImages/5.png";
+import Loading from "./Loading"; // Import Loading component
+import "./IntroCaro.css";
 
 const IntroCaro = () => {
   const images = [fb1, fb2, fb3, fb4, fb5];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // Preload images
+  useEffect(() => {
+    let loadedImages = 0;
+    
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => {
+        loadedImages++;
+        if (loadedImages === images.length) {
+          setIsLoading(false);
+        }
+      };
+    });
+  }, [images]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 10000); // Change every 10 seconds
-
-    return () => clearInterval(interval);
-  }, [images.length]);
+    if (!isLoading) {
+      const interval = setInterval(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }, 10000);
+  
+      return () => clearInterval(interval);
+    }
+  }, [isLoading, images.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -30,6 +49,8 @@ const IntroCaro = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+
+  if (isLoading) return <Loading />; // Show loading component until images are ready
 
   return (
     <div className="carousel-container">
@@ -45,11 +66,10 @@ const IntroCaro = () => {
       ))}
       
       <div className="carousel-banner">
-        {/* Animated Text Block */}
         <motion.div 
           className="title-row"
-          initial={{ x: "-100vw", opacity: 0 }}  // Start from off-screen left
-          animate={{ x: 0, opacity: 1 }}        // Animate to normal position
+          initial={{ x: "-100vw", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 80, damping: 15, delay: 0.2 }} 
         >
           <h1>Willkommen <br /></h1>
