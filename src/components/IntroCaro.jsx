@@ -34,7 +34,7 @@ const IntroCaro = () => {
     if (!isLoading) {
       const interval = setInterval(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 10000);
+      }, 2000);
   
       return () => clearInterval(interval);
     }
