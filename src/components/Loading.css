@@ -10,6 +10,7 @@
   .loading-banner {
     width: 60%;
     max-width: 400px;
+    border-radius: 40% / 100%;
   }
   
   .dots-container {

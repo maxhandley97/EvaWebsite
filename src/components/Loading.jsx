@@ -1,13 +1,14 @@
 import React from "react";
 import "./Loading.css"; // Import the CSS file
+import banner from '../assets/EvaImages/banner.png'
 
 const Loading = () => {
   return (
     <div className="loading-container">
       {/* Business Banner */}
       <img 
-        src="/path-to-your-banner.jpg" 
-        alt="Business Banner" 
+        src={banner} 
+        alt={banner}
         className="loading-banner"
       />
 
