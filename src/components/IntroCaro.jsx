@@ -6,39 +6,38 @@ import fb2 from "../assets/EvaImages/2.png";
 import fb3 from "../assets/EvaImages/3.png";
 import fb4 from "../assets/EvaImages/4.png";
 import fb5 from "../assets/EvaImages/5.png";
-import Loading from "./Loading"; // Import Loading component
 import "./IntroCaro.css";
 
 const IntroCaro = () => {
   const images = [fb1, fb2, fb3, fb4, fb5];
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isLoading, setIsLoading] = useState(true);
+  const [firstImageLoaded, setFirstImageLoaded] = useState(false);
+  const [remainingImagesLoaded, setRemainingImagesLoaded] = useState(0);
 
-  // Preload images
+  // Load the first image immediately
   useEffect(() => {
-    let loadedImages = 0;
-    
-    images.forEach((src) => {
+    const firstImg = new Image();
+    firstImg.src = images[0];
+    firstImg.onload = () => setFirstImageLoaded(true);
+
+    // Load the remaining images in the background
+    images.slice(1).forEach((src) => {
       const img = new Image();
       img.src = src;
       img.onload = () => {
-        loadedImages++;
-        if (loadedImages === images.length) {
-          setIsLoading(false);
-        }
+        setRemainingImagesLoaded((prev) => prev + 1);
       };
     });
   }, [images]);
 
+  // Auto-switch slides every 10 seconds
   useEffect(() => {
-    if (!isLoading) {
-      const interval = setInterval(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-      }, 10000);
-  
-      return () => clearInterval(interval);
-    }
-  }, [isLoading, images.length]);
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -49,8 +48,6 @@ const IntroCaro = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
-
-  if (isLoading) return <Loading />; // Show loading component until images are ready
 
   return (
     <div className="carousel-container">
