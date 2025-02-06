@@ -1,0 +1,116 @@
+/* General styling for the timeline container */
+.timeline-container {
+    margin: 40px 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Timeline styling */
+  .MuiTimeline-root {
+    padding: 0;
+    width: 100%;
+    max-width: 800px; /* You can adjust the max-width as needed */
+  }
+  
+  /* TimelineItem styling */
+  .MuiTimelineItem-root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  /* Styling for the dot and connector */
+  .MuiTimelineDot-root {
+    transition: all 0.5s ease-in-out; /* Smooth transition for color and size changes */
+  }
+  
+  .MuiTimelineDot-filled {
+    background-color: #1976d2; /* Default primary color for active dots */
+    border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .MuiTimelineDot-outlined {
+    border-color: #1976d2;
+  }
+  
+  .MuiTimelineConnector-root {
+    background-color: #1976d2;
+    width: 2px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  /* TimelineContent and Typography Styling */
+  .MuiTimelineContent-root {
+    margin-left: 20px;
+    max-width: 400px; /* Optional, adjust as per your design */
+  }
+  
+  .MuiTypography-root {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 8px;
+  }
+  
+  /* Add subtle animation for text (date and info) */
+  .MuiTypography-h6 {
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .MuiTypography-body2 {
+    opacity: 0;
+    color: #666;
+    font-size: 0.9rem;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .timeline-visible .MuiTypography-h6 {
+    opacity: 1;
+  }
+  
+  .timeline-visible .MuiTypography-body2 {
+    opacity: 1;
+  }
+  
+  /* Small margin for each dot's content */
+  .MuiTimelineItem-root + .MuiTimelineItem-root {
+    margin-top: 40px;
+  }
+  
+  /* Add padding to Timeline root */
+  .MuiTimeline-root {
+    padding-bottom: 40px;
+  }
+  
+  /* When the timeline item is active (when the dot is clicked or scrolled into view) */
+  .timeline-dot-active {
+    background-color: #1976d2 !important; /* Active color for the dots */
+  }
+  
+  .timeline-info {
+    font-size: 0.9rem;
+    color: #333;
+    margin-top: 12px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .timeline-info-visible {
+    opacity: 1;
+  }
+  
+  /* Styling for when timeline is scrolled into view */
+  .timeline-scrolled .MuiTimelineItem-root {
+    transition: transform 1s ease-in-out;
+    transform: translateY(0);
+  }
+  
+  .timeline-scrolled .MuiTimelineItem-root:not(:first-child) {
+    margin-top: 50px; /* Adding spacing between timeline items */
+  }
+  
