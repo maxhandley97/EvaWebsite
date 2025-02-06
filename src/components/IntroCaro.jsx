@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import fb1 from "../assets/EvaImages/1.png";
-import fb2 from "../assets/EvaImages/2.png";
-import fb3 from "../assets/EvaImages/3.png";
-import fb4 from "../assets/EvaImages/4.png";
+import fb1 from "../assets/EvaImages/low2.jpg";
+import fb2 from "../assets/EvaImages/low3.jpg";
+import fb3 from "../assets/EvaImages/low4.jpg";
+import fb4 from "../assets/EvaImages/high5.png";
 import fb5 from "../assets/EvaImages/5.png";
 import "./IntroCaro.css";
 
