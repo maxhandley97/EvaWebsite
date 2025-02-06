@@ -8,27 +8,26 @@ import fb4 from "../assets/EvaImages/high5.png";
 import fb5 from "../assets/EvaImages/low3.jpg";
 import "./IntroCaro.css";
 
-const IntroCaro = () => {
+const IntroCaro = ({ onFirstImageLoad }) => {
   const images = [fb1, fb2, fb3, fb4, fb5];
   const [currentIndex, setCurrentIndex] = useState(0);
   const [firstImageLoaded, setFirstImageLoaded] = useState(false);
-  const [remainingImagesLoaded, setRemainingImagesLoaded] = useState(0);
 
-  // Load the first image immediately
+  // Load the first image first
   useEffect(() => {
     const firstImg = new Image();
     firstImg.src = images[0];
-    firstImg.onload = () => setFirstImageLoaded(true);
+    firstImg.onload = () => {
+      setFirstImageLoaded(true);
+      if (onFirstImageLoad) onFirstImageLoad(); // Notify parent that the first image is loaded
+    };
 
-    // Load the remaining images in the background
+    // Load remaining images in the background
     images.slice(1).forEach((src) => {
       const img = new Image();
       img.src = src;
-      img.onload = () => {
-        setRemainingImagesLoaded((prev) => prev + 1);
-      };
     });
-  }, [images]);
+  }, [images, onFirstImageLoad]);
 
   // Auto-switch slides every 10 seconds
   useEffect(() => {
@@ -48,6 +47,8 @@ const IntroCaro = () => {
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
   };
+
+  if (!firstImageLoaded) return null; // Hide carousel until first image loads
 
   return (
     <div className="carousel-container">

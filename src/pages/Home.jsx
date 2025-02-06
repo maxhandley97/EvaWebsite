@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./Home.css";
 import IntroCaro from "../components/IntroCaro";
 import img1 from "../assets/EvaImages/profile.png";
 import ReviewCarousel from "../components/ReviewCaro";
-import Loading from "../components/Loading";
 
 const Home = () => {
+  const [isFirstImageLoaded, setIsFirstImageLoaded] = useState(false);
+
+  // Handle the first image load event
+  const handleFirstImageLoad = () => {
+    setIsFirstImageLoaded(true); // Set state to indicate the image has loaded
+  };
+
   return (
     <div className="home-container">
       <div className="top-container">
@@ -14,12 +20,11 @@ const Home = () => {
           <div className="text-content"></div>
         </section>
         <div className="intro-caro-wrap">
-        <div className="intro-caro-bg">
-          <IntroCaro />
+          <div className="intro-caro-bg">
+            {/* Pass the handleFirstImageLoad function to IntroCaro */}
+            <IntroCaro onFirstImageLoad={handleFirstImageLoad} />
+          </div>
         </div>
-      </div>
-
-        
       </div>
 
       <div className="bottom-container">
@@ -35,7 +40,7 @@ const Home = () => {
         </motion.div>
 
         <div className="text-boxes">
-        <div className="text-box">
+          <div className="text-box">
             {/* First paragraph slides in from the right */}
             <motion.p
               initial={{ x: "100vw", opacity: 0 }}  // Start off-screen (right)
@@ -59,13 +64,15 @@ const Home = () => {
               Bei Bedarf zeige ich Druckpunkte für die Selbstbehandlung und Meridian-Dehnübungen.
             </motion.p>
           </div>
-
         </div>
       </div>
 
-      <div className="review">
-        <ReviewCarousel />
-      </div>
+      {/* Show this part only after the first image is loaded */}
+      {isFirstImageLoaded && (
+        <div className="review">
+          <ReviewCarousel />
+        </div>
+      )}
     </div>
   );
 };
