@@ -27,11 +27,11 @@ const ContactForm = () => {
       )
       .then(
         () => {
-          setStatus("Email sent successfully!");
+          setStatus("E-Mail erfolgreich gesendet!");
           setFormData({ name: "", email: "", message: "" });
         },
         (error) => {
-          setStatus("Failed to send email. Please try again.");
+          setStatus("E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
           console.error("EmailJS error:", error);
         }
       );
@@ -39,13 +39,13 @@ const ContactForm = () => {
 
   return (
     <div className="contact-form-container">
-      <h2>Schreib mir eine Message</h2>
+      <h2>Haben Sie Fragen? </h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div>
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Ihr Name"
             value={formData.name}
             onChange={handleChange}
             required
@@ -55,7 +55,7 @@ const ContactForm = () => {
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Ihre Email-Adresse"
             value={formData.email}
             onChange={handleChange}
             required
@@ -64,14 +64,14 @@ const ContactForm = () => {
         <div>
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="Ihre Nachricht"
             value={formData.message}
             onChange={handleChange}
             required
           ></textarea>
         </div>
         <div>
-          <button type="submit">Send Message</button>
+          <button type="submit">Senden</button>
         </div>
       </form>
       <p className="status-message">{status}</p>
