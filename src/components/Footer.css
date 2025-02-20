@@ -1,7 +1,7 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: 10px;
   background-color: #CDAB81; /* Unified background color */
   color: #000; /* Ensure readable text */
@@ -27,6 +27,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 144px;
 }
 
 .contact-item .icon {
@@ -58,6 +59,7 @@
   max-width: 620px;
   height: auto;
   margin-bottom: 1rem;
+  min-width: 345px;
 }
 
 
@@ -76,8 +78,28 @@
   text-decoration: underline;
 }
 
+@media (max-width:1200px) {
+  .left-container {
+    flex-direction: column;
+  }
+  .left-bottom {
+    flex-direction: row;
+  }
+}
 
+@media (max-width: 830px) {
+  .map-container {
+    display: flex;            /* Make map-container a flex container */
+    justify-content: flex-end; /* Align iframe to the right */             /* Ensure the map container takes up the full width */
+    margin-left: 0;           /* Remove margin to avoid pushing */
+  }
 
+  .map-container iframe {
+    width: 200px;             /* Adjust width */
+    height: 200px;            /* Adjust height if needed */
+    margin-left: 0;           /* Reset margin to allow right alignment */
+  }
+}
 
 @media (max-width: 768px) {
   .banner {
@@ -90,20 +112,21 @@
     padding-right: 0;
   }
 
-  .map-container {
-    width: 50%;
-    height: 10rem;
-    margin: 20px auto 0;
+}
+
+@media (max-width:660px){
+  .left-bottom {
+    flex-direction: column;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 550px) {
   .footer {
     flex-direction: column;
   }
 
   .left-bottom {
-    padding-left: 60px;
+    align-items: center;
   }
   
   .map-container {
@@ -113,6 +136,15 @@
 
   .contact-item a {
     font-size: small;
+  }
+
+  .map-container {
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    justify-content: center; 
+  }
+  .map-container iframe {
+    width: 100%;
   }
 
 }

@@ -21,16 +21,6 @@ const Footer = () => {
               <Mail className="icon" />
               <a href="mailto:evakluge.praxis@yahoo.com">evakluge.praxis@yahoo.com</a>
             </div>
-            <div className="contact-item">
-              <MapPin className="icon" />
-              <a
-                href="https://www.google.com/maps?q=Joachim-Friedrich-Straße+41,+10711+Berlin,+Germany"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Joachim-Friedrich-Straße 41, Berlin
-              </a>
-            </div>
           </div>
         </div>
         <div className="map-container">
