@@ -85,14 +85,17 @@ const Home = () => {
         </motion.div>
       </div>
 
-      {/* Review Carousel */}
-      <div className="review-caro-home">
-        <h4>Was sagen andere?</h4>
-        <ReviewCarousel />
+      {/* bottom bottom*/}
+      <div className="bottom-bottom">
+        <div className="review-caro-home">
+          <h4>Was sagen andere?</h4>
+          <ReviewCarousel />
+        </div>
+        <div className="home-bottom-caro">
+        <IntroCaro/>
+        </div>
       </div>
-      <div className="home-bottom-caro">
-      <IntroCaro/>
-      </div>
+      
       
     </div>
   );

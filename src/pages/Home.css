@@ -128,6 +128,7 @@ html, body {
   
     .home-bottom-caro {
       background-color: white; 
+      position: absolute;
     }
   
 
@@ -142,6 +143,7 @@ html, body {
     .home-bottom-container {
       padding: 1rem; /* Reduce padding */
       flex-wrap: wrap;
+      justify-content: space-around;
     }
     .home-text-box {
       padding-right: 4rem;
@@ -149,26 +151,23 @@ html, body {
     .kontact-form-container {
       margin-top: 1rem;
       padding-left: 0;
-     
     }
+    .review-caro-home {
+      width: 100%;
+    }
+
+    .bottom-bottom {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    .home-bottom-caro {
+      margin-top: -30rem;
+      position: relative;
+    }
+
   }
 
-  /* Responsive Styling */
-  @media (max-width: 768px) {
-    
-  
-    .title-row {
-      flex-direction: column; /* Stack title and image vertically */
-      align-items: center; /* Center align for smaller screens */
-    }
-  
-    .text-boxes {
-      flex-direction: column; /* Stack text boxes vertically */
-      gap: 1rem; /* Adjust gap */
-    }
-    
-  
-  }
+
 
   .about-button {
     background-color: #719cbe; /* Warm earthy color */
@@ -189,6 +188,37 @@ html, body {
   
   .about-button:hover {
     background-color: #0056b3;
+  }
+
+  @media (max-width: 675px) {
+    .home-text-box {
+      margin-top: -4rem;
+    }
+    .home-bottom-container {
+      padding: 0
+    }
+  
+  }
+
+  @media (max-width: 615px) {
+    .home-bottom-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .eva-long {
+      width: 200px; /* Adjust width for smaller screens */
+      height: 200px; /* Keep height equal to width */
+      border-radius: 50%; /* Ensures a perfect circle */
+      object-fit: cover; /* Prevents distortion */
+      object-position: top; /* Keeps the top half visible */
+    }
+    .home-text-box {
+      width: 100%;
+      padding: 4rem 0;
+    }
+    .home-text-content {
+      margin-top: -2rem;
+    }
   }
   
   @media (max-width: 480px) {
