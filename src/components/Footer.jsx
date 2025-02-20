@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin } from 'lucide-react'; // Icons from lucide-react
 import './Footer.css';
-import banner from '../assets/EvaImages/Eva-banner3.png';
+import banner from '../assets/EvaImages/Eva-Banner3.png'
 
 const Footer = () => {
   return (
