@@ -1,0 +1,60 @@
+.contact-form-container {
+    max-width: 20rem;
+    padding: 20px;
+    border: .7rem solid;
+    border-color: white;
+    background: #CDAB81;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Ensures the items are stacked vertically */
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column; /* Stacks input fields in a column */
+    width: 100%;  /* Ensures the form takes up the full width */
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 15px;
+    font-family: 'Roboto Slab', serif;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Ensures inputs take up 100% of the form width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;  /* Prevents overflow by including padding and borders in width */
+  }
+  
+  .contact-form textarea {
+    height: 100px;  /* Set a default height for the textarea */
+    resize: vertical;  /* Allow vertical resizing of the textarea */
+  }
+  
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #719cbe;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
+  .status-message {
+    margin-top: 10px;
+    color: green;
+  }
+  

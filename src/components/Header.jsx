@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import banner from "../assets/EvaImages/banner.png";
+import banner from "../assets/EvaImages/Eva-Banner3.png";
 import "./Header.css";
 
 const Header = () => {

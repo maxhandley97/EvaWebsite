@@ -1,12 +1,13 @@
 .review-carousel-container {
   position: relative;
-  height: 30vh; /* Adjust height as needed for design */
+  height: 10rem; /* Adjust height as needed for design */
   display: flex;
   align-items: center;
   justify-content: center; /* Center content horizontally */
   overflow: hidden;
-  background-color: #f5f5f5; /* Light background for better readability */
+  background-color: #acc8dd; /* Light background for better readability */
   padding: 0 2rem; /* Add padding on the left and right */
+  border-radius: .2rem;
 }
 
 .review-slide {
@@ -20,18 +21,20 @@
   text-align: center; /* Center align text content */
   transition: left 1s ease-in-out;
   padding: 0 2rem; /* Add extra padding inside the slide */
+  padding-top: 2rem;
   box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
 .review-quote {
-  font-family: 'Hina Mincho', serif;
-  font-size: 1.5rem;
-  margin: 1rem 2rem; /* Add more spacing around the quote */
-  color: #333;
+  font-size: 1.2rem;
+  margin:0 1rem; /* Add more spacing around the quote */
   line-height: 1.6; /* Improve readability */
+
 }
 
+
 .review-initial {
+  
   font-family: 'Hina Mincho', serif;
   font-size: 1.5rem;
   color: #555;
@@ -44,7 +47,7 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.2);
   color: #fff;
   border: none;
   padding: 0.5rem 1rem;
@@ -59,6 +62,7 @@
 .review-button-next {
   right: 1rem;
 }
+
 
 /* Media Query for screens below 550px */
 @media (max-width: 550px) {

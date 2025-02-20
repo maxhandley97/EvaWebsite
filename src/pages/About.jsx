@@ -7,7 +7,7 @@
 
 import React from 'react';
 import './About.css';
-import oil from '../assets/EvaImages/massage-oil.jpg'
+import oil from '../assets/EvaImages/stock/massage-oil.jpg'
 import headshot from '../assets/EvaImages/profile.png'
 import Timeline from '../components/Timeline.jsx'
 

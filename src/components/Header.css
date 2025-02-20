@@ -4,11 +4,6 @@
   padding: 0;
 }
 
-.header-banner {
-  display: block;
-  border-radius: 40% / 100%;
-  height: 100%;
-}
 
 /* Navbar Styles */
 .navbar-container {
@@ -19,19 +14,14 @@
   box-sizing: border-box;
 }
 
-/* Navbar Brand */
-.navbar-brand {
-  display: flex;
-  align-items: center;
-  line-height: 0;
-}
+
 
 /* Navbar Links */
 .navbar-nav {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
-  padding: 0 1rem;
+  
   margin: 0;
   align-items: center;
   flex-wrap: nowrap;
@@ -40,10 +30,10 @@
 /* Logo/Banner */
 .navbar-brand img {
   width: 100%;
-  min-width: 500px;
+  min-width: px;
   height: 100%;
   object-fit: cover;
-  border-radius: 40% / 100%;
+  min-height: 4vh;
 }
 
 /* Navbar Links */

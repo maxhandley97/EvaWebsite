@@ -63,22 +63,6 @@ const IntroCaro = ({ onFirstImageLoad }) => {
         ></div>
       ))}
       
-      <div className="carousel-banner">
-        <motion.div 
-          className="title-row"
-          initial={{ x: "-100vw", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 80, damping: 15, delay: 0.2 }} 
-        >
-          <h1>Willkommen <br /></h1>
-          <h5>
-            bei Eva Kluge, Ihrer Ansprechpartnerin für asiatische
-            Gesundheitsmethoden wie Shiatsu und Jin Shin Jyutsu. <br /> 
-            Finden Sie Ihre Stärken und verbessern Sie Ihre Gesundheit und das Wohlfühlen im Körper!
-          </h5>
-          <Link to="/contact" className="carousel-button">Kontakt</Link>
-        </motion.div>
-      </div>
       
       <button className="carousel-button-prev" onClick={prevSlide}>&#8592;</button>
       <button className="carousel-button-next" onClick={nextSlide}>&#8594;</button>
