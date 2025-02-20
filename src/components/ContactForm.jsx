@@ -19,22 +19,27 @@ const ContactForm = () => {
     setStatus("Sending...");
 
     emailjs
-      .send(
-        "service_wu90e5m", // Replace with your EmailJS Service ID
-        "template_7y65nco", // Replace with your EmailJS Template ID
-        formData,
-        "4V0nWp6lnyS_yMfNb" // Replace with your EmailJS Public Key
-      )
-      .then(
-        () => {
-          setStatus("E-Mail erfolgreich gesendet!");
-          setFormData({ name: "", email: "", message: "" });
-        },
-        (error) => {
-          setStatus("E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
-          console.error("EmailJS error:", error);
-        }
-      );
+  .send(
+    "service_wu90e5m", // Your EmailJS Service ID
+    "template_7y65nco", // Your EmailJS Template ID
+    {
+      from_name: formData.name,   // Sending name
+      from_email: formData.email, // Sending email
+      message: formData.message, // Sending message
+    },
+    "4V0nWp6lnyS_yMfNb" // Your EmailJS Public Key
+  )
+  .then(
+    () => {
+      setStatus("E-Mail erfolgreich gesendet!");
+      setFormData({ name: "", email: "", message: "" });
+    },
+    (error) => {
+      setStatus("E-Mail konnte nicht gesendet werden. Bitte versuchen Sie es erneut.");
+      console.error("EmailJS error:", error);
+    }
+  );
+
   };
 
   return (
