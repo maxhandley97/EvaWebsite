@@ -36,7 +36,8 @@
   
   .contact-form textarea {
     height: 100px;  /* Set a default height for the textarea */
-    resize: vertical;  /* Allow vertical resizing of the textarea */
+    resize: vertical;
+    font-family: Arial, Helvetica, sans-serif;  /* Allow vertical resizing of the textarea */
   }
   
   .contact-form button {

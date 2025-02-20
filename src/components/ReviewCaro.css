@@ -67,12 +67,12 @@
 /* Media Query for screens below 550px */
 @media (max-width: 550px) {
   .review-quote {
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    font-size: 1rem; /* Reduce font size for smaller screens */
     margin: 1rem 1rem; /* Adjust margin to fit smaller screens */
   }
 
   .review-initial {
-    font-size: 1.2rem; /* Reduce font size for smaller screens */
+    font-size: 1rem; /* Reduce font size for smaller screens */
   }
   
   .review-carousel-container {
