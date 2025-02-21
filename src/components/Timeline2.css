@@ -1,0 +1,119 @@
+.timeline-container {
+    position: relative;
+    max-width: 1300px;   /* Set the max width */
+    margin: 0 auto;      /* Center it horizontally */
+    padding-left: 20px;
+    margin-left: 3rem;   /* Optional, if you want to add extra space on the left */
+  }
+  
+  .timeline-line {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: black;
+  }
+  
+  .timeline-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    position: relative;
+    margin-left: 20px;
+    top: -40px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(20px); /* Start slightly below */
+    animation: fadeInUp 1s forwards; /* Animation to fade in and move up */
+    max-width: 60%;
+    margin-top: -30px;
+  }
+  
+  .timeline-dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+    margin-top: 40px;
+    left: -26px;
+    animation: explode 0.5s ease-out forwards; /* Dot explosion animation */
+  }
+  
+  .timeline-content {
+    margin-left: 1rem;
+    max-width: 40rem;
+    opacity: 0; /* Start invisible */
+    animation: fadeIn 0.5s 0.5s forwards; /* Fade in after dot animation */
+  }
+  
+  .timeline-content h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+  }
+  
+  .letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: reveal 0.6s forwards;
+  }
+  
+  /* Dot explosion animation */
+  @keyframes explode {
+    0% {
+      transform: scale(1);
+      background-color: black;
+    }
+    50% {
+      transform: scale(1.5);
+      background-color: #719cbe; /* Change to a different color (e.g., orange) */
+    }
+    100% {
+      transform: scale(1);
+      background-color: #ff5722; /* Keep the new color */
+    }
+  }
+  
+  /* Fade-in animation for content */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Fade-in and move-up animation for timeline items */
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Letter reveal animation */
+  @keyframes reveal {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 660px) {
+    .timeline-container {
+      max-width: 100%;     /* Allow full width on smaller screens */
+      margin-left: 0;      /* Remove left margin */
+      padding-left: 0;
+      padding-right: 20px;     /* Remove left padding */
+    }
+    .timeline-dot {
+      left: -19px;
+    }
+
+    .timeline-item {
+      max-width: 100%;
+      margin-left: 33px;
+    }
+  
+  }
+  

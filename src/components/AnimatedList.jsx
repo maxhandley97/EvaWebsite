@@ -32,6 +32,7 @@ const AnimatedList = () => {
 
   return (
     <div className="animated-list-container">
+      <h3>Indikationen für Shiatsu</h3>
       <ul className="animated-list">
         {['Kopf-, Rücken- und Kreuzschmerzen', 
           'Menstruations- und Wechseljahresbeschwerden', 
@@ -46,7 +47,7 @@ const AnimatedList = () => {
               type="checkbox" 
               checked={checkedItems[index]} 
               readOnly 
-              className="checkbox" 
+              className="checkbox"  // All checkboxes are now consistent
             />
             <span className="item-text">{item}</span>
           </li>

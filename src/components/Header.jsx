@@ -27,8 +27,8 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/Shiatsu" className="nav-link">
-                  Methoden und Wirkung
+                <Link to="/Behandlung" className="nav-link">
+                Behandlungsmethoden
                 </Link>
               </li>
               <li className="nav-item">

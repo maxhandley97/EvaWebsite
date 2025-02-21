@@ -1,0 +1,58 @@
+
+.about-back-container img {
+    width: 100%;
+    height: auto;  /* Maintains aspect ratio */
+    max-height: 400px; /* Adjust to prevent excessive height on large screens */
+    object-fit: cover; /* Ensures it covers the container without distortion */
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    
+}
+
+.about-headshot {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: -10rem;
+}
+.about-headshot img{
+    border-radius: 100%;
+    border: 5px solid;
+    border-color: white;
+    width: 10rem;
+    margin-left: 1rem;
+   
+}
+
+.about-headshot h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1rem;
+    margin-top: -2rem;
+
+}
+
+.about-timeline {
+    width: 100%;
+    max-width: 1300px; /* Max width of the page */
+    margin: 0 auto;    /* Center it */
+    padding: 0 20px; 
+    margin-top: 11rem;
+}
+
+@media (max-width:660px) {
+    .about-timeline {
+        padding: 0;
+    }
+
+    .about-headshot {
+        margin-top: -6rem;
+        margin-bottom: -3rem;
+    }
+
+    .about-headshot img {
+        width: 7rem;
+    }
+
+}

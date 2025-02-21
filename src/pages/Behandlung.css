@@ -1,0 +1,212 @@
+.behandlung-top {
+}
+
+
+.behandlung-top-image {
+    position: block;
+    z-index: -1;
+}
+
+.behandlung-top-image img {
+    width: 100%;
+    height: auto;  /* Maintains aspect ratio */
+    max-height: 400px; /* Adjust to prevent excessive height on large screens */
+    object-fit: cover; /* Ensures it covers the container without distortion */
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    
+}
+.behandlung-heading {
+    opacity: 0.9;
+    position: relative; /* Keep relative positioning for child element */
+    width: fit-content;
+    margin: 0 auto; /* Centers it horizontally */
+    text-align: center; /* Ensures the text is centered inside the box */
+}
+
+.behandlung-heading h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    margin-top: -20rem;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%; /* Moves the left edge of the h2 to the center */
+    transform: translateX(-50%); /* Pulls it back by half of its width, centering it */
+}
+
+.behandlung-content {
+    max-width: 1200px;  /* Ensure the content doesn't go beyond 1200px */
+    width: 100%;        /* Allow it to take up 100% of the parent container's width */
+    margin: 0 auto;     /* Center the content horizontally */
+    padding: 0 20px;    /* Optional: Add padding to prevent text from touching the edges */
+}
+
+
+
+.b-shiatsu-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.b-border-box {
+    background-color: #CDAB81; /* Light brown */
+    width: 80%; /* Responsive width */
+    max-width: 900px; /* Prevent excessive width */
+    padding: 3.5rem;
+    padding-bottom: 5rem; /* Space inside */
+    border-radius: 50% /50%; /* Makes it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 5px solid white; /* Circular border */
+    margin: 0 auto; /* Centering */
+    min-height: 4vw; 
+    margin-top: -70px;
+    
+}
+
+.b-shiatsu-text {
+    max-width: 700px; /* Keeps text from expanding too much */
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.b-shiatsu-text h3 {
+    font-family: 'Roboto Slab', serif;/* Clean and modern font */
+    font-size: 2rem;
+    margin: 0; /*
+    color: #333; /* Dark text for good contrast */
+    line-height: 1.5;
+    text-align: center; /* Center the title */
+}
+.b-shiatsu-text h4 {
+    font-family: 'Roboto Slab', serif;/* Clean and modern font */
+    font-size: 1.5rem;
+    margin-bottom: rem;
+    margin-top: 0;
+    text-align: center;
+}
+.b-shiatsu-text p {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1rem;
+    color: #555; /* Slightly lighter color for the body text */
+    line-height: 1.8; /* Improved line height for readability */
+     /* Justify text for better flow */
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.b-list-box {
+    margin: 0 2rem;
+    margin-top: -200px;
+    background-color: #CDAB81;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    border-radius: 20%;
+    border: 5px solid;
+    border-color: white;
+}
+
+.b-list-kinder {
+    display: flex;
+    flex-direction: column;
+}
+
+.b-kinder {
+    margin: 0 2.5rem;
+}
+
+.b-middle {
+    position: relative;
+    width: 105vw; /* Ensures it spans the full viewport width */
+    max-width: 105vw; /* Prevents parent constraints */
+    left: 50%; /* Moves it halfway out of its parent */
+    transform: translateX(-50%); /* Centers it properly */
+    display: flex;
+    justify-content: center;
+    margin-top: -100px;
+    z-index: -1;
+   
+
+}
+
+
+.b-middle-pic {
+    width: 105vw; /* Ensures full viewport width */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 600px; /* Prevents excessive height */
+    object-fit: cover; /* Ensures proper scaling */
+    object-position: top center; /* Keeps the top of the image visible */
+    opacity: 0.8;
+}
+
+.d-shape {
+    width: 300px; /* Adjust width */
+    height: 200px; /* Adjust height */
+    background-color: #3498db; /* Example color */
+   
+}
+
+
+.ablauf {
+    background-color: #CDAB81; /* Light brown */
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Prevent excessive width */ /* Space inside */
+    
+    padding: 1rem;
+    border-top-right-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    border: 5px solid white; /* Circular border */
+    margin: 0 auto; /* Centering */
+    min-height: 4vw; 
+    margin-top: -70px;
+}
+
+.ablauf h3 {
+    font-size: 1.8rem;
+    color: #333; /* Darker text for better contrast */
+    margin-bottom: 10px;
+}
+
+.ablauf p {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .b-shiatsu-top {
+        flex-direction: column;
+    }
+    .b-list-box {
+        margin-top: -5rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 1240px) {
+    .b-middle {
+        margin-left: -40px;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

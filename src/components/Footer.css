@@ -1,7 +1,6 @@
 .footer {
   display: flex;
   justify-content: space-between;
-  justify-content: center;
   padding: 10px;
   background-color: #CDAB81; /* Unified background color */
   color: #000; /* Ensure readable text */

@@ -22,9 +22,9 @@ html, body {
 }
 
 .home-top-container h3 {
-    margin-bottom: -30px;
+    margin-bottom: -15px;
     font-family: 'Roboto Slab', serif;
-    font-size: 3rem;
+    font-size: 2rem;
 
   
 }
@@ -34,6 +34,11 @@ html, body {
   font-size: 1.5rem;
   margin-top: .7rem;
   margin-bottom: 1rem;
+}
+
+.home-top-container p {
+  font-size: 1.4rem;
+  color: black;
 }
 
 
@@ -58,7 +63,7 @@ html, body {
 .home-bottom-container{
   display: flex; 
   flex-direction: row;
-  max-width: 1500px;
+  max-width: 1300px;
   justify-content: space-between;
   margin: 0 auto;
 
