@@ -5,7 +5,6 @@ import './Footer.css';
 import banner1 from '../assets/EvaImages/Eva-Banner3.png'
 
 
-
 const Footer = () => {
   return (
     <footer>
@@ -14,8 +13,9 @@ const Footer = () => {
           <img src={banner1} alt="Banner" className="banner" />
           <div className="left-bottom">
             <div className='footer-but'>
-              <a href="/contact">
-              <button>Kontakt</button></a>
+            <button onClick={() => (window.location.href = "/contact")}>Kontakt</button>
+
+
             </div>
            
             <div className="contact-item">

@@ -1,12 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Home.css";
-import Timeline2 from '../components/Timeline2'
+import Timeline2 from '../components/Timeline2';
 import evabeach from "../assets/EvaImages/eva-beach.jpg";
-import tall from "../assets/EvaImages/TallLow.jpg"
-import ReviewCaro from "../components/ReviewCaro"
+import tall from "../assets/EvaImages/TallLow.jpg";
+import ReviewCaro from "../components/ReviewCaro";
 
 const Home = () => {
+  const navigate = useNavigate(); // Initialize navigate function
+
   return (
     <div className="home-container">
       <div className="home-top-container">
@@ -16,7 +19,7 @@ const Home = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 80, damping: 25, delay: 0.2 }}
         >
-          <h3>Wilkommen </h3>
+          <h3>Willkommen </h3>
           <h4>bei Eva Kluge</h4>
           <p>
             Ihrer Ansprechpartnerin für die asiatischen Behandlungsmethoden
@@ -24,16 +27,16 @@ const Home = () => {
             <br />
             Stärken Sie Ihre Gesundheit und Ihr körperliches Wohlbefinden!
           </p>
-          <motion.a 
-            href="/contact"
+          <motion.button
+            onClick={() => navigate("/contact")} // Navigate to Contact page
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            <button>Kontakt</button>
-          </motion.a>
+            Kontakt
+          </motion.button>
         </motion.div>
-        
+
         <motion.img 
           src={evabeach} 
           alt="" 
@@ -43,7 +46,7 @@ const Home = () => {
           transition={{ delay: 0 }}
         />
       </div>
-      
+
       <div className="home-below">
         <motion.div 
           className='home-timeline'
@@ -54,7 +57,7 @@ const Home = () => {
           <h4>Über Mich</h4>
           <Timeline2 animationDelay={1} />
         </motion.div>
-        
+
         <motion.img 
           className="eva-long" 
           src={tall} 
@@ -65,8 +68,8 @@ const Home = () => {
         />
       </div>
       <div className="review-caro">
-        <h4>Was sagen Andere?</h4>
-        <ReviewCaro/>
+        <h4>Was sagen die Klienten?</h4>
+        <ReviewCaro />
       </div>
     </div>
   );
