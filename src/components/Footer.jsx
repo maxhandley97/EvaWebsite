@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail} from 'lucide-react'; // Icons from lucide-react
 import './Footer.css';
 import banner1 from '../assets/EvaImages/Eva-Banner3.png'
+import { useNavigate } from "react-router-dom";
 
 
 const Footer = () => {
+    const navigate = useNavigate(); 
   return (
     <footer>
       <div className="footer">
@@ -13,7 +15,7 @@ const Footer = () => {
           <img src={banner1} alt="Banner" className="banner" />
           <div className="left-bottom">
             <div className='footer-but'>
-            <button onClick={() => (window.location.href = "/contact")}>Kontakt</button>
+            <button onClick={() => navigate("/contact")}>Kontakt</button>
 
 
             </div>
