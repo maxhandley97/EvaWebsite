@@ -18,12 +18,7 @@ const Header = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <Link to="/" className="nav-link">
-                  <i className="fas fa-home"></i> {/* Home Icon */}
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/about" className="nav-link">
-                  Über mich
+                  <i className="fas fa-home"></i> Über mich
                 </Link>
               </li>
               <li className="nav-item">

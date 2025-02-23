@@ -9,21 +9,20 @@ const timelineData = [
   { title: "Seit 2003 Erlernen von Jin Shin Jyutsu ", description: "Unterricht bei Frau Gunne von Richthofen in Hamburg." }
 ];
 
-const Timeline = () => {
+const Timeline = ({ animationDelay = 0 }) => {
   const [animationIndex, setAnimationIndex] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setAnimationIndex((prevIndex) => (prevIndex + 1) % timelineData.length);
-    }, 4000); // Change interval timing if needed
+    const startAnimation = setTimeout(() => {
+      const interval = setInterval(() => {
+        setAnimationIndex((prevIndex) => (prevIndex + 1) % timelineData.length);
+      }, 4000);
 
-    return () => clearInterval(interval);
-  }, []);
+      return () => clearInterval(interval);
+    }, animationDelay * 1000); // Convert delay to milliseconds
 
-  const renderDescription = (text) => {
-    // Simply return the description as is (no word or letter animation)
-    return <span>{text}</span>;
-  };
+    return () => clearTimeout(startAnimation);
+  }, [animationDelay]);
 
   return (
     <div className="timeline-container">
@@ -33,7 +32,7 @@ const Timeline = () => {
           key={index}
           className="timeline-item"
           style={{
-            animationDelay: `${index * 2}s`, // 2-second delay per item
+            animationDelay: `${index * 2 + animationDelay}s`, // Start after home-timeline delay
           }}
         >
           <div className="timeline-dot-and-content">
@@ -43,13 +42,13 @@ const Timeline = () => {
             <div
               className={`timeline-content ${animationIndex >= index ? "fade-in" : ""}`}
               style={{
-                animationDelay: `${index * 2 + 1}s`, // stagger title fade-in
+                animationDelay: `${index * 2 + 1 + animationDelay}s`,
               }}
             >
               <h3 className={animationIndex >= index ? "fade-in-title" : ""}>
                 {item.title}
               </h3>
-              <p>{renderDescription(item.description)}</p>
+              <p>{item.description}</p>
             </div>
           </div>
         </div>

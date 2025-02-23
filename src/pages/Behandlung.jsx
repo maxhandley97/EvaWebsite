@@ -5,6 +5,19 @@ import AnimatedList from '../components/AnimatedList'
 import low3 from "../assets/EvaImages/low3.jpg"
 
 
+const shiatsuList = [
+    'Kopf-, Rücken- und Kreuzschmerzen', 
+    'Menstruations- und Wechseljahresbeschwerden', 
+    'Muskelverspannungen', 
+    'Gelenkschmerzen', 
+    'Schlafstörungen'
+  ];
+  
+  const jinShinList = [
+    'Bedürfnis nach tiefer Entspannung',
+    'Unterstützung bei der Heilung von chronischen Problemen'
+  ];
+
 const Behandlung = () => {
   return (
     <div className=''>
@@ -13,7 +26,8 @@ const Behandlung = () => {
                         <img src={high5} alt="" />
             </div>
             <div className='behandlung-heading'>
-                <h2>Behandlungsmethoden</h2>
+                <h2>Behandlungsmethode: <br />Shiatsu</h2>
+                
             </div>
         </div>
         <div className='behandlung-content'>
@@ -34,9 +48,19 @@ const Behandlung = () => {
                 </div>
                 <div className='b-list-kinder'>
                     <div className='b-list-box'>
-                    <AnimatedList/>
+                    <AnimatedList title="Indikationen für Shiatsu" items={shiatsuList} />
                     </div>
                     <div className='b-kinder'><h4>Shiatsu kann sowohl bei Kindern als auch bei Erwachsenen angewendet werden.</h4></div>
+                    <div className='ablauf'>
+                <h3>Ablauf der Shiatsu Behandlung</h3>
+                <p>
+                    Die Behandlung findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
+                    kann eine Massageliege benutzt werden. <br /> <br />Vorher findet ein kurzes Vorgespräch statt, damit
+                    bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann. <br /> <br /> Am Ende der
+                    Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
+                    Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
+                </p>
+            </div>
                     
                 </div>
 
@@ -45,17 +69,27 @@ const Behandlung = () => {
             </div>
             <div className='b-middle'>
                     <img className='b-middle-pic' src={low3} alt="" />
+                    <h2 className='jin-shin-heading'>Behandlungsmethode: <br /> Jin Shin Jitsu</h2>
             </div>
-            <div className='ablauf'>
-                <h3>Ablauf der Shiatsu Behandlung</h3>
-                <p>
-                    Die Behandlung findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
-                    kann eine Massageliege benutzt werden. <br />Vorher findet ein kurzes Vorgespräch statt, damit
-                    bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann. <br /> Am Ende der
-                    Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
-                    Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
-                </p>
+            <div className='jin-shin'>
+                <div className='jin-text'>
+                    <h3>
+                    Jin-Shin-Jyutsu <br />(japanisches Heilströmen)
+                    </h3>
+                    <p>
+                    Jin-Shin-Jyutsu beruht ebenfalls auf der asiatischen Meridianlehre. Mit den Händen werden
+                    Akkupunkturpunkte auf den Meridianlinien gehalten, um die Selbstheilungskräfte und den
+                    Energiefluss im Körper anzuregen. <br /> <br />
+                    Die Behandlung findet traditionell am bekleideten Körper auf einer Massageliege statt. Am
+                    Ende der Behandlung zeige ich Ihnen einzelne Übungen für zu Hause, damit Sie Ihre
+                    Gesundheit selbst weiter unterstützen können.
+                    </p>
+                </div>
+            <div className='jin-check'>
+            <AnimatedList  title="Indikationen für Jin Shin Jyutsu" items={jinShinList}/>
             </div>
+            </div> 
+            
         </div>
 
     </div>

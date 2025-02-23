@@ -14,6 +14,8 @@
     object-fit: cover; /* Ensures it covers the container without distortion */
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
+    position: absolute;
+    z-index: -2;
     
 }
 .behandlung-heading {
@@ -21,27 +23,25 @@
     position: relative; /* Keep relative positioning for child element */
     width: fit-content;
     margin: 0 auto; /* Centers it horizontally */
-    text-align: center; /* Ensures the text is centered inside the box */
 }
 
 .behandlung-heading h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2rem;
-    margin-top: -20rem;
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     border-radius: 8px;
-    position: absolute;
-    left: 50%; /* Moves the left edge of the h2 to the center */
+    position: absolute; /* Moves the left edge of the h2 to the center */
     transform: translateX(-50%); /* Pulls it back by half of its width, centering it */
+    margin-top: 6rem;
 }
 
 .behandlung-content {
     max-width: 1200px;  /* Ensure the content doesn't go beyond 1200px */
     width: 100%;        /* Allow it to take up 100% of the parent container's width */
     margin: 0 auto;     /* Center the content horizontally */
-    padding: 0 20px;    /* Optional: Add padding to prevent text from touching the edges */
+    padding: 420px 20px 0;   /* Optional: Add padding to prevent text from touching the edges */
 }
 
 
@@ -67,7 +67,7 @@
     border: 5px solid white; /* Circular border */
     margin: 0 auto; /* Centering */
     min-height: 4vw; 
-    margin-top: -70px;
+    margin-top: -350px;
     
 }
 
@@ -96,9 +96,8 @@
 .b-shiatsu-text p {
     font-family: 'Roboto Slab', serif;
     color: black;
-    font-size: 1rem;
-    color: #555; /* Slightly lighter color for the body text */
-    line-height: 1.8; /* Improved line height for readability */
+    font-size: 1rem;; /* Slightly lighter color for the body text */
+    line-height: 1.7; /* Improved line height for readability */
      /* Justify text for better flow */
     margin-bottom: 1.5rem;
     text-align: center;
@@ -113,6 +112,7 @@
     border-radius: 20%;
     border: 5px solid;
     border-color: white;
+    max-width: 300px;
 }
 
 .b-list-kinder {
@@ -120,9 +120,47 @@
     flex-direction: column;
 }
 
+.b-list-kinder h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
 .b-kinder {
     margin: 0 2.5rem;
 }
+
+
+.ablauf {
+    background-color: #CDAB81; /* Light brown */
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Prevent excessive width */ /* Space inside */
+    padding: 1rem 2rem;
+    border-radius: 20%;
+    padding-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid white; /* Circular border */
+    min-height: 4vw; 
+    
+}
+
+.ablauf h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.8rem;
+   
+}
+
+.ablauf p {
+    font-size: 1rem;
+    line-height: 1.7;
+    font-family: 'Roboto Slab', serif;
+   
+}
+
 
 .b-middle {
     position: relative;
@@ -132,7 +170,7 @@
     transform: translateX(-50%); /* Centers it properly */
     display: flex;
     justify-content: center;
-    margin-top: -100px;
+    margin-top: -200px;
     z-index: -1;
    
 
@@ -143,48 +181,72 @@
     width: 105vw; /* Ensures full viewport width */
     height: auto; /* Maintains aspect ratio */
     max-height: 600px; /* Prevents excessive height */
-    object-fit: cover; /* Ensures proper scaling */
-    object-position: top center; /* Keeps the top of the image visible */
+    object-fit: cover; /* Ensures proper scaling */ /* Keeps the top of the image visible */
     opacity: 0.8;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+    border-top-left-radius: 50% 10%;
+    border-top-right-radius: 50% 10%;
 }
 
-.d-shape {
-    width: 300px; /* Adjust width */
-    height: 200px; /* Adjust height */
-    background-color: #3498db; /* Example color */
-   
-}
-
-
-.ablauf {
-    background-color: #CDAB81; /* Light brown */
-    width: 80%; /* Responsive width */
-    max-width: 400px; /* Prevent excessive width */ /* Space inside */
-    
-    padding: 1rem;
-    border-top-right-radius: 50% 100%;
-    border-bottom-right-radius: 50% 100%;
-    padding-top: 0rem;
+.jin-shin {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    border: 5px solid white; /* Circular border */
-    margin: 0 auto; /* Centering */
-    min-height: 4vw; 
-    margin-top: -70px;
+
 }
 
-.ablauf h3 {
-    font-size: 1.8rem;
-    color: #333; /* Darker text for better contrast */
-    margin-bottom: 10px;
+.jin-shin-heading {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    left: 20%; /* Moves the left edge of the h2 to the center */
+    transform: translateX(-50%); /* Pulls it back by half of its width, centering it */
+    margin-top: 20rem;
+    text-align: center;
 }
 
-.ablauf p {
-    font-size: 1rem;
-    color: #555;
+.jin-text {
+    width: 50%;
+    background-color: #CDAB81;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    border-radius: 50% 50% 0 0;
+    border: 5px solid;
+    border-color: white;
+    margin-top: -3rem;
+}
+.jin-text h3{
+    text-align: center;
+}
+.jin-text p {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.7
+}
+
+.jin-check {
+    margin: 0 2rem;
+    margin-top: -2rem;
+    background-color: #CDAB81;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+    border-radius: 20%;
+    border: 5px solid;
+    border-color: white;
+    max-width: 300px;
+    max-height: 250px;
+}
+
+@media (max-width: 1240px) {
+    .b-middle {
+        margin-left: -40px;
+    }
+    .jin-shin-heading {
+        margin-left: 40px;
+    }
+
 }
 
 
@@ -193,15 +255,51 @@
         flex-direction: column;
     }
     .b-list-box {
-        margin-top: -5rem;
-        margin-bottom: 4rem;
+        margin: -5rem auto 4rem auto;
+
     }
+    .ablauf {
+        margin: 0 auto;
+    }
+
+    .behandlung-heading {
+        left: 0;
+    }
+    .behandlung-content {
+        border: 0;
+        padding-left: 0;
+    }
+
+    .b-kinder {
+        margin-top: -4em;
+    }
+
+    .b-middle-pic {
+        width: 110vw;
+        margin-top: 150px;
+        margin-left: 70px;
+    }
+
+    .jin-shin-heading {
+        left: 40%
+    }
+
+    .jin-shin {
+        flex-direction: column;
+    }
+
+    .jin-text {
+        width: 90%;
+    }
+
+    .jin-check {
+        margin: 0 auto;
+    }
+
 }
 
-@media (max-width: 1240px) {
-    .b-middle {
-        margin-left: -40px;
-    }
+@media (max-width: 480px) {
+    .
 }
 
 @keyframes fadeInUp {

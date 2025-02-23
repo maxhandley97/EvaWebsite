@@ -3,14 +3,14 @@
     max-width: 1300px;   /* Set the max width */
     margin: 0 auto;      /* Center it horizontally */
     padding-left: 20px;
-    margin-left: 3rem;   /* Optional, if you want to add extra space on the left */
+     /* Optional, if you want to add extra space on the left */
   }
   
   .timeline-line {
     position: absolute;
     left: 20px;
     top: 0;
-    width: 2px;
+    width: 3px;
     height: 100%;
     background-color: black;
   }
@@ -25,7 +25,6 @@
     opacity: 0; /* Start invisible */
     transform: translateY(20px); /* Start slightly below */
     animation: fadeInUp 1s forwards; /* Animation to fade in and move up */
-    max-width: 60%;
     margin-top: -30px;
   }
   
@@ -43,7 +42,7 @@
   
   .timeline-content {
     margin-left: 1rem;
-    max-width: 40rem;
+
     opacity: 0; /* Start invisible */
     animation: fadeIn 0.5s 0.5s forwards; /* Fade in after dot animation */
   }
@@ -51,6 +50,7 @@
   .timeline-content h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5rem;
+    text-align: start;
   }
   
   .letter {
