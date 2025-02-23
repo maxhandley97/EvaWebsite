@@ -42,6 +42,25 @@ html, body {
   color: black;
 }
 
+.home-text-content button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  border: none; /* Remove default border */
+  cursor: pointer;
+}
+
+.home-text-content button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
 
 .home-text-content {
   text-align: center;
@@ -123,5 +142,31 @@ html, body {
       border-radius: 50%; /* Ensures it's a circle */
       object-fit: cover; /* Ensures the image covers the area without stretching */
       object-position: 50% calc(50% + 110px);  /* Keeps the top half of the image in view */
+    }
+
+    .home-top-container p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    .home-text-content button  {
+      left: 85vw;
+      margin-top: -200px;
+    }
+  }
+
+  @media (max-width:480px) {
+    .eva-long {
+      margin-top: -15px;
+    }
+    .home-text-content button  {
+      font-size: 1rem;
+      max-width: 20%;
+      padding: 10px;
+    }
+    .home-text-content p {
+      font-size: 1rem;
     }
   }

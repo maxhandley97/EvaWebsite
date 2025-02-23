@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin } from 'lucide-react'; // Icons from lucide-react
+import { Phone, Mail} from 'lucide-react'; // Icons from lucide-react
 import './Footer.css';
 import banner1 from '../assets/EvaImages/Eva-Banner3.png'
 

@@ -18,7 +18,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 1rem;
-  padding-left: 1rem;
+  padding: 0 1rem;
+  background-color: yellow; 
+  border-radius: 30%;
   
 }
 
