@@ -1,6 +1,6 @@
 import React from 'react'
 import './Behandlung.css'
-import high5 from "../assets/EvaImages/high5.png"
+import high5 from "../assets/EvaImages/low6.png"
 import AnimatedList from '../components/AnimatedList'
 import low3 from "../assets/EvaImages/low3.jpg"
 

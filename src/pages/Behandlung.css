@@ -1,5 +1,3 @@
-.behandlung-top {
-}
 
 
 .behandlung-top-image {
@@ -296,10 +294,6 @@
         margin: 0 auto;
     }
 
-}
-
-@media (max-width: 480px) {
-    .
 }
 
 @keyframes fadeInUp {
