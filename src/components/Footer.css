@@ -19,9 +19,26 @@
   justify-content: center;
   gap: 1rem;
   padding: 0 1rem;
-  background-color: yellow; 
-  border-radius: 30%;
+  background-color: #FCE7AA; 
+  border-radius: 10px;
   
+}
+
+.left-bottom button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.2rem;
+  padding: 12px 25px;
+  background-color: black;
+  color: #FCE7AA;
+  border-radius: 8px;
+  transform: translateX(-50%);
+  border: none; /* Remove default border */
+  cursor: pointer;
+  margin-left: 55px;
+}
+
+.home-text-content button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
 }
 
 .contact-item {

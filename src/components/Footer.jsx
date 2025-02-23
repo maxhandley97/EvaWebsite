@@ -13,6 +13,11 @@ const Footer = () => {
         <div className="left-container">
           <img src={banner1} alt="Banner" className="banner" />
           <div className="left-bottom">
+            <div className='footer-but'>
+              <a href="/contact">
+              <button>Kontakt</button></a>
+            </div>
+           
             <div className="contact-item">
               <Phone className="icon" />
               <a href="tel:01745399457">0174 53 99 457</a>
