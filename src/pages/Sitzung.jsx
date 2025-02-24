@@ -1,6 +1,5 @@
 import React from 'react';
 import './sitzung.css';
-import image from '../assets/EvaImages/stock/candels-incense.jpg';
 const Sitzung = () => {
   return (
     <div className='sitzung-background'>

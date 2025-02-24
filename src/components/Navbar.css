@@ -1,7 +1,4 @@
 /* Navbar */
-body {
-  margin-top: 95px; /* This will move all content down by 60px */
-}
 
 .custom-navbar {
   padding-bottom: 10px;
@@ -19,7 +16,7 @@ body {
 
 /* Title for the left side */
 .navbar-title {
-  width: 200%;
+  width: 300%;
   background-color: #FCE7AA;
   font-family: "Lato", sans-serif;
   font-size: 1.8rem;
@@ -113,6 +110,8 @@ body {
 
 .active-link {
   border-bottom: 2px solid black;
+  font-weight: 400 !important;
+
 }
 
 @media (max-width: 900px) {
@@ -167,5 +166,21 @@ body {
 
   .custom-navbar .nav-link {
     font-size: 1.2rem;
+  }
+}
+/* Mobile Navigation */
+@media (max-width: 580px) {
+  .navbar-title {
+    font-size: 1rem;  /* Adjust font size for smaller screens */
+    white-space: normal;  /* Allows text to break onto multiple lines */
+    line-height: 1.4;  /* Add line height for better spacing */
+   
+    padding-left: 0; /* Optional: Adjust padding */
+    padding-right: 0; /* Optional: Adjust padding */
+  }
+
+  /* Optionally, you can also adjust navbar items here for 580px */
+  .custom-navbar {
+    padding-bottom: 0;
   }
 }

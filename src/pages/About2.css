@@ -1,58 +1,108 @@
+html, body {
+    margin: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
 
-.about-back-container img {
-    width: 100%;
-    height: auto;  /* Maintains aspect ratio */
-    max-height: 400px; /* Adjust to prevent excessive height on large screens */
-    object-fit: cover; /* Ensures it covers the container without distortion */
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
-    
+/*   
+.home-container {
+  background-image: url('../assets/EvaImages/candels-incense.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  width: 100%;
+
+} */
+
+
+.home-below {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
 }
 
-.about-headshot {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-top: -10rem;
-}
-.about-headshot img{
-    border-radius: 100%;
-    border: 5px solid;
-    border-color: white;
-    width: 10rem;
-    margin-left: 1rem;
-   
-}
+.home-timeline {
+  width: 70%;
 
-.about-headshot h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.5rem;
-    color: white;
-    margin-left: 1rem;
-    margin-top: -2rem;
+  z-index: 1;
+  
+  
+
 
 }
 
-.about-timeline {
-    width: 100%;
-    max-width: 1300px; /* Max width of the page */
-    margin: 0 auto;    /* Center it */
-    padding: 0 20px; 
-    margin-top: 11rem;
+.home-timeline h4 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.eva-long {
+  width: auto; 
+  height: auto; 
+  border-radius: 50%;
+  margin-left: 2rem; /* Optional: sets a max width limit */
+  max-height: 600px;
+  object-fit: contain; /* Ensures it doesn't stretch */
+  border: 7px solid;
+  border-color: white;
+  margin-top: -6rem;
+  z-index: 1;
 }
 
-@media (max-width:660px) {
-    .about-timeline {
-        padding: 0;
+.review-caro {
+  max-width: 1200px;
+  width: 45%;
+  margin-left: 53%;
+  margin-top: -15rem;
+}
+
+.review-caro h4 {
+  font-family: 'Roboto Slab', serif;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+  @media (max-width: 768px) {
+    .home-below {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-left: -2rem;
+    }
+    .eva-long {
+      width: 350px; /* Set a fixed width */
+      height: 350px; /* Set a fixed height to keep the circle shape */
+      border-radius: 50%; /* Ensures it's a circle */
+      object-fit: cover; /* Ensures the image covers the area without stretching */
+      object-position: 50% calc(50% + 110px);  /* Keeps the top half of the image in view */
     }
 
-    .about-headshot {
-        margin-top: -6rem;
-        margin-bottom: -3rem;
+    .home-top-container p {
+      font-size: 1.2rem;
     }
+  }
 
-    .about-headshot img {
-        width: 7rem;
+  @media (max-width: 600px) {
+
+    .home-text-content button  {
+      left: 85vw;
+      margin-top: -200px;
     }
+  }
 
-}
+  @media (max-width:480px) {
+    .eva-long {
+      margin-top: -15px;
+    }
+    .home-text-content button  {
+      font-size: 1rem;
+      max-width: 20%;
+      padding: 10px;
+    }
+    .home-text-content p {
+      font-size: 1rem;
+    }
+  }

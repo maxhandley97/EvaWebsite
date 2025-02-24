@@ -1,45 +1,108 @@
 
+.home-top-container {
+    position: relative;
+    width: 100%; /* Adjust as needed */
+    text-align: center; 
+  }
+  
+  .home-top-container h3 {
+      margin-bottom: -15px;
+      font-family: "Lora", serif !important;
+      font-size: 3rem;
+  
+    
+  }
+  
+  .home-top-container h4 {
+   
+    font-size: 1.5rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-top-container p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    color: black;
+  }
+  
+  .home-text-content button {
+    font-family: "Lato", sans-serif !important;
+    font-size: 1.2rem;
+    padding: 12px 25px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    border: none; /* Remove default border */
+    cursor: pointer;
+  }
+  
+  .home-text-content button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  }
+  
+  
+  .home-text-content {
+    text-align: center;
+    position: absolute; /* Ensure the text floats above the image */
+    width: 100%;
+    z-index: 2; /* Ensure the text is on top of the image */
+    /* Center horizontally using transform */
+  }
+  
+  
+  .home-pic {
+    width: 100%;
+    height: auto;  /* Maintains aspect ratio */
+    max-height: 400px; /* Adjust to prevent excessive height on large screens */
+    object-fit: cover; /* Ensures it covers the container without distortion */
+    z-index: 0;
+    border-bottom-left-radius: 50% 10%;
+    border-bottom-right-radius: 50% 10%;
+  }
+
+.home-title {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: white ;
+    border-radius: 10px;
+    padding: 15px 25px;
+    margin-top: -30px;
+    z-index: 3;
+}
+
+.home-title img {
+    border-radius: 50%;
+    height: 200px;
+    z-index: 3;
+    border: white solid 5px;
+}
+
+.home-title-box {
+    background-color: white ;
+    border-radius: 10px;
+    padding: 15px 25px;
+}
+
+.home-title-box h3 {
+    font-size: 2.5rem;
+}
 
 .behandlung-top-image {
     position: block;
     z-index: -1;
 }
 
-.behandlung-top-image img {
-    width: 100%;
-    height: auto;  /* Maintains aspect ratio */
-    max-height: 400px; /* Adjust to prevent excessive height on large screens */
-    object-fit: cover; /* Ensures it covers the container without distortion */
-    border-bottom-left-radius: 50% 10%;
-    border-bottom-right-radius: 50% 10%;
-    position: absolute;
-    z-index: -2;
-    
-}
-.behandlung-heading {
-    opacity: 0.9;
-    position: relative; /* Keep relative positioning for child element */
-    width: fit-content;
-    margin: 0 auto; /* Centers it horizontally */
-}
-
-.behandlung-heading h2 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 2rem;
-    padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    border-radius: 8px;
-    position: absolute; /* Moves the left edge of the h2 to the center */
-    transform: translateX(-50%); /* Pulls it back by half of its width, centering it */
-    margin-top: 6rem;
-}
-
 .behandlung-content {
     max-width: 1200px;  /* Ensure the content doesn't go beyond 1200px */
     width: 100%;        /* Allow it to take up 100% of the parent container's width */
-    margin: 0 auto;     /* Center the content horizontally */
-    padding: 420px 20px 0;   /* Optional: Add padding to prevent text from touching the edges */
+    margin: 0 auto;     /* Center the content horizontally */ /* Optional: Add padding to prevent text from touching the edges */
 }
 
 
@@ -52,21 +115,18 @@
 
 }
 .b-border-box {
-    background-color: #CDAB81; /* Light brown */
     width: 80%; /* Responsive width */
     max-width: 900px; /* Prevent excessive width */
     padding: 3.5rem;
+    padding-left: 1.5rem;
     padding-bottom: 5rem; /* Space inside */
-    border-radius: 50% /50%; /* Makes it circular */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    border: 5px solid white; /* Circular border */
     margin: 0 auto; /* Centering */
     min-height: 4vw; 
-    margin-top: -350px;
-    
+    margin-top: -40px;
 }
 
 .b-shiatsu-text {
@@ -98,50 +158,16 @@
     line-height: 1.7; /* Improved line height for readability */
      /* Justify text for better flow */
     margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.b-list-box {
-    margin: 0 2rem;
-    margin-top: -200px;
-    background-color: #CDAB81;
-    padding: 0 2rem;
-    padding-bottom: 1rem;
-    border-radius: 20%;
-    border: 5px solid;
-    border-color: white;
-    max-width: 300px;
-}
-
-.b-list-kinder {
-    display: flex;
-    flex-direction: column;
-}
-
-.b-list-kinder h4 {
-    font-family: 'Roboto Slab', serif;
-    font-size: 1.2rem;
-    max-width: 600px;
-}
-
-.b-kinder {
-    margin: 0 2.5rem;
 }
 
 
-.ablauf {
-    background-color: #CDAB81; /* Light brown */
-    width: 80%; /* Responsive width */
-    max-width: 400px; /* Prevent excessive width */ /* Space inside */
-    padding: 1rem 2rem;
-    border-radius: 20%;
+.ablauf {/* Prevent excessive width */ /* Space inside */ 
     padding-top: 0rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 5px solid white; /* Circular border */
-    min-height: 4vw; 
+   
     
 }
 
@@ -154,9 +180,37 @@
 
 .ablauf p {
     font-size: 1rem;
-    line-height: 1.7;
     font-family: 'Roboto Slab', serif;
    
+}
+
+.b-list-box {
+
+    background-color: #CDAB81;
+    padding: 0 2rem;
+    padding-bottom: 1rem;
+  
+  
+    max-width: 300px;
+    
+}
+
+.b-list-kinder {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+    background-color: #4A602E;
+    height: 1000%;
+}
+
+.b-list-kinder h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.review-home {
+    margin-top: 30px;
 }
 
 
@@ -168,7 +222,6 @@
     transform: translateX(-50%); /* Centers it properly */
     display: flex;
     justify-content: center;
-    margin-top: -200px;
     z-index: -1;
    
 
@@ -183,8 +236,6 @@
     opacity: 0.8;
     border-bottom-left-radius: 50% 10%;
     border-bottom-right-radius: 50% 10%;
-    border-top-left-radius: 50% 10%;
-    border-top-right-radius: 50% 10%;
 }
 
 .jin-shin {

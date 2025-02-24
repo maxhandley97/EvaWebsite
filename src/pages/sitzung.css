@@ -17,19 +17,6 @@ body {
    background-color: #fff;
 }
 
-
-.sitzung-background {
-  background-image: url('../assets/EvaImages/candels-incense.jpg'); /* Adjust path */
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed; /* This creates the parallax effect */
-  background-repeat: no-repeat;
-  min-height: 100vh; /* Ensures it covers the entire viewport */
-  padding: 20px;
-  width: 100%;
-  color: black; /* Adjust text color for readability */
-}
-
 .sitzung {
   max-width: 800px;
   margin: 0 auto;

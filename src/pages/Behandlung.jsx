@@ -1,9 +1,12 @@
 import React from 'react'
 import './Behandlung.css'
-import high5 from "../assets/EvaImages/low6.jpg"
+import headshot from "../assets/EvaImages/profile.png"
 import AnimatedList from '../components/AnimatedList'
 import low3 from "../assets/EvaImages/low3.jpg"
-
+import evabeach from "../assets/EvaImages/eva-beach.jpg";
+import { useNavigate } from "react-router-dom"; 
+import { motion } from "framer-motion";
+import ReviewCaro from "../components/ReviewCaro"
 
 const shiatsuList = [
     'Kopf-, Rücken- und Kreuzschmerzen', 
@@ -19,9 +22,44 @@ const shiatsuList = [
   ];
 
 const Behandlung = () => {
+    const navigate = useNavigate();
   return (
     <div className=''>
-        <div className='behandlung-top'>
+        <div className="home-top-container">
+        <motion.div
+          className="home-text-content"
+          initial={{ y: "-50px", opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ type: "spring", stiffness: 80, damping: 25, delay: 0.2 }}
+        >
+          <h3>Willkommen </h3>
+          <h4>bei Eva Kluge</h4>
+          <p>
+            Ihrer Ansprechpartnerin für die asiatischen Behandlungsmethoden
+            Shiatsu und Jin Shin Jyutsu.
+            <br />
+            Stärken Sie Ihre Gesundheit und Ihr körperliches Wohlbefinden!
+          </p>
+          <motion.button
+            onClick={() => navigate("/contact")} // Navigate to Contact page
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            Kontakt
+          </motion.button>
+        </motion.div>
+
+        <motion.img 
+          src={evabeach} 
+          alt="" 
+          className="home-pic" 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0 }}
+        />
+      </div>
+        {/* <div className='behandlung-top'>
             <div className='behandlung-top-image'>
                         <img src={high5} alt="" />
             </div>
@@ -29,6 +67,13 @@ const Behandlung = () => {
                 <h2>Behandlungsmethode: <br />Shiatsu</h2>
                 
             </div>
+        </div> */}
+        <div className='home-title'>
+            <img src={headshot} alt="" />
+            <div className='home-title-box'>
+                <h3>Meine Behandlungsmethoden</h3>
+            </div>
+
         </div>
         <div className='behandlung-content'>
             <div className='b-shiatsu-top'>
@@ -44,23 +89,28 @@ const Behandlung = () => {
                             Bei der Behandlung wird entlang der Meridiane mit den Händen, Daumen, Ellenbogen und Knien gearbeitet, um die Energieströme zu harmonisieren und Spannungen zu lösen. 
                             <br />Dadurch wird die Körperwahrnehmung sowie die innere Ausgeglichenheit und Vitalität des Klienten gefördert. 
                         </p>
+                    </div> 
+                    <div className='ablauf'>
+                        <h3>Ablauf der Shiatsu Behandlung</h3>
+                        <p>
+                            Die Behandlung findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
+                            kann eine Massageliege benutzt werden. <br /> <br />Vorher findet ein kurzes Vorgespräch statt, damit
+                            bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann. <br /> <br /> Am Ende der
+                            Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
+                            Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
+                        </p>
                     </div>
                 </div>
                 <div className='b-list-kinder'>
                     <div className='b-list-box'>
-                    <AnimatedList title="Indikationen für Shiatsu" items={shiatsuList} />
+                        <AnimatedList title="Indikationen für Shiatsu" items={shiatsuList} />
                     </div>
-                    <div className='b-kinder'><h4>Shiatsu kann sowohl bei Kindern als auch bei Erwachsenen angewendet werden.</h4></div>
-                    <div className='ablauf'>
-                <h3>Ablauf der Shiatsu Behandlung</h3>
-                <p>
-                    Die Behandlung findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
-                    kann eine Massageliege benutzt werden. <br /> <br />Vorher findet ein kurzes Vorgespräch statt, damit
-                    bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann. <br /> <br /> Am Ende der
-                    Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
-                    Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
-                </p>
-            </div>
+
+                    <div className='review-home'>
+                        <h2>Was Sagen meine Klienten?</h2>   
+                        <ReviewCaro/>
+                    </div>
+                   
                     
                 </div>
 
