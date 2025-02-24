@@ -1,6 +1,5 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About2 from './pages/About2';
@@ -10,12 +9,13 @@ import Datenschutz from './pages/Datenschutz';
 import Behandlung from './pages/Behandlung';
 import Sitzung from './pages/Sitzung';
 import Geschichte from './pages/Geschichte'; 
+import CustomNavbar from './components/Navbar';
 
 
 const App = () => {
   return (
     <div>
-      <Header />
+      <CustomNavbar />
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
