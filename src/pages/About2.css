@@ -49,8 +49,8 @@ html, body {
   object-fit: contain; /* Ensures it doesn't stretch */
   border: 7px solid;
   border-color: white;
-  margin-top: -6rem;
   z-index: 1;
+  margin-top: 5rem;
 }
 
 .review-caro {

@@ -5,7 +5,6 @@ import "./About2.css";
 import Timeline2 from '../components/Timeline2';
 
 import tall from "../assets/EvaImages/TallLow.jpg";
-import ReviewCaro from "../components/ReviewCaro";
 
 const Home = () => {
   // Initialize navigate function

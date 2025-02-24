@@ -27,7 +27,7 @@
 }
 
 .review-quote {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin:0 1rem; /* Add more spacing around the quote */
   line-height: 1.6; /* Improve readability */
   font-family: 'Roboto Slab', serif;

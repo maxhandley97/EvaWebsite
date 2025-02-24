@@ -186,11 +186,10 @@
 
 .b-list-box {
 
-    background-color: #CDAB81;
     padding: 0 2rem;
     padding-bottom: 1rem;
-  
-  
+    
+    
     max-width: 300px;
     
 }
@@ -199,7 +198,6 @@
     display: flex;
     flex-direction: column;
     margin-right: 1.5rem;
-    background-color: #4A602E;
     height: 1000%;
 }
 

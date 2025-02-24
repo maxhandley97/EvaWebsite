@@ -21,6 +21,7 @@
 .list-item {
   display: flex;
   align-items: center;
+  
   opacity: 0;
   transform: translateY(-20px); /* Start position (above) */
   animation: fall 0.5s ease forwards;
@@ -66,9 +67,9 @@ h3 {
 
 
 .item-text {
-  font-family: 'Roboto Slab', serif; /* Font style */
+  font-family: "Lato", sans-serif; /* Font style */
   font-size: 16px;
-  color: #333;
+ 
 }
 
 /* When the item falls and becomes visible */

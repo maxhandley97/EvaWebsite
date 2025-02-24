@@ -30,7 +30,7 @@ const CustomNavbar = () => {
               { path: "/", label: "Behandlungsmethoden" },
               { path: "/about", label: "Über mich" },
               { path: "/geschichte", label: "Geschichte der Methoden" },
-              { path: "/impressum", label: "Kosten" },
+              { path: "/sitzung", label: "Kosten" },
               { path: "/contact", label: "Kontakt" }
             ].map(({ path, label }) => (
               <Nav.Link
