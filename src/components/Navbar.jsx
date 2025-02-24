@@ -10,6 +10,7 @@ const CustomNavbar = () => {
   return (
     <Navbar expand="md" className="custom-navbar" fixed="top">
       <Container>
+      <div className="navbar-title">Eva Kluge: Heilpraktikerin für Shiatsu und Jin Shin Jyutsu </div>
         {/* Burger Button */}
         <button
           className={`burger-btn ${isMenuOpen ? "open" : ""}`}
