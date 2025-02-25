@@ -4,7 +4,7 @@
   padding: 10px;
   background-color: #CDAB81; /* Unified background color */
   color: #000; /* Ensure readable text */
-  font-family: Arial, sans-serif;
+  font-family: "Lato", sans-serif ;
 }
 
 .left-container {
@@ -74,7 +74,7 @@
 
 .banner {
   width: 100%;
-  max-width: 620px;
+  max-width: 400px;
   height: auto;
   margin-bottom: 1rem;
   min-width: 345px;
