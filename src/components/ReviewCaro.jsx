@@ -40,16 +40,6 @@ const ReviewCarousel = () => {
     return () => clearInterval(interval);
   }, [reviews.length]);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? reviews.length - 1 : prevIndex - 1
-    );
-  };
-
   return (
     <div className="review-carousel-container">
       {reviews.map((review, index) => (
@@ -61,16 +51,9 @@ const ReviewCarousel = () => {
           }}
         >
           <p className="review-quote">&quot;{review.quote}&quot;</p>
-<p className="review-initial">- {review.initial}</p>
-        
+          <p className="review-initial">- {review.initial}</p>
         </div>
       ))}
-      <button className="review-button-prev" onClick={prevSlide}>
-        &#8592;
-      </button>
-      <button className="review-button-next" onClick={nextSlide}>
-        &#8594;
-      </button>
     </div>
   );
 };

@@ -41,7 +41,7 @@
   color: #555;
   margin-top: 0.5rem; /* Add spacing above initials */
 }
-
+/* 
 .review-button-prev,
 .review-button-next {
   position: absolute;
@@ -53,16 +53,16 @@
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
-  border-radius: 4px; /* Optional: Add rounded corners */
-}
+  border-radius: 4px; /* Optional: Add rounded corners } */
 
+/* 
 .review-button-prev {
   left: 1rem;
 }
 
 .review-button-next {
   right: 1rem;
-}
+} */
 
 
 /* Media Query for screens below 550px */

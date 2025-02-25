@@ -1,122 +1,78 @@
-/* General Styling */
-.g-top-pic {
-  position: relative;
-  width: 100%; /* Adjust max width as needed */
-  height: 400px;
-  background-color: #CDAB81;
-  border-bottom-left-radius: 50% 10%;
-  border-bottom-right-radius: 50% 10%;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end; /* Ensures image remains visible */
+.geschichte-container {
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-.g-top-pic img {
-  width: auto;
-  max-width: 100%;
-  height: 110%; /* Ensures visibility */
-  object-fit: cover; /* Ensures content remains visible */
-  object-position: center bottom;
+.g-head h2 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
 }
-
-.g-heading {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 10px 20px;
-  border-radius: 8px;
-  color: white;
-  text-align: center;
-}
-
 
 .geschichte-content {
-  margin-top: 5rem;
   display: flex;
   flex-direction: row;
-  align-items: start;
+  padding: 0 1rem;
 }
 
-.g-border-box {
-  background-color: #CDAB81;
-  width: 80%;
-  max-width: 900px;
-  padding: 3.5rem;
-  padding-bottom: 5rem;
-  border-radius: 50% / 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 5px solid white;
-  margin: -150px auto 0;
-  flex-direction: column;
-  z-index: 1;
+.g-shiatsu {
+    max-width: 60%;
+    padding-right: 2rem;
+}
+.g-top-pic {
+  max-height: 40rem;
+  height: 100vh;
 }
 
-.geschichte-text {
-  max-width: 900px;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 1s forwards;
-}
-
-.geschichte-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.geschichte-middle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.g-top-pic img {
   width: 100%;
-  margin: 50px 0;
+  height: 100%;
+  object-fit: cover;
+  object-position: 45% center;
+  margin-top: 2rem;
+  
+  /* Apply a gradient mask */
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+
 }
 
-.geschichte-middle-pic {
-  max-width: 100%;
-  height: auto;
+.g-jin {
+  max-width: 60%;
+  margin-top: -15rem;
+  padding-bottom: 7rem;
+  padding-left: 1rem;
 }
 
-
-
-@media (max-width: 1020px) {
-  .g-top-pic img {
-    width: 80%;
-    height: auto;
-  }
+@media (max-width: 980px) {
   .geschichte-content {
     flex-direction: column;
   }
-  .g-bottom-con .g-bottom {
-    margin: 0;
-  }
-}
 
-@media (max-width: 760px) {
-  .g-top-pic {
-    height: 300px;
+  .g-shiatsu {
+    margin: 0 auto;
   }
-  .g-border-box {
-    padding: 2rem;
-    width: 100%;
+
+  .g-top-pic {
+    width: 110%;
+    max-height: 20rem;
+    background-color: #CDAB81;
+    margin-left: -15px;
+  }
+
+  .g-top-pic img {
+    width: 70%;
+    margin-left: 6rem;
+    margin-top: 0;
+
+  /* Apply a gradient mask */
+  -webkit-mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 30%);
+  }
+
+  .g-jin {
+    margin: 0 auto -4rem;
     
-  }
-}
 
-@media (max-width: 600px) {
-  .g-top-pic {
-    height: 250px;
   }
-  .g-heading h2 {
-    font-size: 1.5rem;
-    padding: 8px 16px;
-  }
+
 }
