@@ -6,9 +6,9 @@ import evabeach from "../assets/EvaImages/eva-beach.jpg";
 import { useNavigate } from "react-router-dom"; 
 import { motion } from "framer-motion";
 import ReviewCaro from "../components/ReviewCaro"
-import low6 from "../assets/evaImages/low6.jpg"
-import low9 from "../assets/evaImages/low9.jpg"
-import low4 from "../assets/evaImages/low4.jpg"
+import low6 from "../assets/EvaImages/low6.jpg"
+import low9 from "../assets/EvaImages/low9.jpg"
+import low4 from "../assets/EvaImages/low4.jpg"
 
 const shiatsuList = [
     'Kopf und Rückenschmerzen', 
