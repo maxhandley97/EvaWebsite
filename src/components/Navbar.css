@@ -22,15 +22,24 @@
   font-size: 1.8rem;
   font-weight: 300;
   color: black;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  padding-top: 5px;
+  
   z-index: 1100;
-  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-title p {
+  margin: .5rem 0;
+  padding-left: 8px;
+  font-family: "Lato", sans-serif !important;
+  font-size: 1.8rem;
+  font-weight: 300;
 }
 
 /* Navbar links and burger button are aligned to the right */
 .navbar-collapse {
+  margin-top: 18px;
+  padding-top: 5px;
   display: flex;
   justify-content: flex-end; /* Align the nav items to the right */
   width: 100%;
@@ -52,6 +61,7 @@
 
 /* Burger Button */
 .burger-btn {
+  margin-top: 5px;
   display: none;
   background: none;
   border: none;
@@ -114,7 +124,7 @@
 
 }
 
-@media (max-width: 900px) {
+@media (max-width: 910px) {
   body {
     margin-top: 80px; /* This will move all content down by 60px */
   }
@@ -157,7 +167,7 @@
     padding: 10px 15px;
   }
 
-  .navbar-title {
+  .navbar-title p {
     font-size: 1.3rem;
     padding-bottom: 20px;
     padding-top: 15px;
@@ -170,17 +180,34 @@
 }
 /* Mobile Navigation */
 @media (max-width: 580px) {
-  .navbar-title {
+  .navbar-title p {
     font-size: 1rem;  /* Adjust font size for smaller screens */
     white-space: normal;  /* Allows text to break onto multiple lines */
     line-height: 1.4;  /* Add line height for better spacing */
    
-    padding-left: 0; /* Optional: Adjust padding */
+    padding-left: 5px; /* Optional: Adjust padding */
     padding-right: 0; /* Optional: Adjust padding */
+  }
+
+  .navbar-collapse {
+    margin-top: 22px;
   }
 
   /* Optionally, you can also adjust navbar items here for 580px */
   .custom-navbar {
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-title {
+    flex-direction: column;
+    padding: 8px;
+    
+  }
+  .navbar-title p {
+    padding: 0;
+    margin: 0;
+    
   }
 }
