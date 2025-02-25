@@ -24,7 +24,9 @@ const Contact = () => {
           </p>
         </div>
         </div>
+        <div className='c-contact'>
         <ContactForm/>
+        </div>
     </div>
   );
 };
