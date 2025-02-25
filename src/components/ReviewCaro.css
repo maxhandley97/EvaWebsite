@@ -7,8 +7,8 @@
   overflow: hidden; /* Light background for better readability */
   padding: 0 2rem; /* Add padding on the left and right */
   border-radius: .2rem;
-  border: 4px solid black;
-  margin-bottom: 1rem;
+  margin-bottom: -1.5rem;
+  padding-top: 1.3rem;
 }
 
 .review-slide {
