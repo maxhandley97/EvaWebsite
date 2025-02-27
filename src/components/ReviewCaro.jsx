@@ -35,7 +35,7 @@ const ReviewCarousel = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
-    }, 10000); // Change every 10 seconds
+    }, 6000); // Change every 10 seconds
 
     return () => clearInterval(interval);
   }, [reviews.length]);

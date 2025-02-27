@@ -45,6 +45,8 @@ const ContactForm = () => {
   return (
     <div className="contact-form-container">
       <h2>Haben Sie Fragen? </h2>
+      
+      <h2></h2>
       <form onSubmit={handleSubmit} className="contact-form">
         <div>
           <input

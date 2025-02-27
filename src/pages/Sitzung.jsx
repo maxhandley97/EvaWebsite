@@ -27,16 +27,17 @@ const Sitzung = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>30 Minuten</td>
-                <td>35€</td>
-                <td>z.B. nur Rückenbehandlung</td>
-              </tr>
-              <tr>
+            <tr>
                 <td>60 Minuten</td>
                 <td>65€</td>
-                <td>Normale Behandlung</td>
+                <td>Klassische Behandlung</td>
               </tr>
+              <tr>
+                <td>35 Minuten</td>
+                <td>40€</td>
+                <td>Teilbehandlung z.B. nur Rückenbehandlung</td>
+              </tr>
+              
             </tbody>
           </table>
 
@@ -53,26 +54,27 @@ const Sitzung = () => {
             <tbody>
               <tr>
                 <td>5-er Karte</td>
-                <td>30 Minuten</td>
-                <td>160€</td>
-              </tr>
-              <tr>
-                <td>10-er Karte</td>
-                <td>30 Minuten</td>
-                <td>300€</td>
-              </tr>
-              <tr>
-                <td>5-er Karte</td>
                 <td>60 Minuten</td>
-                <td>310€</td>
+                <td>300€</td>
               </tr>
               <tr>
                 <td>10-er Karte</td>
                 <td>60 Minuten</td>
                 <td>550€</td>
               </tr>
+              <tr>
+                <td>5-er Karte</td>
+                <td>35 Minuten</td>
+                <td>180€</td>
+              </tr>
+              <tr>
+                <td>10-er Karte</td>
+                <td>35 Minuten</td>
+                <td>350€</td>
+              </tr>
             </tbody>
           </table>
+          <h4>*Ermäßigung für Geringverdiener möglich</h4>
         </div>
       </div>
     </div>

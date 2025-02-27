@@ -52,6 +52,10 @@
     color: #555;
     line-height: 1.6;
   }
+
+  .c-contact {
+    min-width: 300px;
+  }
   
   /* Responsive Styling */
   @media (max-width: 768px) {
