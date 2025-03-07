@@ -19,7 +19,7 @@ const Geschichte = () => {
             <h3>Shiatsu</h3>
             <p>
               Die Wurzeln des Shiatsu kommen von Tuina, einer medizinischen Massage-Technik aus China und den japanischen Formen des Anma, der traditionellen japanischen Massage. 
-              Seit der Einführung des westlichen Gesundheitswesens wurden Anfang des 20. Jahrhunderts verschiedene Formen manueller Behandlungsmethoden unter dem Namen Shiatsu zusammengefasst, um einen Platz im neuen Gesundheitswesen zu erlangen.
+              Seit der Einführung des westlichen Gesundheitswesens wurden Anfang des 20. Jahrhundert verschiedene Formen manueller Behandlungsmethoden unter dem Namen Shiatsu zusammengefasst, um einen Platz im neuen Gesundheitswesen zu erlangen.
             </p>
             <p>
               Sowohl Tokujiro Namikoshi als auch Tempeki Tamai erweiterten die Behandlungsmethoden mit westlichen physiotherapeutischen Ansätzen und bezogen die Meridianlehre mit ein. 
@@ -27,7 +27,7 @@ const Geschichte = () => {
               Zu den weiteren großen Lehrern gehört Wataru Ohashi, der auch Kurse in Europa und Berlin gibt.
             </p>
             <p>
-              Seit den 80er Jahren hat sich Shiatsu in Europa etabliert, und in den 90er Jahren wurden in Deutschland mehrere Schulen gegründet, darunter die GSD - Gesellschaft für Shiatsu Deutschland.
+              Seit den 80er Jahren hat sich Shiatsu in Europa etabliert, und in den 90er Jahren wurden in Deutschland mehrere Schulen gegründet, sowie die GSD - Gesellschaft für Shiatsu Deutschland.
             </p>
             </div>
             <div className="g-top-pic">

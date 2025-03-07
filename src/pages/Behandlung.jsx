@@ -15,7 +15,7 @@ const shiatsuList = [
     'Stress-Symptome',
     'Schlafstörungen',
     'Muskelverspannungen', 
-    'Gelenkschmerzen', 'Gelenkblockaden', 
+    'Gelenkschmerzen',
     'Verklebung von Faszien',
     'Stärkung des Immunsystems',
     'Gesundheitsprophylaxe'
@@ -132,7 +132,7 @@ const Behandlung = () => {
                       </h3>
                       <p>
                       Jin-Shin-Jyutsu beruht ebenfalls auf der asiatischen Meridianlehre. Mit den Händen werden
-                      Akkupunkturpunkte auf den Meridianlinien gehalten, um die Selbstheilungskräfte und den
+                      Akupunkturpunkte auf den Meridianlinien gehalten, um die Selbstheilungskräfte und den
                       Energiefluss im Körper anzuregen. <br /> <br />
                       <strong>Die Behandlung</strong> findet traditionell am bekleideten Körper auf einer Massageliege statt. Am
                       Ende der Behandlung zeige ich Ihnen einzelne Übungen für zu Hause, damit Sie Ihre
