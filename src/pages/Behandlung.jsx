@@ -11,7 +11,7 @@ import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
 
 const shiatsuList = [
-    'Kopf und Rückenschmerzen', 
+    'Kopf- und Rückenschmerzen', 
     'Stress-Symptome',
     'Schlafstörungen',
     'Muskelverspannungen', 
