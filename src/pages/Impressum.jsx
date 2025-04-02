@@ -13,6 +13,7 @@ const Impressum = () => {
       <p><strong>Berufsrechtliche Regelungen:</strong> Heilpraktikergesetz (HeilprG), Heilmittelwerbegesetz (HWG), etc.</p>
       <p><strong>Weitere berufsrechtliche Regelungen u.a.:</strong> Heilmittelwerbegesetz (HWG), Gesetz gegen den unlauteren Wettbewerb (UWG), etc.</p>
       {/* Add more details if needed */}
+      <p>Fotos: Jan-Erik Lehmann</p>
     </div>
   );
 };
