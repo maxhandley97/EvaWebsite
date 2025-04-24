@@ -55,15 +55,6 @@ const Behandlung = () => {
           >
             Kontakt
           </motion.button>
-          <motion.div
-            className="special-offer-banner"
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 80, damping: 20, delay: 0.3 }}
-          >
-            <div className="corner-ribbon">Angebot</div>
-            <p><strong>Sonderangebot bis Ostern:</strong> <br /> Schnupperstunde: <strong>40 Euro</strong>!</p>
-          </motion.div>
         </motion.div>
 
         <motion.img 
