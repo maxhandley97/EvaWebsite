@@ -11,7 +11,7 @@ const Contact = () => {
         <div className="contact-details">
           <img src={headshot} alt="" />
           <p>
-            <strong>Studio:</strong> Be Your Star<br />
+            <strong translate="no">Studio:</strong> Be Your Star<br />
             <strong>Adresse:</strong> Joachim-Friedrichstr. 41, 10711 Berlin<br />
             <strong>Mail:</strong> <a href="mailto:evakluge.praxis@yahoo.com" className="contact-link">evakluge.praxis@yahoo.com</a><br />
             <strong>Telefon:</strong> <a href="tel:+491745399457" className="contact-link">0174 53 99 457</a>

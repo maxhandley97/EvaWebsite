@@ -2,44 +2,46 @@ import React from 'react'
 import './Behandlung.css'
 import AnimatedList from '../components/AnimatedList'
 import low3 from "../assets/EvaImages/low3.jpg"
-import evabeach from "../assets/EvaImages/eva-beach.jpg";
-import { useNavigate } from "react-router-dom"; 
-import { motion } from "framer-motion";
+import evabeach from "../assets/EvaImages/eva-beach.jpg"
+import { useNavigate } from "react-router-dom"
+import { motion } from "framer-motion"
 import ReviewCaro from "../components/ReviewCaro"
 import low6 from "../assets/EvaImages/low6.jpg"
 import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
 
 const shiatsuList = [
-    'Kopf- und Rückenschmerzen', 
-    'Stress-Symptome',
-    'Schlafstörungen',
-    'Muskelverspannungen', 
-    'Gelenkschmerzen',
-    'Verklebung von Faszien',
-    'Stärkung des Immunsystems',
-    'Gesundheitsprophylaxe'
-    
-  ];
-  
-  const jinShinList = [
-    'Bedürfnis nach tiefer Entspannung',
-    'Unterstützung bei der Heilung von chronischen Problemen',
-    'Gesundheitsprophylaxe'
-  ];
+  'Kopf- und Rückenschmerzen', 
+  'Stress-Symptome',
+  'Schlafstörungen',
+  'Muskelverspannungen', 
+  'Gelenkschmerzen',
+  'Verklebung von Faszien',
+  'Stärkung des Immunsystems',
+  'Gesundheitsprophylaxe'
+]
+
+const jinShinList = [
+  'Bedürfnis nach tiefer Entspannung',
+  'Unterstützung bei der Heilung von chronischen Problemen',
+  'Gesundheitsprophylaxe'
+]
 
 const Behandlung = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate()
+
   return (
     <div className=''>
-        <div className="home-top-container">
+
+      {/* --- Hero Section --- */}
+      <div className="home-top-container">
         <motion.div
           className="home-text-content"
           initial={{ y: "-50px", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 80, damping: 25, delay: 0.2 }}
         >
-          <h3>Willkommen </h3>
+          <h3>Willkommen</h3>
           <h4>bei Eva Kluge</h4>
           <p>
             Ihrer Ansprechpartnerin für die asiatischen Behandlungsmethoden
@@ -47,14 +49,33 @@ const Behandlung = () => {
             <br />
             Stärken Sie Ihre Gesundheit und Ihr körperliches Wohlbefinden!
           </p>
+
           <motion.button
-            onClick={() => navigate("/contact")} // Navigate to Contact page
+            onClick={() => navigate("/contact")}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
             Kontakt
           </motion.button>
+
+          {/* --- New Course Offer --- */}
+          <div className='new-offer'>
+            <motion.div
+              className="offer-box"
+              initial={{ x: 150, opacity: 0 }}
+              animate={{ x: 0, opacity: 1 }}
+              transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.8 }}
+            >
+              <h4>Neuer Kurs:</h4>
+              <p>
+                <strong>Faszien:</strong><br />
+                Lockerung – Dehnung – Kräftigung<br />
+                für mehr Beweglichkeit<br />
+                <em>Montags 18–19 Uhr ab 8.9.2025</em>
+              </p>
+            </motion.div>
+          </div>
         </motion.div>
 
         <motion.img 
@@ -67,102 +88,96 @@ const Behandlung = () => {
         />
       </div>
 
-        <div className='home-title'>
-            <div className='home-title-box'>
-                <h3>Behandlungsmethoden</h3>
+      {/* --- Title Section --- */}
+      <div className='home-title'>
+        <div className='home-title-box'>
+          <h3>Behandlungsmethoden</h3>
+        </div>
+      </div>
+
+      {/* --- Shiatsu Section --- */}
+      <div className='behandlung-content'>
+        <div className='b-shiatsu-top'>
+
+          <div className='text-img'>
+            <div className='b-shiatsu-text'>
+              <h3>Shiatsu</h3>
+              <h4>(japanische Fingerdruckmassage)</h4>
+              <p>
+                Shiatsu <em><i>(„Fingerdruck“)</i></em> ist eine wohltuende und gesundheitsfördernde Druckpunktmassage.
+                <br />
+                Die Massage basiert auf der Grundannahme der fernöstlichen Medizin, dass die Lebensenergie (Ki) in Energiekanälen, den sogenannten Meridianen fließt. 
+                <br /><br />
+                Gesundheitliche Dysbalancen werden mit einem blockierten Fluss der Lebensenergie erklärt. Diese Blockierungen zeigen sich als Verhärtungen, Verspannungen und Schmerzen. 
+                Bei der Behandlung wird entlang der Meridiane mit den Händen, Daumen, Ellenbogen und Knien gearbeitet, um die Energieströme zu harmonisieren und Spannungen zu lösen. 
+                <br />
+                Dadurch wird die Körperwahrnehmung sowie die innere Ausgeglichenheit und Vitalität des Klienten gefördert. 
+              </p>
+            </div>  
+            <img src={low6} alt="" />
+          </div>
+
+          <div className='top-r-side'>
+            <div className='b-list-box'>
+              <AnimatedList title="Indikationen für Shiatsu" items={shiatsuList} />
             </div>
+            <div className='ablauf'>
+              <h2>Shiatsu kann sowohl bei Kindern als auch bei Erwachsenen angewendet werden.</h2>
+              <p>
+                <strong>Die Behandlung</strong> findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
+                kann eine Massageliege benutzt werden.
+                <br /><br />
+                Vorher findet ein kurzes Vorgespräch statt, damit bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann.
+                <br /><br />
+                Am Ende der Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
+                Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
+              </p>
+            </div>
+          </div>
 
         </div>
+      </div>
 
+      {/* --- Image Break --- */}
+      <div className='b-middle'>
+        <img className='b-middle-pic' src={low3} alt="" />
+      </div>
 
-        <div className='behandlung-content'>
-            <div className='b-shiatsu-top'>
+      {/* --- Jin Shin Jyutsu Section --- */}
+      <div className='jin-shin'>
+        <div className='jin-text'>
+          <h3>
+            Jin-Shin-Jyutsu <br />
+            (japanisches Heilströmen)
+          </h3>
+          <p>
+            Jin-Shin-Jyutsu beruht ebenfalls auf der asiatischen Meridianlehre. Mit den Händen werden
+            Akupunkturpunkte auf den Meridianlinien gehalten, um die Selbstheilungskräfte und den
+            Energiefluss im Körper anzuregen.
+            <br /><br />
+            <strong>Die Behandlung</strong> findet traditionell am bekleideten Körper auf einer Massageliege statt. 
+            Am Ende der Behandlung zeige ich Ihnen einzelne Übungen für zu Hause, damit Sie Ihre
+            Gesundheit selbst weiter unterstützen können.
+          </p>
+        </div>
+        <div className='jin-check'>
+          <AnimatedList title="Indikationen für Jin Shin Jyutsu" items={jinShinList}/>
+        </div>
+      </div> 
 
-                  <div className='text-img'>
-
-                  
-                      <div className='b-shiatsu-text'>
-                          <h3>
-                          Shiatsu
-                          </h3>
-                          <h4>(japanische Fingerdruckmassage)</h4>
-                          <p>Shiatsu <em><i>(„Fingerdruck“)</i></em> ist eine wohltuende und gesundheitsfördernde Druckpunktmassage.
-                              <br />Die Massage basiert auf der Grundannahme der fernöstlichen Medizin, dass die Lebensenergie (Ki) in Energiekanälen, den sogenannten Meridianen fließt. 
-                              <br /><br /> Gesundheitliche Dysbalancen werden mit einem blockierten Fluss der Lebensenergie erklärt. Diese Blockierungen zeigen sich als Verhärtungen, Verspannungen und Schmerzen. 
-                              Bei der Behandlung wird entlang der Meridiane mit den Händen, Daumen, Ellenbogen und Knien gearbeitet, um die Energieströme zu harmonisieren und Spannungen zu lösen. 
-                              <br />Dadurch wird die Körperwahrnehmung sowie die innere Ausgeglichenheit und Vitalität des Klienten gefördert. 
-                          </p>
-                          
-                      </div>  
-                      <img src={low6} alt="" />
-                  </div>
-                    <div className='top-r-side'>
-                     
-                      <div className='b-list-box'>
-                          <AnimatedList title="Indikationen für Shiatsu" items={shiatsuList} />
-                      </div>
-                      <div className='ablauf'>
-                        <h2>Shiatsu kann sowohl bei Kindern als auch bei Erwachsenen angewendet werden.</h2>
-                        <p>
-                        <strong>Die Behandlung</strong> findet traditionell am bekleideten Körper auf Bodenmatten statt, bei Bedarf
-                            kann eine Massageliege benutzt werden. <br /> <br />Vorher findet ein kurzes Vorgespräch statt, damit
-                            bei der Massage individuell auf Ihre Bedürfnisse eingegangen werden kann. <br /> <br /> Am Ende der
-                            Behandlung zeige ich Ihnen einzelne Dehnübungen oder einfache Drucktechniken, die Sie zu
-                            Hause anwenden können, um den Erfolg der Behandlung fortzusetzen.
-                        </p>
-                    </div>
-                    </div>
-
-                    
-                </div>
-
-            </div>
-
-
-
-
-              <div className='b-middle'>
-                      <img className='b-middle-pic' src={low3} alt="" />
-
-              </div>
-              <div className='jin-shin'>
-                  <div className='jin-text'>
-                      <h3>
-                      Jin-Shin-Jyutsu <br />(japanisches Heilströmen)
-                      </h3>
-                      <p>
-                      Jin-Shin-Jyutsu beruht ebenfalls auf der asiatischen Meridianlehre. Mit den Händen werden
-                      Akupunkturpunkte auf den Meridianlinien gehalten, um die Selbstheilungskräfte und den
-                      Energiefluss im Körper anzuregen. <br /> <br />
-                      <strong>Die Behandlung</strong> findet traditionell am bekleideten Körper auf einer Massageliege statt. Am
-                      Ende der Behandlung zeige ich Ihnen einzelne Übungen für zu Hause, damit Sie Ihre
-                      Gesundheit selbst weiter unterstützen können.
-                      </p>
-                  </div>
-              <div className='jin-check'>
-              <AnimatedList  title="Indikationen für Jin Shin Jyutsu" items={jinShinList}/>
-              </div>
-              
-        </div> 
-        <div className='home-bottom-review'>
-          
-          <div className='box-b-review'>
-            <img src={low9} alt="" className="side-image" />
-            <div className='center-review'>
-              <h3>Was sagen Klienten dazu:</h3>
-            
+      {/* --- Reviews Section --- */}
+      <div className='home-bottom-review'>
+        <div className='box-b-review'>
+          <img src={low9} alt="" className="side-image" />
+          <div className='center-review'>
+            <h3>Was sagen Klienten dazu:</h3>
             <div className='review-div'>
-            
               <ReviewCaro />
             </div>  
-            </div>
-            <img src={low4} alt="" className="side-image2" />
           </div>
+          <img src={low4} alt="" className="side-image2" />
         </div>
-
-
-            
-      
+      </div>
 
     </div>
   )
