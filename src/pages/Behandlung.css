@@ -259,6 +259,113 @@
     border-bottom-right-radius: 50% 10%;
 }
 
+.faszien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -2rem;
+    
+}
+
+.faszien-subtitle h4 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.faszien-title h3 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid black;
+  display: inline-block; /* shrink box to text width */
+  align-self: center; 
+  margin-bottom: 1rem;   /* keeps it centered inside flex column */
+}
+/* Desktop layout */
+/* Desktop layout (>= 1000px) */
+.faszien-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .faszien-lists {
+    flex: 0 0 250px; /* fixed width for side lists */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .aktueller-box {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    background: #fffbea;
+    border: 2px solid #e5c100;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .faszien-lists.right{
+    margin-left: -2rem;
+
+  }
+  
+  /* Tablet + smaller screens (< 1000px) */
+  @media (max-width: 1070px) {
+    .faszien-text {
+      display: flex;
+      flex-wrap: wrap;          /* allow wrapping */
+      justify-content: center;  /* center children */
+      gap: 1.5rem;
+    }
+  
+    .aktueller-box {
+      order: -1;                /* force box first */
+      flex: 1 1 100%;           /* take full row */
+      max-width: 600px;
+      margin: 0 auto 2rem;      /* center + spacing */
+    }
+  
+    .faszien-lists {
+      flex: 1 1 45%;            /* allow lists side by side */
+      max-width: 300px;
+    }
+  }
+  
+  
+  .aktueller-box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #c38b00;
+    margin-top: 0;
+  }
+  
+  .aktueller-box p {
+    margin: 0.5rem 0;          /* slightly more spacing between paragraphs */
+  }
+  
+  .aktueller-box em {
+    display: block;
+    margin-top: 0.5rem;
+    color: #444;
+    font-style: italic;
+  }
+  
+
+.faszien h4 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+
 .jin-shin {
     display: flex;
 
@@ -323,7 +430,7 @@
     
 }
 .home-bottom-review {
-    padding-top: 7vw;
+    padding-top: 1rem;
 }
 .box-b-review img {
     max-width: 50%;

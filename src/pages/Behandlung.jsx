@@ -27,6 +27,21 @@ const jinShinList = [
   'Gesundheitsprophylaxe'
 ]
 
+const faszienZiele = [
+  'Weniger Steifheit im Alltag und beim Sport',
+  'Weniger Verspannungen und Schmerzen',
+  'Schnellere Regeneration nach Belastung',
+  'Verbesserung der Haltung'
+];
+
+const faszienFuerWen = [
+  'Wenn du beweglicher werden willst',
+  'Wenn du lange keinen Sport gemacht hast',
+  'Wenn du einen Einstieg in Bewegung suchst',
+  'Wenn du der Verkürzung deiner Muskeln entgegenwirken willst',
+  'Wenn du eine Ergänzung zum Krafttraining suchst'
+];
+
 const Behandlung = () => {
   const navigate = useNavigate()
 
@@ -142,6 +157,69 @@ const Behandlung = () => {
       <div className='b-middle'>
         <img className='b-middle-pic' src={low3} alt="" />
       </div>
+            {/* --- Faszienkurse Section --- */}
+     
+            <div className='faszien'>
+              {/* Title */}
+              <div className='faszien-title'>
+                <h3>Faszienkurse</h3>
+              </div>
+
+              {/* Subtitle */}
+              <div className='faszien-subtitle'>
+                <h4>Lockerung – Dehnung – Kräftigung</h4>
+              </div>
+
+              <div className='faszien-text'>
+
+                {/* Left AnimatedList */}
+                <div className='faszien-lists left'>
+                  <AnimatedList title={'Ziele:'} items={faszienZiele} />
+                </div>
+
+                {/* Text box */}
+                <div className='aktueller-box'>
+                  <h4>Neuer Kurs:</h4>
+                  <p><strong>Wann:</strong> Mo 8.9. 18–19 Uhr</p>
+                  <p><strong>Wo:</strong> Studio Be Your Star, Joachim-Friedrich-Str. 41, 10711 Berlin</p>
+                  <p><strong>Was:</strong> Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.</p>
+                  <p><strong>Warum:</strong> Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.</p>
+                  <p>
+                    <strong>Weil:</strong> Faszien umhüllen alle Muskeln und Muskelfasern.  
+                    Sie haben mehr Schmerzrezeptoren als die Muskeln. Ohne Bewegung verkleben sie,  
+                    bewegliche Faszien helfen Muskelfaserrissen vorzubeugen.
+                  </p>
+                </div>
+
+                {/* Right AnimatedList */}
+                <div className='faszien-lists right'>
+                  <AnimatedList title={'Für wen:'} items={faszienFuerWen} />
+                </div>
+
+              </div>
+
+
+
+
+      </div>
+
+
+    
+      {/* --- Reviews Section --- */}
+      <div className='home-bottom-review'>
+        <div className='box-b-review'>
+          <img src={low9} alt="" className="side-image" />
+          <div className='center-review'>
+            <h3>Was sagen Klienten dazu:</h3>
+            <div className='review-div'>
+              <ReviewCaro />
+            </div>  
+          </div>
+          <img src={low4} alt="" className="side-image2" />
+        </div>
+      </div>
+
+    
 
       {/* --- Jin Shin Jyutsu Section --- */}
       <div className='jin-shin'>
@@ -164,20 +242,7 @@ const Behandlung = () => {
           <AnimatedList title="Indikationen für Jin Shin Jyutsu" items={jinShinList}/>
         </div>
       </div> 
-
-      {/* --- Reviews Section --- */}
-      <div className='home-bottom-review'>
-        <div className='box-b-review'>
-          <img src={low9} alt="" className="side-image" />
-          <div className='center-review'>
-            <h3>Was sagen Klienten dazu:</h3>
-            <div className='review-div'>
-              <ReviewCaro />
-            </div>  
-          </div>
-          <img src={low4} alt="" className="side-image2" />
-        </div>
-      </div>
+      
 
     </div>
   )
