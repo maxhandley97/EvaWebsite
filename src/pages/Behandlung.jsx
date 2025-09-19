@@ -74,13 +74,19 @@ const Behandlung = () => {
             Kontakt
           </motion.button>
 
-          {/* --- New Course Offer --- */}
           <div className='new-offer'>
             <motion.div
               className="offer-box"
               initial={{ x: 150, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.8 }}
+              onClick={() => {
+                const section = document.getElementById("faszien");
+                if (section) {
+                  section.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+              style={{ cursor: "pointer" }} // makes it feel clickable
             >
               <h4>Neuer Kurs:</h4>
               <p>
@@ -159,7 +165,7 @@ const Behandlung = () => {
       </div>
             {/* --- Faszienkurse Section --- */}
      
-            <div className='faszien'>
+            <div className='faszien' id='faszien'>
               {/* Title */}
               <div className='faszien-title'>
                 <h3>Faszienkurse</h3>
