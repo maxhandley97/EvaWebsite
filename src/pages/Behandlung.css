@@ -20,6 +20,8 @@ margin: -10rem 1rem 0;
   .new-offer {
    max-width: 80%;
     z-index: 20;
+    transform: translateX(-1rem);
+    
   }
   
   .offer-box {
@@ -468,9 +470,7 @@ margin: -10rem 1rem 0;
 
 
 @media (max-width: 450px) {
-    .new-offer {
-      position: static;
-      margin: 2rem auto 3rem auto; /* give space above + below */
+    .new-offer {/* give space above + below */
       display: flex;
       justify-content: center;
     }
