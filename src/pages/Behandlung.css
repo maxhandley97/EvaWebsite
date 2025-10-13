@@ -4,12 +4,21 @@
     width: 100%; /* Adjust as needed */
     text-align: center; 
     min-height: 350px;
+    
   }
 
+.offers-container {
+position: absolute;
+display: flex;
+flex-direction: row;
+align-items:center;
+justify-content: space-between;
+width: 100%;
+margin: -10rem 1rem 0;
+}
+
   .new-offer {
-    position: absolute;       /* so it floats over the homepage */
-    top: 20%;                 /* adjust for placement */
-    right: 2rem;              /* distance from right edge */
+   max-width: 80%;
     z-index: 20;
   }
   
@@ -63,7 +72,10 @@
     font-family: 'Roboto Slab', serif;
     font-size: 1.2rem;
     color: black;
-    margin: 0 1rem;
+  }
+
+  .home-p {
+    margin: 0 20rem;
   }
   .home-text-content button {
     font-family: "Lato", sans-serif !important;
@@ -453,39 +465,8 @@
     right: 0;
 }
 
-@media (max-width: 1330px) {
-    .new-offer {
-      position: static;            /* no longer absolute, goes into flow */
-      margin-top: 3rem;
-      display: flex;
-      justify-content: center;     /* center horizontally */
-    }
-    
-    .offer-box h4{
-        padding-right: 1.5rem;
-    }
-    .offer-box {
-        
-      display: flex;
-      align-items: center;
-      max-width: 100%;
-      padding: 1rem 2rem;
-      margin-top: 2rem;
-    }
-  
-    .offer-box h4 {
-      margin: 0;                   /* remove bottom margin */
-      white-space: nowrap;         /* keep 'Neuer Kurs:' on one line */
-    }
-  
-    .offer-box p {
-      margin: 0;
-    }
 
-    .offer-box em {
-        margin-top: 0;
-      }
-} 
+
 @media (max-width: 450px) {
     .new-offer {
       position: static;
@@ -512,14 +493,15 @@
 }
 
 @media (max-width: 960px) {
-    .corner-ribbon {
-        left: -50px;
+    .home-top-container {
+        margin-bottom: 15vw;
     }
-    .special-offer-banner {
-        padding: 10px 20px;
+    .home-p {
+        margin: 0 1rem;
     }
-    .special-offer-banner p {
-        font-size: 1rem;
+    .offers-container{
+        justify-content: space-around;
+        margin: 5rem 0rem;
     }
     .b-shiatsu-text {
         width: 100%;
@@ -620,17 +602,17 @@
 
 }
 
-@media (max-width: 540px) {
+@media (max-width: 590px) {
     .home-top-container {
-        margin-bottom: 2rem;
+        margin-bottom: 15REM;
     }
-    .special-offer-banner {
-        left: 50% !important; /* Center horizontally */
-        transform: translateX(-50%) !important; /* Ensure exact centering */
-        top: 300px;
-        margin-bottom: 3rem;
+    .home-p {
+        margin: 0 1rem;
     }
-}
+    .offers-container {
+        margin-right: 1rem;
+    }
+
 
 @media (max-width: 480px) {
     .home-text-content button {
@@ -647,4 +629,4 @@
         opacity: 1;
         transform: translateY(0);
     }
-}
+}}

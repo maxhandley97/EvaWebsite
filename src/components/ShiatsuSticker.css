@@ -1,0 +1,27 @@
+/* Reuse base styles */
+.shiatsu-offer {
+  
+    top: 55%;          /* adjust placement relative to Faszienkurs box */
+    right: 2rem;
+    z-index: 19;       /* slightly below or same as main offer */
+  }
+  
+  /* Variant of the offer-box */
+  .shiatsu-box {
+    background: #f5fffa;           /* a gentle mint/cream contrast */
+    border: 2px solid #00b894;     /* calming green tone */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  }
+  
+  .shiatsu-box h4 {
+    color: #007a52;                /* matching green accent */
+  }
+  
+  .shiatsu-box strong {
+    color: #005d3a;
+  }
+  
+  .shiatsu-box em {
+    color: #333;
+  }
+  

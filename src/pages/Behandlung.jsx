@@ -9,6 +9,7 @@ import ReviewCaro from "../components/ReviewCaro"
 import low6 from "../assets/EvaImages/low6.jpg"
 import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
+import ShiatsuSticker from '../components/ShiatsuSticker'
 
 const shiatsuList = [
   'Kopf- und Rückenschmerzen', 
@@ -58,12 +59,14 @@ const Behandlung = () => {
         >
           <h3>Willkommen</h3>
           <h4>bei Eva Kluge</h4>
-          <p>
+          
+          <p className='home-p'>
             Ihrer Ansprechpartnerin für die asiatischen Behandlungsmethoden
             Shiatsu und Jin Shin Jyutsu.
             <br />
             Stärken Sie Ihre Gesundheit und Ihr körperliches Wohlbefinden!
           </p>
+        
 
           <motion.button
             onClick={() => navigate("/contact")}
@@ -73,30 +76,35 @@ const Behandlung = () => {
           >
             Kontakt
           </motion.button>
+          <div className="offers-container">
+            <ShiatsuSticker />
 
-          <div className='new-offer'>
-            <motion.div
-              className="offer-box"
-              initial={{ x: 150, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.8 }}
-              onClick={() => {
-                const section = document.getElementById("faszien");
-                if (section) {
-                  section.scrollIntoView({ behavior: "smooth" });
-                }
-              }}
-              style={{ cursor: "pointer" }} // makes it feel clickable
-            >
-              <h4>Neuer Kurs:</h4>
-              <p>
-                <strong>Faszien:</strong><br />
-                Lockerung – Dehnung – Kräftigung<br />
-                für mehr Beweglichkeit<br />
-                <em>Montags 18–19 Uhr ab 8.9.2025</em>
-              </p>
-            </motion.div>
+            <div className='new-offer'>
+              <motion.div
+                className="offer-box"
+                initial={{ x: 150, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.8 }}
+                onClick={() => {
+                  const section = document.getElementById("faszien");
+                  if (section) {
+                    section.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
+                style={{ cursor: "pointer" }}
+              >
+                <h4>Neuer Kurs:</h4>
+                <p>
+                  <strong>Faszien:</strong><br />
+                  Lockerung – Dehnung – Kräftigung<br />
+                  für mehr Beweglichkeit<br />
+                  <em>Montags 18–19 Uhr ab 8.9.2025</em>
+                </p>
+              </motion.div>
+            </div>
           </div>
+
+         
         </motion.div>
 
         <motion.img 
@@ -211,21 +219,6 @@ const Behandlung = () => {
 
 
     
-      {/* --- Reviews Section --- */}
-      <div className='home-bottom-review'>
-        <div className='box-b-review'>
-          <img src={low9} alt="" className="side-image" />
-          <div className='center-review'>
-            <h3>Was sagen Klienten dazu:</h3>
-            <div className='review-div'>
-              <ReviewCaro />
-            </div>  
-          </div>
-          <img src={low4} alt="" className="side-image2" />
-        </div>
-      </div>
-
-    
 
       {/* --- Jin Shin Jyutsu Section --- */}
       <div className='jin-shin'>
@@ -248,6 +241,22 @@ const Behandlung = () => {
           <AnimatedList title="Indikationen für Jin Shin Jyutsu" items={jinShinList}/>
         </div>
       </div> 
+
+    
+      {/* --- Reviews Section --- */}
+      <div className='home-bottom-review'>
+        <div className='box-b-review'>
+          <img src={low9} alt="" className="side-image" />
+          <div className='center-review'>
+            <h3>Was sagen Klienten dazu:</h3>
+            <div className='review-div'>
+              <ReviewCaro />
+            </div>  
+          </div>
+          <img src={low4} alt="" className="side-image2" />
+        </div>
+      </div>
+
       
 
     </div>
