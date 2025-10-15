@@ -11,6 +11,15 @@ import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
 import ShiatsuSticker from '../components/ShiatsuSticker'
 
+
+const offerShiatsu = ['Haben Sie öfter Rückenschmerzen nach der Arbeit?',
+  'Können Ihre Kinder manchmal schlecht einschlafen?']
+
+const wasErwartet = ['Einführung in die Grundlagen des Shiatsu',
+  'Praktische Massagegriffe speziell für den Rücken',
+  'Kleine Gruppengröße für individuelles Lernen'
+]
+
 const shiatsuList = [
   'Kopf- und Rückenschmerzen', 
   'Stress-Symptome',
@@ -216,9 +225,56 @@ const Behandlung = () => {
 
 
       </div>
+      <div className="section-line"></div>
 
+      <div className='shiatsu' id='shiatsu'>
+        <div className='shiatsu-title'>
+          <h3>
+            <span className='shiatsu-highlight'>Shiatsu-Kurs:</span>
+           
+          </h3>
+          <h4> Rückenmassage für Einsteiger</h4>
+          <p className='shiatsu-subtitle'>
+            Fr. 7.11. und 14.11.25, 17.30–19.30 Uhr, 60.- €
+          </p>
+        </div>
 
-    
+        <div className='shiatsu-text'>
+          {/* Left list */}
+          <div className='shiatsu-lists left'>
+          <AnimatedList title={'Ist dieser Kurs richtig für Sie?'} items={offerShiatsu} />
+          </div>
+
+          {/* Center info box */}
+          <div className='shiatsu-box'>
+            <h4>Shiatsu Rückenmassage: <br />Entspannung lernen & weitergeben</h4>
+            <p>In diesem Kurs zeige ich Ihnen, wie Sie mit einfachen Shiatsu-Techniken Rückenschmerzen lindern und echte Tiefenentspannung schenken können – für sich selbst oder andere.</p>
+            <p>Shiatsu ist eine japanische Druckmassage, sie wirkt stresslösend, ausgleichend & belebend – perfekt gegen den Alltagsstress. Keine Vorkenntnisse erforderlich. Alleine oder zu zweit buchbar.</p>
+
+            <div className='shiatsu-info'>
+              <p><strong>📍 Ort:</strong> Studio Be Your Star, Joachim-Friedrich-Str. 41</p>
+              <p><strong>📅 Termine:</strong> Fr. 7.11. und 14.11.2025, 17.30–19.30</p>
+              <p><strong>💶 Kosten:</strong> 60.-</p>
+            </div>
+
+            <p className='shiatsu-cta'>
+              Jetzt anmelden & Rückenwohl verschenken – an sich selbst oder andere!<br />
+              📞  0174 53 99 457
+              <br />
+              📧 evakluge.praxis@yahoo.com<br />
+              🌐 evaklugeshiatsuberlin.com
+            </p>
+          </div>
+
+          {/* Right list */}
+          <div className='shiatsu-lists right'>
+          <AnimatedList title={'Was Sie erwartet:'} items={wasErwartet} />
+            
+          </div>
+        </div>
+      </div>
+
+      <div className="section-line"></div>
 
       {/* --- Jin Shin Jyutsu Section --- */}
       <div className='jin-shin'>

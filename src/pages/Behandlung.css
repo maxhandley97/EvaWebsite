@@ -1,4 +1,11 @@
 
+.section-line {
+    width: 80%;
+    margin: 2rem auto;
+    border-top: 2px solid #e5c100; /* warm yellow line to match Eva’s theme */
+    opacity: 0.6;
+  }
+  
 .home-top-container {
     position: relative;
     width: 100%; /* Adjust as needed */
@@ -467,6 +474,128 @@ margin: -10rem 1rem 0;
     right: 0;
 }
 
+/* --- Shiatsu-Kurs Section --- */
+/* --- Shiatsu-Kurs Section --- */
+.shiatsu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+  }
+   
+  /* Title and subtitle */
+  .shiatsu-title h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  /* underline only the first part */
+  .shiatsu-highlight {
+    border-bottom: 3px solid black;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+  }
+  .shiatsu-title h3 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* ↓ smaller gap */
+    text-align: center;
+    line-height: 1.1;
+  }
+  
+  .shiatsu-title h4 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0;         /* removes default top margin */
+    margin-bottom: 0.3rem; /* optional small space */
+  }
+  
+  /* Main layout (mirrors Faszien structure) */
+  .shiatsu-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .shiatsu-lists {
+    flex: 0 0 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .shiatsu-box {
+    flex: 1;
+    min-width: 400px;
+    max-width: 500px;
+    background: #fffaf5;
+    border: 2px solid #CDAB81;
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  .shiatsu-box h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #A47F54;
+    margin-top: 0;
+    text-align: center;
+  }
+  
+  .shiatsu-box p {
+    margin: 0.5rem 0;
+  }
+  
+  .shiatsu-box em {
+    display: block;
+    margin-top: 0.5rem;
+    color: #444;
+    font-style: italic;
+  }
+  
+  .shiatsu-info p {
+    margin: 0.3rem 0;
+  }
+  
+  .shiatsu-cta {
+    margin-top: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Responsive layout (same as Faszien) */
+  @media (max-width: 1070px) {
+    .shiatsu-text {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+  
+    .shiatsu-box {
+      order: -1;               /* bring box to top */
+      flex: 1 1 100%;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+  
+    .shiatsu-lists {
+      flex: 1 1 45%;
+      max-width: 300px;
+    }
+  }
+  
+  
+
 
 
 @media (max-width: 450px) {
@@ -527,6 +656,9 @@ margin: -10rem 1rem 0;
         position: relative; /* Makes sure images stack on top of each other */
         max-width: 100%; /* Adjust width if necessary */
         margin: 10px 0; /* Adds space between stacked images */
+    }
+    .jin-shin {
+        margin-top: 10rem;
     }
 }
 

@@ -1,27 +1,40 @@
 /* Reuse base styles */
 .shiatsu-offer {
-  
-    top: 55%;          /* adjust placement relative to Faszienkurs box */
+    top: 55%;           /* adjust placement relative to Faszienkurs box */
     right: 2rem;
-    z-index: 19;       /* slightly below or same as main offer */
+    z-index: 19;        /* slightly below or same as main offer */
   }
   
   /* Variant of the offer-box */
-  .shiatsu-box {
-    background: #f5fffa;           /* a gentle mint/cream contrast */
-    border: 2px solid #00b894;     /* calming green tone */
+  .shiatsu-box-sticker {
+    background: #fffaf5;
+    border: 2px solid #CDAB81;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;    /* match Faszien padding */
+    max-width: 250px;        /* match Faszien width */
+    font-size: 0.95rem;      /* same text size */
+    line-height: 1.4;        /* same spacing */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
-  .shiatsu-box h4 {
-    color: #007a52;                /* matching green accent */
+  .shiatsu-box-sticker:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.18);
   }
   
-  .shiatsu-box strong {
-    color: #005d3a;
+  /* Text styling */
+  .shiatsu-box-sticker h4 {
+    color: #A47F54;                  /* deeper tone of #CDAB81 for titles */
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
   }
   
-  .shiatsu-box em {
-    color: #333;
+  
+  .shiatsu-box-sticker em {
+    color: #4B3A29;                  /* dark neutral for readability */
+    font-style: italic;
   }
   

@@ -1,0 +1,72 @@
+.animated-list-row-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    padding: 1rem 0;
+  }
+  
+  .animated-list-row {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  .list-item-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .list-item-row.fall {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .checkbox-row {
+    appearance: none;
+    min-width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: white;
+    position: relative;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkbox-row:checked {
+    background-color: black;
+  }
+  
+  .checkbox-row:checked::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  
+  .item-text-row {
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    white-space: nowrap;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
