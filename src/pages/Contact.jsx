@@ -8,19 +8,52 @@ const Contact = () => {
     <div className="contact-container">
       <div className='info-con'>
         <h2 className="contact-title">Kontakt</h2>
-        <div className="contact-details">
-          <img src={headshot} alt="" />
-          <p>
-            <strong translate="no">Studio:</strong> Be Your Star<br />
-            <strong>Adresse:</strong> Joachim-Friedrichstr. 41, 10711 Berlin<br />
-            <strong>Mail:</strong> <a href="mailto:evakluge.praxis@yahoo.com" className="contact-link">evakluge.praxis@yahoo.com</a><br />
-            <strong>Telefon:</strong> <a href="tel:+491745399457" className="contact-link">0174 53 99 457</a>
-            <br /> <strong>Praxiszeiten:</strong><br />Montag <br /> Dienstag <br /> Donnerstag 13-18 Uhr <br /> bei Bedarf auch andere Zeiten
-            <br /> <strong>Termine:</strong> nur nach Vereinbarung <br />
-Nutzen Sie gerne die Möglichkeit, mich anzurufen, mir eine Mail zu schreiben oder das Kontaktformular. <br />Offene Fragen und Termine können wir auf diese Weise direkt klären.
+        <div className="contact-details modern">
+  <div className="praxis praxis-left">
+    <h3>Praxis .1</h3>
+    <p>
+      <strong>Be Your Star</strong><br />
+      Joachim-Friedrichstr. 41<br />
+      10711 Berlin
+    </p>
+  </div>
 
-          </p>
-        </div>
+  <div className="contact-center">
+    <img src={headshot} alt="Eva Kluge" />
+
+    <p>
+      <strong>Mail:</strong><br />
+      <a href="mailto:evakluge.praxis@yahoo.com" className="contact-link">
+        evakluge.praxis@yahoo.com
+      </a>
+    </p>
+
+    <p>
+      <strong>Telefon:</strong><br />
+      <a href="tel:+491745399457" className="contact-link">
+        0174 53 99 457
+      </a>
+    </p>
+
+    <p>
+      <strong>Praxiszeiten:</strong><br />
+      Mo, Di, Do · 13–18 Uhr<br />
+      andere Zeiten nach Vereinbarung
+    </p>
+  </div>
+
+  <div className="praxis praxis-right">
+    <h3>Praxis .2</h3>
+    <p>
+    <strong>Privat Praxis</strong><br />
+      Bautzener Platz 2<br />
+      10829 Berlin
+    </p>
+  </div>
+
+
+  </div>
+
         </div>
         <div className='c-contact'>
         <ContactForm/>

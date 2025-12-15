@@ -6,6 +6,30 @@
    flex-direction: row;
   }
 
+
+
+
+  .contact-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .locations {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+  }
+  
+  .locations p:first-child {
+    margin-bottom: 0.75rem;
+  }
+  
+  .locations p {
+    margin-bottom: 0.5rem;
+  }
+
+  
   .info-con {
     margin-left: 1.5rem;
     
@@ -17,29 +41,50 @@
     margin-bottom: 1.5rem;
     color: #333;
   }
-  
-  .contact-details {
-    padding: .5rem;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #555;
+  .contact-details.modern {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    gap: 3rem;
+  
+    padding: 3rem;
     background-color: #FCE7AA;
-    border: 2px solid gray;
-    border-radius: 10px;
-
+    border-radius: 16px;
+    border: 2px solid #999;
+  
+    max-width: 1100px;
   }
-  .contact-details img{
-    border-radius: 50%;
-    max-height: 200px;
-    margin-right: 20px;
+  .contact-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.25rem;
+    max-width: 320px;
   }
   
+  .contact-center img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+ 
   .contact-link {
     color: #007BFF;
     text-decoration: none;
+  }
+  .praxis {
+    max-width: 260px;
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  .praxis h3 {
+    text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.9rem;
+    color: #333;
   }
   
   .contact-link:hover {
@@ -55,6 +100,18 @@
 
   .c-contact {
     min-width: 300px;
+  }
+
+  @media (max-width: 900px) {
+    .contact-details.modern {
+      flex-direction: column;
+      gap: 2.5rem;
+      text-align: center;
+    }
+  
+    .praxis {
+      max-width: 100%;
+    }
   }
   
   /* Responsive Styling */
