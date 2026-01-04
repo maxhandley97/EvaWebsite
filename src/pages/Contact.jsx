@@ -12,8 +12,9 @@ const Contact = () => {
   <div className="praxis praxis-left">
     <h3>Praxis .1</h3>
     <p>
-      <strong>Be Your Star</strong><br />
-      Joachim-Friedrichstr. 41<br />
+      <strong>Berliner Schule für Zen Shiatsu</strong><br />
+      Wittelsbacher Str. 17<br />
+      (U-Bahn Konstanzer Straße) <br />
       10711 Berlin
     </p>
   </div>

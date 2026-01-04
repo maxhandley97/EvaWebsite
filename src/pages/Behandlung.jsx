@@ -204,7 +204,9 @@ const Behandlung = () => {
                 <div className='aktueller-box'>
                   <h4>Neuer Kurs:</h4>
                   <p><strong>Wann:</strong> Mo 8.9. 18–19 Uhr</p>
-                  <p><strong>Wo:</strong> Studio Be Your Star, Joachim-Friedrich-Str. 41, 10711 Berlin</p>
+                  <p><strong>Wo:</strong> Berliner Schule für Zen Shiatsu <br />Wittelsbacher Str. 17
+                  (U-Bahn Konstanzer Straße) <br /> 10711 Berlin</p>
+                  
                   <p><strong>Was:</strong> Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.</p>
                   <p><strong>Warum:</strong> Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.</p>
                   <p>
@@ -252,7 +254,9 @@ const Behandlung = () => {
             <p>Shiatsu ist eine japanische Druckmassage, sie wirkt stresslösend, ausgleichend & belebend – perfekt gegen den Alltagsstress. Keine Vorkenntnisse erforderlich. Alleine oder zu zweit buchbar.</p>
 
             <div className='shiatsu-info'>
-              <p><strong>📍 Ort:</strong> Studio Be Your Star, Joachim-Friedrich-Str. 41</p>
+              <p><strong>📍 Ort:</strong> Berliner Schule für Zen Shiatsu
+<br/> Wittelsbacher Str. 17
+(U-Bahn Konstanzer Straße)</p>
               <p><strong>📅 Termine:</strong> Fr. 7.11. und 14.11.2025, 17.30–19.30</p>
               <p><strong>💶 Kosten:</strong> 60.-</p>
             </div>
