@@ -75,6 +75,7 @@ const Sitzung = () => {
             </tbody>
           </table>
           <h4>*Ermäßigung für Geringverdiener möglich</h4>
+          
         </div>
       </div>
     </div>

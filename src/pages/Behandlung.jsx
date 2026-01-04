@@ -38,18 +38,19 @@ const jinShinList = [
 ]
 
 const faszienZiele = [
-  'Weniger Steifheit im Alltag und beim Sport',
-  'Weniger Verspannungen und Schmerzen',
-  'Schnellere Regeneration nach Belastung',
-  'Verbesserung der Haltung'
+  'Mobilisieren der Faszien',
+  'Verbesserung der Haltung',
+  'Hydration des Gewebes',
+  'Verbesserte Beweglichkeit'
+
 ];
 
+
 const faszienFuerWen = [
-  'Wenn du beweglicher werden willst',
-  'Wenn du lange keinen Sport gemacht hast',
-  'Wenn du einen Einstieg in Bewegung suchst',
-  'Wenn du der Verkürzung deiner Muskeln entgegenwirken willst',
-  'Wenn du eine Ergänzung zum Krafttraining suchst'
+  'Sportler',
+  'Büroangestellte',
+  'Senioren',
+  'Alle, die beweglich bleiben wollen'
 ];
 
 const Behandlung = () => {
@@ -104,10 +105,11 @@ const Behandlung = () => {
               >
                 <h4>Neuer Kurs:</h4>
                 <p>
-                  <strong>Faszien:</strong><br />
+                  <strong>Faszientraining – Fit ins neue Jahr</strong><br />
                   Lockerung – Dehnung – Kräftigung<br />
                   für mehr Beweglichkeit<br />
-                  <em>Montags 18–19 Uhr ab 8.9.2025</em>
+                  Aktueller Kurs <br/>
+                  <em>Montags 19.15–20.15 Uhr · ab 5.1.2026</em>
                 </p>
               </motion.div>
             </div>
@@ -185,12 +187,12 @@ const Behandlung = () => {
             <div className='faszien' id='faszien'>
               {/* Title */}
               <div className='faszien-title'>
-                <h3>Faszienkurse</h3>
+                <h3>Fit durch Faszientraining</h3>
               </div>
 
               {/* Subtitle */}
               <div className='faszien-subtitle'>
-                <h4>Lockerung – Dehnung – Kräftigung</h4>
+                <h4>Die Grundlage für schmerzfreie Bewegung.</h4>
               </div>
 
               <div className='faszien-text'>
@@ -202,19 +204,58 @@ const Behandlung = () => {
 
                 {/* Text box */}
                 <div className='aktueller-box'>
-                  <h4>Neuer Kurs:</h4>
-                  <p><strong>Wann:</strong> Mo 8.9. 18–19 Uhr</p>
-                  <p><strong>Wo:</strong> Berliner Schule für Zen Shiatsu <br />Wittelsbacher Str. 17
-                  (U-Bahn Konstanzer Straße) <br /> 10711 Berlin</p>
-                  
-                  <p><strong>Was:</strong> Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.</p>
-                  <p><strong>Warum:</strong> Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.</p>
+                  <h4>Zeit</h4>
+
+                  <div className="course-table">
+                    <div className="row">
+                      <span className="label">Termine</span>
+                      <span className="value">
+                        5.1. | 12.1. | 19.1. | 26.1. | 2.2. | 9.2.
+                      </span>
+                    </div>
+
+                    <div className="row">
+                      <span className="label">Uhrzeit</span>
+                      <span className="value">19.15–20.15 Uhr</span>
+                    </div>
+
+                    <div className="row">
+                      <span className="label">Preis</span>
+                      <span className="value">
+                        Schnupperstunde (5.1.): 5 €<br />
+                        Ganzer Kurs: 50 €
+                      </span>
+                    </div>
+                  </div>
+
+                  <hr />
+
+                  <p>
+                    <strong>Wo:</strong><br />
+                    Berliner Schule für Zen Shiatsu<br />
+                    Wittelsbacher Str. 17<br />
+                    (U-Bahn Konstanzer Straße)<br />
+                    10711 Berlin
+                  </p>
+
+                  <p>
+                    <strong>Was:</strong> Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.
+                  </p>
+
+                  <p>
+                    <strong>Warum:</strong> Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.
+                  </p>
+
                   <p>
                     <strong>Weil:</strong> Faszien umhüllen alle Muskeln und Muskelfasern.  
                     Sie haben mehr Schmerzrezeptoren als die Muskeln. Ohne Bewegung verkleben sie,  
                     bewegliche Faszien helfen Muskelfaserrissen vorzubeugen.
                   </p>
+                  <p><strong>Registrierung:</strong> <br /> <strong>Email:</strong> evakluge.praxis@yahoo.com <br />
+                    <strong>Phone:</strong> 0174 53 99 457
+                  </p>
                 </div>
+
 
                 {/* Right AnimatedList */}
                 <div className='faszien-lists right'>
@@ -255,10 +296,12 @@ const Behandlung = () => {
 
             <div className='shiatsu-info'>
               <p><strong>📍 Ort:</strong> Berliner Schule für Zen Shiatsu
-<br/> Wittelsbacher Str. 17
-(U-Bahn Konstanzer Straße)</p>
-              <p><strong>📅 Termine:</strong> Fr. 7.11. und 14.11.2025, 17.30–19.30</p>
-              <p><strong>💶 Kosten:</strong> 60.-</p>
+              <br/> Wittelsbacher Str. 17
+              (U-Bahn Konstanzer Straße)</p>
+              <p><strong>📅 Termine:</strong> Sa 31.1.26 · 10.30–13 Uhr <br />
+                So 1.2.26 · 10.30–13 Uhr</p>
+              <p><strong>💶 Kosten:</strong> 75.-</p>
+              <p><strong>!!! Anmeldung:</strong> Anmeldung bis 24.1.26</p>
             </div>
 
             <p className='shiatsu-cta'>

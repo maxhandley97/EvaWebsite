@@ -331,11 +331,51 @@ margin: -10rem 1rem 0;
     font-size: 0.95rem;
     line-height: 1.4;
   }
+
+  .aktueller-box h5 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-size: 1rem;
+    color: #a67800;
+  }
+  
+  .aktueller-box hr {
+    border: none;
+    border-top: 1px solid rgba(0,0,0,0.15);
+    margin: 0.8rem 0;
+  }
   
   .faszien-lists.right{
     margin-left: -2rem;
 
   }
+
+  .course-table {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .course-table .row {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0.5rem;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  
+  .course-table .row:last-child {
+    border-bottom: none;
+  }
+  
+  .course-table .label {
+    font-weight: 600;
+    color: #8a6a00;
+  }
+  
+  .course-table .value {
+    line-height: 1.4;
+  }
+  
   
   /* Tablet + smaller screens (< 1000px) */
   @media (max-width: 1070px) {
