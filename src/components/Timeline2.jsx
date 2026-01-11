@@ -4,9 +4,16 @@ import "./Timeline2.css";
 const timelineData = [
   { title: "Wie alles begann", description: "Aus einer Arztfamilie stammend war Gesundheit seit meiner Kindheit ein wichtiges Thema. Mein Vater war klassischer Hausarzt, meine Mutter war der Naturheilkunde zugetan und achtete auf gesunde Ernährung. Alle Ferien und Wochenenden wurden sportlich verbracht." },
   { title: "Beruflicher Werdegang", description: "Parallel zu meinem Beruf als passionierte Grundschullehrerin erwarb ich die Qualifikation zur Heilpraktikerin und befasste mich mit verschiedenen Aspekten der Naturheilkunde und der asiatischen Gesundheitslehre." },
-  { title: "Seit 1979 Shiatsu", description: "Ausbildung in der Methode von Namikoshi und Masunaga bei meinen Lehrern: Wataru Ohashi, Pamela Ferguson, Yoshi Myashita, Ulrike Schmidt und Cornelia Elbel (Schule für Zen-Shiatsu in Berlin)" },
+  {
+    title: "Seit 1979 Shiatsu",
+    description:
+      "In der Methode von Namikoshi und Masunaga bei meinen Lehrern: Wataru Ohashi, Pamela Ferguson, Yoshi Myashita, Ulrike Schmidt, Cornelia Elbel (Schule für Zen-Shiatsu in Berlin), Mike Mandl (mit Shiatsu in Krisen begleiten) und Oskar Peter (Shiatsu bei Krebs)."
+  },
   { title: "2000 Heilpraktikerprüfung", description: "" },
-  { title: "Seit 2003 Jin Shin Jyutsu", description: "Ausbildung bei Frau Gunne von Richthofen in Hamburg." }
+  {
+    title: "Seit 2003 Jin Shin Jyutsu",
+    description: "Bei Frau Gunne von Richthofen in Hamburg."
+  }
 ];
 
 const Timeline = ({ animationDelay = 0 }) => {
