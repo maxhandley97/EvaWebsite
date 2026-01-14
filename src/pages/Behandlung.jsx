@@ -278,7 +278,7 @@ const Behandlung = () => {
           </h3>
           <h4> Rückenmassage für Einsteiger</h4>
           <p className='shiatsu-subtitle'>
-            Fr. 7.11. und 14.11.25, 17.30–19.30 Uhr, 60.- €
+          Samstag 31.1.26 11-14 Uhr, 45.- €
           </p>
         </div>
 
@@ -298,8 +298,7 @@ const Behandlung = () => {
               <p><strong>📍 Ort:</strong> Berliner Schule für Zen Shiatsu
               <br/> Wittelsbacher Str. 17
               (U-Bahn Konstanzer Straße)</p>
-              <p><strong>📅 Termine:</strong> Sa 31.1.26 · 10.30–13 Uhr <br />
-                So 1.2.26 · 10.30–13 Uhr</p>
+              <p><strong>📅 Termine:</strong> Samstag 31.1.26 11-14 Uhr</p>
               <p><strong>💶 Kosten:</strong> 75.-</p>
               <p><strong>!!! Anmeldung:</strong> Anmeldung bis 24.1.26</p>
             </div>

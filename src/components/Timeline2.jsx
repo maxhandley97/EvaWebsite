@@ -7,9 +7,9 @@ const timelineData = [
   {
     title: "Seit 1979 Shiatsu",
     description:
-      "In der Methode von Namikoshi und Masunaga bei meinen Lehrern: Wataru Ohashi, Pamela Ferguson, Yoshi Myashita, Ulrike Schmidt, Cornelia Elbel (Schule für Zen-Shiatsu in Berlin), Mike Mandl (mit Shiatsu in Krisen begleiten) und Oskar Peter (Shiatsu bei Krebs)."
+      "In der Methode von Namikoshi und Masunaga bei meinen Lehrern: Wataru Ohashi, Pamela Ferguson, Yoshi Myashita, Ulrike Schmidt, Cornelia Elbel (Schule für Zen-Shiatsu in Berlin), Mike Mandl (mit Shiatsu in Krisen begleiten), Meike Lucht (Faszien im Shiatsu) und Oskar Peter (Shiatsu bei Krebs)."
   },
-  { title: "2000 Heilpraktikerprüfung", description: "" },
+  { title: "2000 Heilpraktikerin", description: "" },
   {
     title: "Seit 2003 Jin Shin Jyutsu",
     description: "Bei Frau Gunne von Richthofen in Hamburg."
