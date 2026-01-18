@@ -299,7 +299,7 @@ const Behandlung = () => {
               <br/> Wittelsbacher Str. 17
               (U-Bahn Konstanzer Straße)</p>
               <p><strong>📅 Termine:</strong> Samstag 31.1.26 11-14 Uhr</p>
-              <p><strong>💶 Kosten:</strong> 75.-</p>
+              <p><strong>💶 Kosten:</strong> 45.-</p>
               <p><strong>!!! Anmeldung:</strong> Anmeldung bis 24.1.26</p>
             </div>
 
