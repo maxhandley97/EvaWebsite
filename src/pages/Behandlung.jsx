@@ -10,6 +10,7 @@ import low6 from "../assets/EvaImages/low6.jpg"
 import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
 import ShiatsuSticker from '../components/ShiatsuSticker'
+import { Link } from "react-router-dom";
 
 
 const offerShiatsu = ['Haben Sie öfter Rückenschmerzen nach der Arbeit?',
@@ -87,7 +88,26 @@ const Behandlung = () => {
             Kontakt
           </motion.button>
           <div className="offers-container">
-            <ShiatsuSticker />
+              <div className='sticker-l-box'>
+    
+                
+
+              <Link to="/contact#blessing" className="praxis-preview-link">
+                <div className="praxis-preview">
+                  <h4>Einladung</h4>
+
+                  <p>
+                    <strong>Praxiseinweihung</strong><br />
+                    Dienstag 17.3.2026<br />
+                    18–20 Uhr<br />
+                    <em>gerne anmelden!</em>
+                  </p>
+
+                  <div className="praxis-link">Hier klicken</div>
+                </div>
+              </Link>
+                <ShiatsuSticker />
+            </div>
 
             <div className='new-offer'>
               <motion.div
@@ -107,9 +127,12 @@ const Behandlung = () => {
                 <p>
                   <strong>Faszientraining – Fit ins neue Jahr</strong><br />
                   Lockerung – Dehnung – Kräftigung<br />
-                  für mehr Beweglichkeit<br />
-                  Aktueller Kurs <br/>
-                  <em>Montags 19.15–20.15 Uhr · ab 5.1.2026</em>
+                  für mehr Beweglichkeit im Alltag<br />
+                  auch für Senioren <br/>
+                  <em>Montag 13. 4. - 22.6.2026
+                  18-19 Uhr</em>
+                  bitte anmelden!
+
                 </p>
               </motion.div>
             </div>
@@ -177,7 +200,10 @@ const Behandlung = () => {
 
         </div>
       </div>
+        {/* --- ceremony --- */}
+        <div>
 
+        </div>
       {/* --- Image Break --- */}
       <div className='b-middle'>
         <img className='b-middle-pic' src={low3} alt="" />
@@ -204,57 +230,64 @@ const Behandlung = () => {
 
                 {/* Text box */}
                 <div className='aktueller-box'>
-                  <h4>Zeit</h4>
+                    <h4>Zeit</h4>
 
-                  <div className="course-table">
-                    <div className="row">
-                      <span className="label">Termine</span>
-                      <span className="value">
-                        5.1. | 12.1. | 19.1. | 26.1. | 2.2. | 9.2.
-                      </span>
+                    <div className="course-table">
+
+                      <div className="row">
+                        <span className="label">Termine</span>
+                        <span className="value">
+                          13.4. | 20.4. | 27.4. | 4.5. | 11.5. | 18.5. | 1.6. | 8.6. | 15.6. | 22.6.2026
+                        </span>
+                      </div>
+
+                      <div className="row">
+                        <span className="label">Uhrzeit</span>
+                        <span className="value">18–19 Uhr</span>
+                      </div>
+
+                      <div className="row">
+                        <span className="label">Preis</span>
+                        <span className="value">
+                          Schnupperstunde: 5 €<br />
+                          Ganzer Kurs (10 Termine): 60 €<br />
+                          Einzelne Stunden: 10.-<br />
+                          Frühbucherrabatt bis 30.3.2026: 50.-
+                        </span>
+                      </div>
+
                     </div>
 
-                    <div className="row">
-                      <span className="label">Uhrzeit</span>
-                      <span className="value">19.15–20.15 Uhr</span>
-                    </div>
+                    <hr />
 
-                    <div className="row">
-                      <span className="label">Preis</span>
-                      <span className="value">
-                        Schnupperstunde (5.1.): 5 €<br />
-                        Ganzer Kurs: 50 €
-                      </span>
-                    </div>
+                    <p>
+                      <strong>Wo:</strong><br />
+                      Heilpraktikerin Eva Kluge<br />
+                      Horstweg 32 (EG rechts)<br />
+                      14059 Berlin
+                    </p>
+
+                    <p>
+                      <strong>Was:</strong><br />
+                      Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.
+                    </p>
+
+                    <p>
+                      <strong>Warum:</strong><br />
+                      Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.
+                    </p>
+
+                    <p>
+                      <strong>Weil:</strong><br />
+                      Faszien umhüllen alle Muskeln und Muskelfasern. Ohne Bewegung verkleben sie.
+                    </p>
+
+                    <p>
+                      <strong>Anmeldung:</strong><br />
+                      <strong>E-Mail:</strong> evakluge.praxis@yahoo.com<br />
+                      <strong>Telefon:</strong> 0174 53 99 457
+                    </p>
                   </div>
-
-                  <hr />
-
-                  <p>
-                    <strong>Wo:</strong><br />
-                    Berliner Schule für Zen Shiatsu<br />
-                    Wittelsbacher Str. 17<br />
-                    (U-Bahn Konstanzer Straße)<br />
-                    10711 Berlin
-                  </p>
-
-                  <p>
-                    <strong>Was:</strong> Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.
-                  </p>
-
-                  <p>
-                    <strong>Warum:</strong> Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.
-                  </p>
-
-                  <p>
-                    <strong>Weil:</strong> Faszien umhüllen alle Muskeln und Muskelfasern.  
-                    Sie haben mehr Schmerzrezeptoren als die Muskeln. Ohne Bewegung verkleben sie,  
-                    bewegliche Faszien helfen Muskelfaserrissen vorzubeugen.
-                  </p>
-                  <p><strong>Registrierung:</strong> <br /> <strong>Email:</strong> evakluge.praxis@yahoo.com <br />
-                    <strong>Phone:</strong> 0174 53 99 457
-                  </p>
-                </div>
 
 
                 {/* Right AnimatedList */}
@@ -290,25 +323,45 @@ const Behandlung = () => {
 
           {/* Center info box */}
           <div className='shiatsu-box'>
-            <h4>Shiatsu Rückenmassage: <br />Entspannung lernen & weitergeben</h4>
-            <p>In diesem Kurs zeige ich Ihnen, wie Sie mit einfachen Shiatsu-Techniken Rückenschmerzen lindern und echte Tiefenentspannung schenken können – für sich selbst oder andere.</p>
-            <p>Shiatsu ist eine japanische Druckmassage, sie wirkt stresslösend, ausgleichend & belebend – perfekt gegen den Alltagsstress. Keine Vorkenntnisse erforderlich. Alleine oder zu zweit buchbar.</p>
+            <h4>
+              Shiatsu Rückenmassage: <br />
+              Entspannung lernen & weitergeben
+            </h4>
+
+            <p>
+              In diesem Kurs zeige ich Ihnen, wie Sie mit einfachen Shiatsu-Techniken den Rücken lockern und tiefe Entspannung schenken können.
+            </p>
+
+            <p>
+              Shiatsu ist eine japanische Druckmassage, sie wirkt stresslösend, ausgleichend & belebend – perfekt gegen den Alltagsstress. 
+              Keine Vorkenntnisse erforderlich. Alleine oder zu zweit buchbar.
+            </p>
 
             <div className='shiatsu-info'>
-              <p><strong>📍 Ort:</strong> Berliner Schule für Zen Shiatsu
-              <br/> Wittelsbacher Str. 17
-              (U-Bahn Konstanzer Straße)</p>
-              <p><strong>📅 Termine:</strong> Samstag 31.1.26 11-14 Uhr</p>
-              <p><strong>💶 Kosten:</strong> 45.-</p>
-              <p><strong>!!! Anmeldung:</strong> Anmeldung bis 24.1.26</p>
+              <p>
+                <strong>📅 Wann:</strong><br />
+                Samstag, 25.4.2026, 15–18 Uhr
+              </p>
+
+              <p>
+                <strong>📍 Wo:</strong><br />
+                Eva Kluge<br />
+                Horstweg 32 (EG re)<br />
+                14059 Berlin<br />
+                U-Bahn Sophie-Charlotte-Platz
+              </p>
+
+              <p>
+                <strong>💶 Kosten:</strong><br />
+                45 €<br />
+                Frühbucherrabatt bis 11.4.2026: 35 €
+              </p>
             </div>
 
             <p className='shiatsu-cta'>
-              Jetzt anmelden & Rückenwohl verschenken – an sich selbst oder andere!<br />
-              📞  0174 53 99 457
-              <br />
-              📧 evakluge.praxis@yahoo.com<br />
-              🌐 evaklugeshiatsuberlin.com
+              <strong>Anmeldung:</strong><br />
+              📞 0174 53 99 457<br />
+              📧 evakluge.praxis@yahoo.com
             </p>
           </div>
 

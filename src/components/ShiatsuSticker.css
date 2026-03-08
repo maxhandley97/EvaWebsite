@@ -11,7 +11,7 @@
     border: 2px solid #CDAB81;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
-    padding: 1rem 1.2rem;    /* match Faszien padding */
+    padding: .5rem .6rem;    /* match Faszien padding */
     max-width: 250px;        /* match Faszien width */
     font-size: 0.95rem;      /* same text size */
     line-height: 1.4;        /* same spacing */

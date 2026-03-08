@@ -6,16 +6,45 @@ import headshot from "../assets/EvaImages/profile.png";
 const Contact = () => {
   return (
     <div className="contact-container">
+      <div className='contact-l'>
+      <div className='blessing' id="blessing">
+
+          <h3>Einladung zur Praxiseinweihung</h3>
+
+          <p>
+            Ich lade herzlich zur Einweihung meiner neuen Praxis ein.
+          </p>
+          
+          <p className='strong-text'>
+            <strong>Dienstag, 17. März 2026<br/>
+            18 – 20 Uhr</strong>
+          </p>
+
+          <p><em>
+            Es gibt eine kleine Einführung, Tee und die Möglichkeit
+            die Praxisräume kennenzulernen.</em>
+          </p>
+
+          <p>
+            Ich freue mich über eine kurze Anmeldung.
+          </p>
+
+          </div>
+        <div className='c-contact'>
+        <ContactForm/>
+        </div>
+      </div>
+       
       <div className='info-con'>
         <h2 className="contact-title">Kontakt</h2>
         <div className="contact-details modern">
   <div className="praxis praxis-left">
-    <h3>Praxis .1</h3>
+    <h3>Heilpraktikerin Eva Kluge</h3>
     <p>
-      <strong>Berliner Schule für Zen Shiatsu</strong><br />
-      Wittelsbacher Str. 17<br />
-      (U-Bahn Konstanzer Straße) <br />
-      10711 Berlin
+    
+      Horstweg 32
+      14059 Berlin
+      U-Bahn Sophie-Charlotte-Platz
     </p>
   </div>
 
@@ -44,9 +73,8 @@ const Contact = () => {
   </div>
 
   <div className="praxis praxis-right">
-    <h3>Praxis .2</h3>
+    <h3>Privat Praxis</h3>
     <p>
-    <strong>Privat Praxis</strong><br />
       Bautzener Platz 2<br />
       10829 Berlin
     </p>
@@ -56,9 +84,7 @@ const Contact = () => {
   </div>
 
         </div>
-        <div className='c-contact'>
-        <ContactForm/>
-        </div>
+       
     </div>
   );
 };
