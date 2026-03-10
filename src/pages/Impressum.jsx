@@ -5,7 +5,7 @@ const Impressum = () => {
     <div className="impressum article">
       <h1>Impressum / Anbieterkennzeichnung</h1>
       <p><strong>Dienstanbieter / Verantwortlich im Sinne des Pressegesetzes:</strong> Heilpraktikerin Eva Kluge</p>
-      <p><strong>Postanschrift:</strong> Studio Be Your Star, Joachim-Friedrich-Str. 41, 10711 Berlin</p>
+      <p><strong>Postanschrift:</strong> Horstweg 32, 14059 Berlin</p>
       <p><strong>Email:</strong> <a href="mailto:evakluge.praxis@yahoo.com">evakluge.praxis@yahoo.com</a></p>
       <p><strong>Telefon:</strong> <a href="tel:+491745399457">0174 53 99 457</a></p>
       <p><strong>Heilpraktiker (gesetzliche Berufsbezeichnung in Deutschland, verliehen 2000 in Berlin)</strong></p>

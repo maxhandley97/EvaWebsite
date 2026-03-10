@@ -31,12 +31,18 @@ const Footer = () => {
           </div>
         </div>
         <div className="map-container">
-        <iframe
-          src="https://www.google.com/maps?q=Berliner+Schule+für+Zen+Shiatsu,+Wittelsbacher+Str.+17,+Berlin&output=embed"
-          style={{ border: 0 }}
-          loading="lazy"
-          title="Google Maps"
-        ></iframe>
+          <div className="map-container">
+            <iframe
+              src="https://www.google.com/maps?q=Horstweg%2032%2C%2014059%20Berlin%2C%20Germany&output=embed"
+              width="100%"
+              height="450"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Google Maps - Horstweg 32 Berlin"
+            ></iframe>
+          </div>
         </div>
       </div>
       <div className="bottom">

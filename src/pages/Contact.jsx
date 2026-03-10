@@ -42,8 +42,8 @@ const Contact = () => {
     <h3>Heilpraktikerin Eva Kluge</h3>
     <p>
     
-      Horstweg 32
-      14059 Berlin
+      Horstweg 32,d
+      14059 Berlin <br />
       U-Bahn Sophie-Charlotte-Platz
     </p>
   </div>
@@ -68,17 +68,10 @@ const Contact = () => {
     <p>
       <strong>Praxiszeiten:</strong><br />
       Mo, Di, Do · 13–18 Uhr<br />
-      andere Zeiten nach Vereinbarung
+      andere Zeiten nach Vereinbarung, auch Samstags
     </p>
   </div>
 
-  <div className="praxis praxis-right">
-    <h3>Privat Praxis</h3>
-    <p>
-      Bautzener Platz 2<br />
-      10829 Berlin
-    </p>
-  </div>
 
 
   </div>

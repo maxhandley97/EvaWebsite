@@ -9,9 +9,9 @@ const timelineData = [
     description:
       "Nach der Methode von Namikoshi und Masunaga bei meinen Lehrern: Wataru Ohashi, Pamela Ferguson, Yoshi Myashita, Ulrike Schmidt, Cornelia Ebel (Schule für Zen-Shiatsu in Berlin), Mike Mandl (mit Shiatsu in Krisen begleiten), Meike Lucht (Faszien im Shiatsu) und Oskar Peter (Shiatsu bei Krebs)."
   },
-  { title: " Seit 1989 Ki-Aikido", description: "Dan 2000-2010 Aikido für Kinder " },
+  { title: " Seit 1989 Ki-Aikido", description: "2000-2010 Aikido für Kinder " },
   
-  { title: "2000 Heilpraktikerin", description: "" },
+  { title: "Seit 2000 Heilpraktikerin", description: "" },
   {
     title: "Seit 2003 Jin Shin Jyutsu",
     description: "Nach der Methode von Frau Gunne von Richthofen in Hamburg."
