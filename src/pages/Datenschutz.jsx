@@ -2,7 +2,7 @@ import React from 'react';
 
 const Datenschutz = () => {
   return (
-    <div className="datenschutz article">
+    <div className="datenschutz article notranslate" translate="no">
       <h1>Datenschutzerklärung</h1>
       <p>Ich freue mich über Ihr Interesse an unserer Website. Der Schutz Ihrer Privatsphäre ist für mich sehr wichtig. Nachstehend informiere ich Sie über den Umgang mit Ihren Daten.</p>
       

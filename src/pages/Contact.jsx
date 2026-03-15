@@ -21,8 +21,7 @@ const Contact = () => {
           </p>
 
           <p><em>
-            Es gibt eine kleine Einführung, Tee und die Möglichkeit
-            die Praxisräume kennenzulernen.</em>
+            Es gibt eine Einführung in meine Arbeit, <strong>Gutscheine </strong>und einen kleinen Umtrunk mit Knabbereien.</em>
           </p>
 
           <p>
@@ -39,10 +38,10 @@ const Contact = () => {
         <h2 className="contact-title">Kontakt</h2>
         <div className="contact-details modern">
   <div className="praxis praxis-left">
-    <h3>Heilpraktikerin Eva Kluge</h3>
+    <h3>Heilpraktikerin <br />Eva Kluge</h3>
     <p>
     
-      Horstweg 32,d
+      Horstweg 32,
       14059 Berlin <br />
       U-Bahn Sophie-Charlotte-Platz
     </p>
@@ -68,7 +67,7 @@ const Contact = () => {
     <p>
       <strong>Praxiszeiten:</strong><br />
       Mo, Di, Do · 13–18 Uhr<br />
-      andere Zeiten nach Vereinbarung, auch Samstags
+      andere Zeiten nach Vereinbarung, auch samstags
     </p>
   </div>
 
