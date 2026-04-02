@@ -9,15 +9,17 @@ const Contact = () => {
       <div className='contact-l'>
       <div className='blessing' id="blessing">
 
-          <h3>Einladung zur Praxiseinweihung</h3>
+          <h3>Praxis-Informations-Veranstaltung</h3>
 
           <p>
-            Ich lade herzlich zur Einweihung meiner neuen Praxis ein.
+            Ich lade Sie herzlich ein, meine Praxis zu besuchen und Shiatsu sowie Jin Shin Jyutsu kennenzulernen.
           </p>
-          
+          <h3>Zeiten:</h3>
           <p className='strong-text'>
-            <strong>Dienstag, 17. März 2026<br/>
-            18 – 20 Uhr</strong>
+          <em><strong>13.4.</strong> 17 – 17.45 Uhr  <br />
+                     <strong>11.5.</strong>  19.15 – 20 Uhr  <br />
+                      <strong>8.6.</strong>  17 – 17.45 Uhr 
+                      </em>
           </p>
 
           <p><em>

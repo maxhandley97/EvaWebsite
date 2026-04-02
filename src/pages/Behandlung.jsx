@@ -97,12 +97,18 @@ const Behandlung = () => {
                   <h4>Einladung</h4>
 
                   <p>
-                    <strong>Praxiseinweihung</strong><br />
-                    Dienstag 17.3.2026<br />
-                    <em>gerne anmelden!</em>
+                    <strong>Praxis <br />Informations <br />Veranstaltung
+                    </strong><br />
+                  
                   </p>
 
-                  <div className="praxis-link">Hier klicken</div>
+                  <div className="praxis-link"><em><strong>13.4.</strong> 17 – 17.45 Uhr  <br />
+                     <strong>11.5.</strong>  19.15 – 20 Uhr  <br />
+                      <strong>8.6.</strong>  17 – 17.45 Uhr 
+                      <br /> Hier clicken!
+                      </em>
+                    </div>
+                     
                 </div>
               </Link>
                 <ShiatsuSticker />
