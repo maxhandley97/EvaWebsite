@@ -66,8 +66,7 @@ const Contact = () => {
 
     <p>
       <strong>Praxiszeiten:</strong><br />
-      Mo, Di, Do · 13–18 Uhr<br />
-      andere Zeiten nach Vereinbarung, auch samstags
+      Termine nach Vereinbarung Mo–Sa
     </p>
   </div>
 

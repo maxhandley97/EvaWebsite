@@ -22,7 +22,7 @@ const ShiatsuSticker = () => {
         <p>
           <strong>Shiatsu-Kurs</strong><br />
           Rückenmassage für Einsteiger<br />
-          <em>Samstag 25.4.2026 <br /> 15-18 Uhr</em><br />
+          <em>Samstag 25.4.2026 </em><br />
           {/* <strong>45 €</strong> */}
         </p>
       </motion.div>

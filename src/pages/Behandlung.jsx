@@ -99,7 +99,6 @@ const Behandlung = () => {
                   <p>
                     <strong>Praxiseinweihung</strong><br />
                     Dienstag 17.3.2026<br />
-                    18–20 Uhr<br />
                     <em>gerne anmelden!</em>
                   </p>
 
@@ -130,7 +129,7 @@ const Behandlung = () => {
                   für mehr Beweglichkeit im Alltag<br />
                   auch für Senioren <br/>
                   <em>Montag 13. 4. - 22.6.2026
-                  18-19 Uhr</em>
+               </em>
                   bitte anmelden!
 
                 </p>
@@ -311,7 +310,7 @@ const Behandlung = () => {
           </h3>
           <h4> Rückenmassage für Einsteiger</h4>
           <p className='shiatsu-subtitle'>
-          Samstag 31.1.26 11-14 Uhr, 45.- €
+          Samstag, 25.4.2026, 15–18 Uhr
           </p>
         </div>
 
