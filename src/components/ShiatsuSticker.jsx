@@ -11,7 +11,7 @@ const ShiatsuSticker = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{ type: "spring", stiffness: 70, damping: 15, delay: 1 }}
         onClick={() => {
-          const section = document.getElementById("shiatsu")
+          const section = document.getElementById("eltern-shiatsu")
           if (section) {
             section.scrollIntoView({ behavior: "smooth" })
           }
@@ -19,11 +19,22 @@ const ShiatsuSticker = () => {
         style={{ cursor: "pointer" }}
       >
         <h4>Neuer Kurs:</h4>
+
         <p>
-          <strong>Shiatsu-Kurs</strong><br />
-          Rückenmassage für Einsteiger<br />
-          <em>Samstag 25.4.2026 </em><br />
-          {/* <strong>45 €</strong> */}
+          <strong>
+            Shiatsu-Rückenmassage
+          </strong>
+          <br />
+
+          auch für Eltern mit Kindern
+          <br />
+
+          <em>
+            ab Fr 29.5.26
+          </em>
+          <br />
+
+          16:30–17:30 Uhr
         </p>
       </motion.div>
     </div>

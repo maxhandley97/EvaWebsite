@@ -9,8 +9,8 @@ import ReviewCaro from "../components/ReviewCaro"
 import low6 from "../assets/EvaImages/low6.jpg"
 import low9 from "../assets/EvaImages/low9.jpg"
 import low4 from "../assets/EvaImages/low4.jpg"
-import ShiatsuSticker from '../components/ShiatsuSticker'
-import { Link } from "react-router-dom";
+import CourseCard from "../components/CourseCard"
+import { courses } from "../data/courses"
 
 
 const offerShiatsu = ['Haben Sie öfter Rückenschmerzen nach der Arbeit?',
@@ -67,6 +67,7 @@ const Behandlung = () => {
           initial={{ y: "-50px", opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ type: "spring", stiffness: 80, damping: 25, delay: 0.2 }}
+          
         >
           <h3>Willkommen</h3>
           <h4>bei Eva Kluge</h4>
@@ -87,61 +88,16 @@ const Behandlung = () => {
           >
             Kontakt
           </motion.button>
-          <div className="offers-container">
-              <div className='sticker-l-box'>
-    
-                
 
-              <Link to="/contact#blessing" className="praxis-preview-link">
-                <div className="praxis-preview">
-                  <h4>Einladung</h4>
-
-                  <p>
-                    <strong>Praxis <br />Informations <br />Veranstaltung
-                    </strong><br />
-                  
-                  </p>
-
-                  <div className="praxis-link"><em><strong>13.4.</strong> 17 – 17.45 Uhr  <br />
-                     <strong>11.5.</strong>  19.15 – 20 Uhr  <br />
-                      <strong>8.6.</strong>  17 – 17.45 Uhr 
-                      <br /> Hier clicken!
-                      </em>
-                    </div>
-                     
-                </div>
-              </Link>
-                <ShiatsuSticker />
-            </div>
-
-            <div className='new-offer'>
-              <motion.div
-                className="offer-box"
-                initial={{ x: 150, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ type: "spring", stiffness: 70, damping: 15, delay: 0.8 }}
-                onClick={() => {
-                  const section = document.getElementById("faszien");
-                  if (section) {
-                    section.scrollIntoView({ behavior: "smooth" });
-                  }
-                }}
-                style={{ cursor: "pointer" }}
-              >
-                <h4>Neuer Kurs:</h4>
-                <p>
-                  <strong>Faszientraining – Fit ins neue Jahr</strong><br />
-                  Lockerung – Dehnung – Kräftigung<br />
-                  für mehr Beweglichkeit im Alltag<br />
-                  auch für Senioren <br/>
-                  <em>Montag 13. 4. - 22.6.2026
-               </em>
-                  bitte anmelden!
-
-                </p>
-              </motion.div>
-            </div>
+          <div className="courses-container">
+            {courses.map((course) => (
+              <CourseCard
+                key={course.id}
+                course={course}
+              />
+            ))}
           </div>
+        
 
          
         </motion.div>
@@ -235,64 +191,67 @@ const Behandlung = () => {
 
                 {/* Text box */}
                 <div className='aktueller-box'>
-                    <h4>Zeit</h4>
+                  <h4>Faszientraining – Fit durch Bewegung</h4>
 
-                    <div className="course-table">
+                  <p>
+                    Entdecke die Kraft deiner Faszien – dein unsichtbares Netzwerk für Beweglichkeit,
+                    Stabilität und Schmerzfreiheit.
+                  </p>
 
-                      <div className="row">
-                        <span className="label">Termine</span>
-                        <span className="value">
-                          13.4. | 20.4. | 27.4. | 4.5. | 11.5. | 18.5. | 1.6. | 8.6. | 15.6. | 22.6.2026
-                        </span>
-                      </div>
+                  <p>
+                    Durch gezielte Übungen lösen wir Verklebungen, verbessern die Haltung und fördern
+                    die natürliche Beweglichkeit des Körpers.
+                  </p>
 
-                      <div className="row">
-                        <span className="label">Uhrzeit</span>
-                        <span className="value">18–19 Uhr</span>
-                      </div>
+                  <hr />
 
-                      <div className="row">
-                        <span className="label">Preis</span>
-                        <span className="value">
-                          Schnupperstunde: 5 €<br />
-                          Ganzer Kurs (10 Termine): 60 €<br />
-                          Einzelne Stunden: 10.-<br />
-                          Frühbucherrabatt bis 30.3.2026: 50.-
-                        </span>
-                      </div>
+                  <div className="course-table">
 
+                    <div className="row">
+                      <span className="label">🕒 Zeit</span>
+                      <span className="value">18:00 – 19:00 Uhr</span>
                     </div>
 
-                    <hr />
+                    <div className="row">
+                      <span className="label">📅 Termine</span>
+                      <span className="value">
+                     1.6. | 8.6. | 15.6. | 22.6.2026
+                      </span>
+                    </div>
 
-                    <p>
-                      <strong>Wo:</strong><br />
-                      Heilpraktikerin Eva Kluge<br />
-                      Horstweg 32 (EG rechts)<br />
-                      14059 Berlin
-                    </p>
+                    <div className="row">
+                      <span className="label">💶 Preis</span>
+                      <span className="value">
+                        Schnupperstunde: 5 €<br />
+                        Ganzer Kurs (10 Termine): 60 €<br />
+                        Einzelstunde: 10 €<br />
+                        Frühbucherrabatt bis 30.3.2026: 50 €
+                      </span>
+                    </div>
 
-                    <p>
-                      <strong>Was:</strong><br />
-                      Entdecke die Kraft deiner Faszien – dein unsichtbares Netz, das Bewegung flüssig macht.
-                    </p>
-
-                    <p>
-                      <strong>Warum:</strong><br />
-                      Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.
-                    </p>
-
-                    <p>
-                      <strong>Weil:</strong><br />
-                      Faszien umhüllen alle Muskeln und Muskelfasern. Ohne Bewegung verkleben sie.
-                    </p>
-
-                    <p>
-                      <strong>Anmeldung:</strong><br />
-                      <strong>E-Mail:</strong> evakluge.praxis@yahoo.com<br />
-                      <strong>Telefon:</strong> 0174 53 99 457
-                    </p>
                   </div>
+
+                  <hr />
+
+                  <p>
+                    <strong>📍 Ort und Anmeldung:</strong><br />
+                    Enna Herzraum<br />
+                    Seelingstr. 33<br />
+                    14059 Berlin
+                  </p>
+
+                  <p>
+                    <strong>ℹ️ Mehr Infos:</strong><br />
+                    Faszien-Training stärkt das Bindegewebe, verbessert Beweglichkeit und löst Verspannungen.<br />
+                    Faszien umhüllen alle Muskeln und Muskelfasern – ohne Bewegung verkleben sie.
+                  </p>
+
+                  <p>
+                    <strong>✉️ Anmeldung:</strong><br />
+                    evakluge.praxis@yahoo.com<br />
+                    0174 53 99 457
+                  </p>
+                </div>
 
 
                 {/* Right AnimatedList */}
@@ -306,17 +265,25 @@ const Behandlung = () => {
 
 
       </div>
+
+
+
+
+{/* new area */}
+
+
+
+     
       <div className="section-line"></div>
 
-      <div className='shiatsu' id='shiatsu'>
+      <div className='shiatsu' id='eltern-shiatsu'>
         <div className='shiatsu-title'>
           <h3>
             <span className='shiatsu-highlight'>Shiatsu-Kurs:</span>
            
           </h3>
-          <h4> Rückenmassage für Einsteiger</h4>
+          <h4>Shiatsu-Rückenmassage auch für Eltern mit Kindern</h4>
           <p className='shiatsu-subtitle'>
-          Samstag, 25.4.2026, 15–18 Uhr
           </p>
         </div>
 
@@ -342,32 +309,49 @@ const Behandlung = () => {
               Keine Vorkenntnisse erforderlich. Alleine oder zu zweit buchbar.
             </p>
 
-            <div className='shiatsu-info'>
-              <p>
-                <strong>📅 Wann:</strong><br />
-                Samstag, 25.4.2026, 15–18 Uhr
-              </p>
+            <div className="shiatsu-info">
 
-              <p>
-                <strong>📍 Wo:</strong><br />
-                Eva Kluge<br />
-                Horstweg 32 (EG re)<br />
-                14059 Berlin<br />
-                U-Bahn Sophie-Charlotte-Platz
-              </p>
+              <div className="info-block l-g">
+                <p><strong>📅 Wann:</strong></p>
 
-              <p>
-                <strong>💶 Kosten:</strong><br />
-                45 €<br />
-                Frühbucherrabatt bis 11.4.2026: 35 €
-              </p>
+                <table className="date-table">
+                  <tbody>
+                    <tr>
+                      <td>16:30–17:30</td>
+                    </tr>
+                    <tr>
+                      
+                      <td>
+                        Fr 29.5.2026<br />
+                        Fr 5.6.2026<br />
+                        Fr 12.6.2026<br />
+                        Fr 19.6.2026<br />
+                        Fr 26.6.2026
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className='r-g'>
+                <div className="info-block">
+                  <p><strong>📍 Ort und Anmeldung:</strong></p>
+                  <p>
+                    Enna Herzraum<br />
+                    Seelingstr. 33<br />
+                    14059 Berlin
+                  </p>
+                </div>
+
+                <div className="info-block">
+                  <p><strong>💶 Kosten:</strong></p>
+                  <p>
+                   <strong> 45 € </strong>
+                  </p>
+                </div>
+              </div>
+
             </div>
 
-            <p className='shiatsu-cta'>
-              <strong>Anmeldung:</strong><br />
-              📞 0174 53 99 457<br />
-              📧 evakluge.praxis@yahoo.com
-            </p>
           </div>
 
           {/* Right list */}
@@ -377,6 +361,123 @@ const Behandlung = () => {
           </div>
         </div>
       </div>
+
+      <div className="section-line"></div>
+
+
+
+
+            {/* new area!!! */}
+
+
+
+      <div className="shiatsu" id="babymassage">
+
+  {/* Title */}
+  <div className="shiatsu-title">
+    <h3>
+      <span className="shiatsu-highlight">Babymassage</span>
+    </h3>
+    <h4>Nähe und Geborgenheit vermitteln</h4>
+
+    <p className="shiatsu-subtitle">
+      ab Fr 29.5.2026, 13:00–14:00 Uhr
+    </p>
+  </div>
+
+  <div className="shiatsu-text">
+
+    {/* Left list */}
+    <div className="shiatsu-lists left">
+      <AnimatedList
+        title="Für wen ist der Kurs?"
+        items={[
+          "Eltern mit Babys (0–12 Monate)",
+          "Eltern, die Bindung stärken möchten",
+          "Babys mit Unruhe oder Schlafproblemen"
+        ]}
+      />
+    </div>
+
+    {/* Center box */}
+    <div className="shiatsu-box">
+
+      <h4>
+        Babymassage: <br />
+        Liebevolle Berührung & Bindung
+      </h4>
+
+      <p>
+        In diesem Kurs lernen Sie sanfte Massagegriffe, die Ihrem Baby Sicherheit,
+        Entspannung und Nähe schenken.
+      </p>
+
+      <p>
+        Babymassage stärkt die Eltern-Kind-Bindung, unterstützt die Verdauung
+        und kann beim Einschlafen helfen.
+      </p>
+
+      <div className="shiatsu-info">
+
+        <div className="info-block">
+          <p><strong>📅 Wann:</strong></p>
+
+          <table className="date-table">
+            <tbody>
+              <tr>
+                <td>13:00–14:00</td>
+              </tr>
+              <tr>
+                <td>
+                  Fr 29.5.2026<br />
+                  Fr 5.6.2026<br />
+                  Fr 12.6.2026<br />
+                  Fr 19.6.2026<br />
+                  Fr 26.6.2026
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div className="info-block">
+          <p><strong>📍 Ort:</strong></p>
+          <p>
+            Enna Herzraum<br />
+            Seelingstr. 33<br />
+            14059 Berlin
+          </p>
+        </div>
+
+        <div className="info-block">
+          <p><strong>💶 Kosten:</strong></p>
+          <p><strong>45 €</strong></p>
+        </div>
+
+      </div>
+
+      <p className="shiatsu-cta">
+        <strong>Anmeldung:</strong><br />
+        📞 0174 53 99 457<br />
+        📧 evakluge.praxis@yahoo.com
+      </p>
+
+    </div>
+
+    {/* Right list */}
+    <div className="shiatsu-lists right">
+      <AnimatedList
+        title="Was erwartet Sie?"
+        items={[
+          "Sanfte Massagegriffe für Babys",
+          "Ruhe und Bindung zwischen Eltern & Kind",
+          "Anleitung zum sicheren Üben zu Hause"
+        ]}
+      />
+    </div>
+
+  </div>
+</div>
 
       <div className="section-line"></div>
 

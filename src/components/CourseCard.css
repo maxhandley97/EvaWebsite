@@ -1,0 +1,32 @@
+.offer-box h4 {
+    margin: 0 0 0.5rem;
+  }
+  .course-title {
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  
+    border: 3px solid rgba(0,0,0,0.75);
+    border-radius: 8px;
+  
+    padding: 0.5rem;
+  
+    background: rgba(255,255,255,0.45);
+  
+    display: inline-block;
+  }
+  .course-date {
+    font-style: italic;
+    margin-bottom: 0.2rem;
+  }
+  
+  .course-time {
+    font-weight: 500;
+  }
+
+  .course-click {
+    margin-top: 0.7rem;
+    font-size: 0.85rem;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: all 0.2s ease;
+  }
