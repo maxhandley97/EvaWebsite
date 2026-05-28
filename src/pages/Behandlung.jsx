@@ -209,13 +209,15 @@ const Behandlung = () => {
 
                     <div className="row">
                       <span className="label">🕒 Zeit</span>
-                      <span className="value">18:00 – 19:00 Uhr</span>
+                      <span className="value">11.30-12.30 Uhr</span>
                     </div>
 
                     <div className="row">
                       <span className="label">📅 Termine</span>
                       <span className="value">
-                     1.6. | 8.6. | 15.6. | 22.6.2026
+                     1.6. Hier müssen bitte die neuen Kurszeiten rein , 
+29.5. | 5.6. | 12.6. | 19.6. | 26.6. 
+11.30-12.30
                       </span>
                     </div>
 
@@ -224,8 +226,8 @@ const Behandlung = () => {
                       <span className="value">
                         Schnupperstunde: 5 €<br />
                         Ganzer Kurs (10 Termine): 60 €<br />
-                        Einzelstunde: 10 €<br />
-                        Frühbucherrabatt bis 30.3.2026: 50 €
+                        Einzelstunde: 15 €<br />
+                        Ermäßigung möglich
                       </span>
                     </div>
 
@@ -345,7 +347,11 @@ const Behandlung = () => {
                 <div className="info-block">
                   <p><strong>💶 Kosten:</strong></p>
                   <p>
-                   <strong> 45 € </strong>
+                   Ganzer Kurs <strong> 60 € </strong> 
+                   <br />
+                    Einzelstunde 15.-
+                    <br />
+                    Ermäßigung möglich
                   </p>
                 </div>
               </div>
@@ -451,7 +457,9 @@ const Behandlung = () => {
 
         <div className="info-block">
           <p><strong>💶 Kosten:</strong></p>
-          <p><strong>45 €</strong></p>
+          <p><strong>50 €</strong> <br />
+          Ermäßigung möglich
+          </p>
         </div>
 
       </div>
