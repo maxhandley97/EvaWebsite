@@ -161,10 +161,56 @@ const Behandlung = () => {
 
         </div>
       </div>
-        {/* --- ceremony --- */}
-        <div>
+
+        {/* --- Praxisinfo --- */}
+      <div className="praxisinfo" id="praxisinfo">
+
+      <div className="praxisinfo-title">
+        <h3>Praxisinfo</h3>
+      </div>
+
+        <div className="praxisinfo-box">
+
+          <p>
+            Bei Tee und Keksen informiere ich Sie über das Angebot meiner Praxis:
+          </p>
+
+          <p>
+            Shiatsu, Jin Shin Jyutsu, Faszientraining und Babymassage
+          </p>
+
+          <div className="praxisinfo-dates">
+            <p>
+              <strong>Termine:</strong>
+            </p>
+
+            <p>
+              Montag 14.9. · 19–20 Uhr<br />
+              Dienstag 13.10. · 19–20 Uhr<br />
+              Montag 9.11. · 19–20 Uhr<br />
+              Dienstag 15.12. · 19–20 Uhr
+            </p>
+          </div>
+
+          <p>
+            <strong>📍 Ort und Anmeldung:</strong><br />
+            Praxis Horstweg 32<br />
+            14059 Berlin
+          </p>
+
+          <p>
+            evakluge.praxis@yahoo.com<br />
+            0174 539 94 57
+          </p>
+
+          <p>
+            <strong>Keine Kosten</strong>
+          </p>
 
         </div>
+
+      </div>
+
       {/* --- Image Break --- */}
       <div className='b-middle'>
         <img className='b-middle-pic' src={low3} alt="" />
@@ -209,15 +255,17 @@ const Behandlung = () => {
 
                     <div className="row">
                       <span className="label">🕒 Zeit</span>
-                      <span className="value">11.30-12.30 Uhr</span>
+                      <span className="value">
+                        Montag 18–19 Uhr ab 31.8.2026<br />
+                        Dienstag 18–19 Uhr ab 1.9.2026
+                      </span>
                     </div>
 
                     <div className="row">
                       <span className="label">📅 Termine</span>
                       <span className="value">
-                     1.6. Hier müssen bitte die neuen Kurszeiten rein , 
-29.5. | 5.6. | 12.6. | 19.6. | 26.6. 
-11.30-12.30
+                        Mo 18–19 Uhr ab 31.8.26<br />
+                        Di 18–19 Uhr ab 1.9.26
                       </span>
                     </div>
 
@@ -225,9 +273,9 @@ const Behandlung = () => {
                       <span className="label">💶 Preis</span>
                       <span className="value">
                         Schnupperstunde: 5 €<br />
-                        Ganzer Kurs (10 Termine): 60 €<br />
-                        Einzelstunde: 15 €<br />
-                        Ermäßigung möglich
+                        10-er Karte: 80 €<br />
+                        5-er Karte: 45 €<br />
+                        Einzelstunde: 10 €
                       </span>
                     </div>
 
@@ -237,8 +285,7 @@ const Behandlung = () => {
 
                   <p>
                     <strong>📍 Ort und Anmeldung:</strong><br />
-                    Enna Herzraum<br />
-                    Seelingstr. 33<br />
+                    Praxis Horstweg 32<br />
                     14059 Berlin
                   </p>
 
@@ -275,7 +322,7 @@ const Behandlung = () => {
 
 
 
-     
+      
       <div className="section-line"></div>
 
       <div className='shiatsu' id='eltern-shiatsu'>
@@ -298,7 +345,7 @@ const Behandlung = () => {
           {/* Center info box */}
           <div className='shiatsu-box'>
             <h4>
-              Shiatsu Rückenmassage: <br />
+              Shiatsu-Rückenmassage: <br />
               Entspannung lernen & weitergeben
             </h4>
 
@@ -313,48 +360,42 @@ const Behandlung = () => {
 
             <div className="shiatsu-info">
 
-              <div className="info-block l-g">
-                <p><strong>📅 Wann:</strong></p>
+            <div className="info-block l-g">
+              <p><strong>📅 Wann:</strong></p>
 
-                <table className="date-table">
-                  <tbody>
-                    <tr>
-                      <td>16:30–17:30</td>
-                    </tr>
-                    <tr>
-                      
-                      <td>
-                        Fr 29.5.2026<br />
-                        Fr 5.6.2026<br />
-                        Fr 12.6.2026<br />
-                        Fr 19.6.2026<br />
-                        Fr 26.6.2026
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div className='r-g'>
-                <div className="info-block">
-                  <p><strong>📍 Ort und Anmeldung:</strong></p>
-                  <p>
-                    Enna Herzraum<br />
-                    Seelingstr. 33<br />
-                    14059 Berlin
-                  </p>
-                </div>
+              <p>
+                Montag 16:30–17:30 Uhr<br />
+                ab 7.9.2026
+              </p>
+            </div>
+            <div className='r-g'>
 
-                <div className="info-block">
-                  <p><strong>💶 Kosten:</strong></p>
-                  <p>
-                   Ganzer Kurs <strong> 60 € </strong> 
-                   <br />
-                    Einzelstunde 15.-
-                    <br />
-                    Ermäßigung möglich
-                  </p>
-                </div>
-              </div>
+                  <div className="info-block">
+                    <p><strong>📍 Ort und Anmeldung:</strong></p>
+                    <p>
+                      Praxis Horstweg 32<br />
+                      14059 Berlin
+                    </p>
+
+                    <p>
+                      <a href="mailto:evakluge.praxis@yahoo.com">
+                        evakluge.praxis@yahoo.com
+                      </a>
+                      <br />
+                      0174 53 99 457
+                    </p>
+                  </div>
+
+                  <div className="info-block">
+                    <p><strong>💶 Kosten:</strong></p>
+                    <p>
+                      10-er Karte: 100 €<br />
+                      5-er Karte: 60 €<br />
+                      Einzelstunde: 15 €
+                    </p>
+                  </div>
+
+                  </div>
 
             </div>
 
@@ -379,113 +420,116 @@ const Behandlung = () => {
 
       <div className="shiatsu" id="babymassage">
 
-  {/* Title */}
-  <div className="shiatsu-title">
-    <h3>
-      <span className="shiatsu-highlight">Babymassage</span>
-    </h3>
-    <h4>Nähe und Geborgenheit vermitteln</h4>
+              {/* Title */}
+              <div className="shiatsu-title">
+                <h3>
+                  <span className="shiatsu-highlight">Babymassage</span>
+                </h3>
+                <h4>Entwicklung fördern</h4>
 
-    <p className="shiatsu-subtitle">
-      ab Fr 29.5.2026, 13:00–14:00 Uhr
-    </p>
-  </div>
+                <p className="shiatsu-subtitle">
+                  Mittwoch 13–14 Uhr ab 2.9.2026
+                </p>
+              </div>
 
-  <div className="shiatsu-text">
+              <div className="shiatsu-text">
 
-    {/* Left list */}
-    <div className="shiatsu-lists left">
-      <AnimatedList
-        title="Für wen ist der Kurs?"
-        items={[
-          "Eltern mit Babys (0–12 Monate)",
-          "Eltern, die Bindung stärken möchten",
-          "Babys mit Unruhe oder Schlafproblemen"
-        ]}
-      />
-    </div>
+                {/* Left list */}
+                <div className="shiatsu-lists left">
+                  <AnimatedList
+                    title="Für wen ist der Kurs?"
+                    items={[
+                      "Eltern mit Babys (2–12 Monate)",
+                      "Eltern, die die Bindung stärken möchten",
+                      "Babys, deren Entwicklung gefördert werden soll"
+                    ]}
+                  />
+                </div>
 
-    {/* Center box */}
-    <div className="shiatsu-box">
+                {/* Center box */}
+                <div className="shiatsu-box">
 
-      <h4>
-        Babymassage: <br />
-        Liebevolle Berührung & Bindung
-      </h4>
+                  <h4>
+                    Babymassage: <br />
+                    Entwicklung fördern
+                  </h4>
 
-      <p>
-        In diesem Kurs lernen Sie sanfte Massagegriffe, die Ihrem Baby Sicherheit,
-        Entspannung und Nähe schenken.
-      </p>
+                  <p>
+                    In diesem Kurs lernen Sie sanfte Massagegriffe, die Ihrem Kind
+                    Sicherheit und Entspannung schenken und seine Entwicklung fördern.
+                  </p>
 
-      <p>
-        Babymassage stärkt die Eltern-Kind-Bindung, unterstützt die Verdauung
-        und kann beim Einschlafen helfen.
-      </p>
+                  <p>
+                    Babymassage stärkt die Eltern-Kind-Bindung (auch für Väter geeignet),
+                    fördert nachhaltig die Entwicklung des Kindes und unterstützt seine
+                    Verdauung.
+                  </p>
 
-      <div className="shiatsu-info">
+                  <div className="shiatsu-info">
 
-        <div className="info-block">
-          <p><strong>📅 Wann:</strong></p>
+                    <div className="info-block">
+                      <p><strong>📅 Wann:</strong></p>
 
-          <table className="date-table">
-            <tbody>
-              <tr>
-                <td>13:00–14:00</td>
-              </tr>
-              <tr>
-                <td>
-                  Fr 29.5.2026<br />
-                  Fr 5.6.2026<br />
-                  Fr 12.6.2026<br />
-                  Fr 19.6.2026<br />
-                  Fr 26.6.2026
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+                      <table className="date-table">
+                        <tbody>
+                          <tr>
+                            <td>Mittwoch 13–14 Uhr</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              2.9.2026<br />
+                              9.9.2026<br />
+                              16.9.2026<br />
+                              23.9.2026<br />
+                              30.9.2026
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
 
-        <div className="info-block">
-          <p><strong>📍 Ort:</strong></p>
-          <p>
-            Enna Herzraum<br />
-            Seelingstr. 33<br />
-            14059 Berlin
-          </p>
-        </div>
+                    <div className="info-block">
+                      <p><strong>📍 Ort und Anmeldung:</strong></p>
+                      <p>
+                        Enna-Herzraum<br />
+                        Seelingstr. 32<br />
+                        14059 Berlin
+                      </p>
+                    </div>
 
-        <div className="info-block">
-          <p><strong>💶 Kosten:</strong></p>
-          <p><strong>50 €</strong> <br />
-          Ermäßigung möglich
-          </p>
-        </div>
+                    <div className="info-block">
+                      <p><strong>💶 Kosten:</strong></p>
+                      <p>
+                        4-er Karte <strong>60 €</strong><br />
+                        Einzeltermin: <strong>18 €</strong>
+                      </p>
+                    </div>
+
+                  </div>
+
+                  <p className="shiatsu-cta">
+                    <strong>Anmeldung:</strong><br />
+                    📞 0174 53 99 457<br />
+                    📧 evakluge.praxis@yahoo.com
+                  </p>
+
+                </div>
+
+                {/* Right list */}
+                <div className="shiatsu-lists right">
+                  <AnimatedList
+                    title="Was erwartet Sie?"
+                    items={[
+                      "Sanfte Massagegriffe für Ihr Baby",
+                      "Sicherheit, Entspannung und Nähe",
+                      "Unterstützung der Entwicklung und Verdauung"
+                    ]}
+                  />
+                </div>
+
+              </div>
 
       </div>
-
-      <p className="shiatsu-cta">
-        <strong>Anmeldung:</strong><br />
-        📞 0174 53 99 457<br />
-        📧 evakluge.praxis@yahoo.com
-      </p>
-
-    </div>
-
-    {/* Right list */}
-    <div className="shiatsu-lists right">
-      <AnimatedList
-        title="Was erwartet Sie?"
-        items={[
-          "Sanfte Massagegriffe für Babys",
-          "Ruhe und Bindung zwischen Eltern & Kind",
-          "Anleitung zum sicheren Üben zu Hause"
-        ]}
-      />
-    </div>
-
-  </div>
-</div>
 
       <div className="section-line"></div>
 
