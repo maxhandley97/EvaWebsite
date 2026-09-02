@@ -1,5 +1,6 @@
 .contact-form-container {
     max-width: 20rem;
+    margin: 0 auto;
     padding: 20px;
     border: .7rem solid;
     border-color: white;

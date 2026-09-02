@@ -17,6 +17,60 @@
   
     text-align: left; /* important override */
   }
+
+/* --------------------------------
+   Praxisinfo landing page card
+-------------------------------- */
+
+.praxisinfo-card {
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+
+  width: 200px;
+  padding: 0.8rem 1rem;
+
+  background: #FCE7AA;
+  border: 4px solid #a94b3c;
+  border-radius: 0;
+
+  box-shadow: 4px 5px 12px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  cursor: pointer;
+  z-index: 10;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.praxisinfo-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 6px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.praxisinfo-card-title {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #a94b3c;
+
+  margin-bottom: 0.35rem;
+}
+
+.praxisinfo-card-link {
+  font-family: "Roboto Slab", serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+  /* --------------------------------
+   Offer BOXES
+-------------------------------- */
   
   .courses-container {
     display: flex;
@@ -171,6 +225,142 @@
     font-size: 2.5rem;
     border-bottom: black solid 3px;
 }
+
+/* --------------------------------
+   Praxisinfo Section
+-------------------------------- */
+
+.praxisinfo {
+  width: 90%;
+  max-width: 1000px;
+  margin: 5rem auto;
+  scroll-margin-top: 2rem;
+}
+
+.praxisinfo-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.praxisinfo-title h3 {
+  display: inline-block;
+
+  background: #a94b3c;
+  color: white;
+
+  font-family: "Lora", serif;
+  font-size: 2.2rem;
+
+  padding: 0.5rem 2rem;
+  margin: 0;
+
+  border-radius: 6px;
+}
+
+.praxisinfo-title p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  color: #a94b3c;
+  margin-top: 0.7rem;
+}
+
+
+/* Main yellow box */
+
+.praxisinfo-box {
+  background: #FCE7AA;
+
+  border: 5px solid #a94b3c;
+  border-radius: 0;
+
+  padding: 2.5rem;
+
+  text-align: center;
+
+  box-shadow: 5px 7px 18px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Intro */
+
+.praxisinfo-intro {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+.praxisinfo-methods {
+  font-family: "Lora", serif;
+  font-size: 1.4rem;
+  color: #a94b3c;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+
+/* Dates */
+
+.praxisinfo-dates {
+  border-top: 2px solid #a94b3c;
+  border-bottom: 2px solid #a94b3c;
+
+  padding: 1.5rem 1rem;
+  margin: 1.5rem auto;
+
+  max-width: 600px;
+}
+
+.praxisinfo-dates h4 {
+  font-family: "Lora", serif;
+  font-size: 1.5rem;
+  color: #a94b3c;
+  margin: 0 0 0.8rem;
+}
+
+.praxisinfo-dates p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+
+/* Contact */
+
+.praxisinfo-contact {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.praxisinfo-contact p {
+  margin: 1rem 0;
+}
+
+.praxisinfo-contact strong {
+  color: #a94b3c;
+}
+
+
+/* Free */
+
+.praxisinfo-free {
+  display: inline-block;
+
+  background: #a94b3c;
+  color: white;
+
+  font-family: "Lora", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+  padding: 0.5rem 1.2rem;
+  margin-top: 0.5rem;
+
+  border-radius: 4px;
+}
+
+
 
 .behandlung-top-image {
     position: block;
@@ -739,6 +929,29 @@
     text-align: center;
   }
 
+  .praxisinfo-card {
+    width: 180px;
+    padding: 0.6rem 0.7rem;
+    top: 0.8rem;
+    left: 0.7rem;
+  }
+
+  .praxisinfo-card-title {
+    font-size: 0.95rem;
+  }
+
+  .praxisinfo-card-link {
+    font-size: 0.75rem;
+  }
+  
+    .praxisinfo-card-title {
+      font-size: 1.05rem;
+    }
+  
+    .praxisinfo-card-text {
+      font-size: 0.75rem;
+    }
+
   .courses-container {
     flex-direction: column;
     margin-left: 0;          /* 👈 removes right push */
@@ -761,6 +974,41 @@
     .home-text-content p {
         font-size: 1rem;
     }
+
+
+      .praxisinfo {
+        width: 92%;
+        margin: 3rem auto;
+      }
+    
+      .praxisinfo-title h3 {
+        font-size: 1.7rem;
+        padding: 0.4rem 1.3rem;
+      }
+    
+      .praxisinfo-title p {
+        font-size: 0.9rem;
+      }
+    
+      .praxisinfo-box {
+        padding: 1.5rem 1rem;
+        border-width: 4px;
+      }
+    
+      .praxisinfo-intro {
+        font-size: 1rem;
+      }
+    
+      .praxisinfo-methods {
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    
+      .praxisinfo-dates p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+      }
+    
 
 
     .b-shiatsu-top {
@@ -812,6 +1060,16 @@
     .jin-check {
         margin: 0 auto;
     }
+
+}
+
+@media (max-width: 630px) {
+  .praxisinfo-card {
+    width: 150px;
+    padding: 0.3rem 0.5rem;
+    top: 14rem;
+    left: 0.7rem;
+  }
 
 }
 

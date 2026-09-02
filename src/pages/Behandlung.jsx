@@ -69,6 +69,22 @@ const Behandlung = () => {
           transition={{ type: "spring", stiffness: 80, damping: 25, delay: 0.2 }}
           
         >
+          <div
+            className="praxisinfo-card"
+            onClick={() => {
+              document.getElementById("praxisinfo")?.scrollIntoView({
+                behavior: "smooth"
+              })
+            }}
+          >
+            <span className="praxisinfo-card-title">
+              Praxisinfo – kommende Termine
+            </span>
+
+            <span className="praxisinfo-card-link">
+              Hier klicken für mehr Infos →
+            </span>
+          </div>
           <h3>Willkommen</h3>
           <h4>bei Eva Kluge</h4>
           
@@ -163,26 +179,27 @@ const Behandlung = () => {
       </div>
 
         {/* --- Praxisinfo --- */}
-      <div className="praxisinfo" id="praxisinfo">
+      {/* --- Praxisinfo --- */}
+        <div className="praxisinfo" id="praxisinfo">
 
-      <div className="praxisinfo-title">
-        <h3>Praxisinfo</h3>
-      </div>
+        <div className="praxisinfo-title">
+          <h3>Praxisinfo</h3>
+          <p>Informationsveranstaltungen in der Praxis</p>
+        </div>
 
         <div className="praxisinfo-box">
 
-          <p>
+          <p className="praxisinfo-intro">
             Bei Tee und Keksen informiere ich Sie über das Angebot meiner Praxis:
           </p>
 
-          <p>
-            Shiatsu, Jin Shin Jyutsu, Faszientraining und Babymassage
+          <p className="praxisinfo-methods">
+            Shiatsu · Jin Shin Jyutsu · Faszientraining · Babymassage
           </p>
 
           <div className="praxisinfo-dates">
-            <p>
-              <strong>Termine:</strong>
-            </p>
+
+            <h4>Termine</h4>
 
             <p>
               Montag 14.9. · 19–20 Uhr<br />
@@ -190,26 +207,30 @@ const Behandlung = () => {
               Montag 9.11. · 19–20 Uhr<br />
               Dienstag 15.12. · 19–20 Uhr
             </p>
+
           </div>
 
-          <p>
-            <strong>📍 Ort und Anmeldung:</strong><br />
-            Praxis Horstweg 32<br />
-            14059 Berlin
-          </p>
+          <div className="praxisinfo-contact">
 
-          <p>
-            evakluge.praxis@yahoo.com<br />
-            0174 539 94 57
-          </p>
+            <p>
+              <strong>📍 Ort und Anmeldung:</strong><br />
+              Praxis Horstweg 32<br />
+              14059 Berlin
+            </p>
 
-          <p>
-            <strong>Keine Kosten</strong>
-          </p>
+            <p>
+              evakluge.praxis@yahoo.com<br />
+              0174 539 94 57
+            </p>
+
+            <p className="praxisinfo-free">
+              Keine Kosten
+            </p>
+
+          </div>
 
         </div>
-
-      </div>
+        </div>
 
       {/* --- Image Break --- */}
       <div className='b-middle'>

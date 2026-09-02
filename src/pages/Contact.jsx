@@ -6,35 +6,7 @@ import headshot from "../assets/EvaImages/profile.png";
 const Contact = () => {
   return (
     <div className="contact-container">
-      <div className='contact-l'>
-      <div className='blessing' id="blessing">
-
-          <h3>Praxis-Informations-Veranstaltung</h3>
-
-          <p>
-            Ich lade Sie herzlich ein, meine Praxis zu besuchen und Shiatsu sowie Jin Shin Jyutsu kennenzulernen.
-          </p>
-          <h3>Zeiten:</h3>
-          <p className='strong-text'>
-          <em><strong>13.4.</strong> 17 – 17.45 Uhr  <br />
-                     <strong>11.5.</strong>  19.15 – 20 Uhr  <br />
-                      <strong>8.6.</strong>  17 – 17.45 Uhr 
-                      </em>
-          </p>
-
-          <p><em>
-            Es gibt eine Einführung in meine Arbeit, <strong>Gutscheine </strong>und einen kleinen Umtrunk mit Knabbereien.</em>
-          </p>
-
-          <p>
-            Ich freue mich über eine kurze Anmeldung.
-          </p>
-
-          </div>
-        <div className='c-contact'>
-        <ContactForm/>
-        </div>
-      </div>
+      
        
       <div className='info-con'>
         <h2 className="contact-title">Kontakt</h2>
@@ -71,6 +43,11 @@ const Contact = () => {
       Termine nach Vereinbarung Mo–Sa
     </p>
   </div>
+  <div className='contact-l'>
+        <div className='c-contact'>
+        <ContactForm/>
+        </div>
+      </div>
 
 
 
