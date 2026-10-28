@@ -197,19 +197,6 @@ const Behandlung = () => {
             Shiatsu · Jin Shin Jyutsu · Faszientraining · Babymassage
           </p>
 
-          <div className="praxisinfo-dates">
-
-            <h4>Termine</h4>
-
-            <p>
-              Montag 14.9. · 19–20 Uhr<br />
-              Dienstag 13.10. · 19–20 Uhr<br />
-              Montag 9.11. · 19–20 Uhr<br />
-              Dienstag 15.12. · 19–20 Uhr
-            </p>
-
-          </div>
-
           <div className="praxisinfo-contact">
 
             <p>
@@ -271,36 +258,6 @@ const Behandlung = () => {
                   </p>
 
                   <hr />
-
-                  <div className="course-table">
-
-                    <div className="row">
-                      <span className="label">🕒 Zeit</span>
-                      <span className="value">
-                        Montag 18–19 Uhr ab 31.8.2026<br />
-                        Dienstag 18–19 Uhr ab 1.9.2026
-                      </span>
-                    </div>
-
-                    <div className="row">
-                      <span className="label">📅 Termine</span>
-                      <span className="value">
-                        Mo 18–19 Uhr ab 31.8.26<br />
-                        Di 18–19 Uhr ab 1.9.26
-                      </span>
-                    </div>
-
-                    <div className="row">
-                      <span className="label">💶 Preis</span>
-                      <span className="value">
-                        Schnupperstunde: 5 €<br />
-                        10-er Karte: 80 €<br />
-                        5-er Karte: 45 €<br />
-                        Einzelstunde: 10 €
-                      </span>
-                    </div>
-
-                  </div>
 
                   <hr />
 
@@ -381,14 +338,7 @@ const Behandlung = () => {
 
             <div className="shiatsu-info">
 
-            <div className="info-block l-g">
-              <p><strong>📅 Wann:</strong></p>
-
-              <p>
-                Montag 16:30–17:30 Uhr<br />
-                ab 7.9.2026
-              </p>
-            </div>
+           
             <div className='r-g'>
 
                   <div className="info-block">
@@ -407,14 +357,7 @@ const Behandlung = () => {
                     </p>
                   </div>
 
-                  <div className="info-block">
-                    <p><strong>💶 Kosten:</strong></p>
-                    <p>
-                      10-er Karte: 100 €<br />
-                      5-er Karte: 60 €<br />
-                      Einzelstunde: 15 €
-                    </p>
-                  </div>
+                  
 
                   </div>
 
@@ -447,10 +390,6 @@ const Behandlung = () => {
                   <span className="shiatsu-highlight">Babymassage</span>
                 </h3>
                 <h4>Entwicklung fördern</h4>
-
-                <p className="shiatsu-subtitle">
-                  Mittwoch 13–14 Uhr ab 2.9.2026
-                </p>
               </div>
 
               <div className="shiatsu-text">
@@ -488,26 +427,7 @@ const Behandlung = () => {
 
                   <div className="shiatsu-info">
 
-                    <div className="info-block">
-                      <p><strong>📅 Wann:</strong></p>
-
-                      <table className="date-table">
-                        <tbody>
-                          <tr>
-                            <td>Mittwoch 13–14 Uhr</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              2.9.2026<br />
-                              9.9.2026<br />
-                              16.9.2026<br />
-                              23.9.2026<br />
-                              30.9.2026
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                    
 
                     <div className="info-block">
                       <p><strong>📍 Ort und Anmeldung:</strong></p>
@@ -515,14 +435,6 @@ const Behandlung = () => {
                         Enna-Herzraum<br />
                         Seelingstr. 32<br />
                         14059 Berlin
-                      </p>
-                    </div>
-
-                    <div className="info-block">
-                      <p><strong>💶 Kosten:</strong></p>
-                      <p>
-                        4-er Karte <strong>60 €</strong><br />
-                        Einzeltermin: <strong>18 €</strong>
                       </p>
                     </div>
 
